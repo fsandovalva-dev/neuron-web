@@ -153,7 +153,7 @@ export function PricingSection() {
   return (
     <section
       id="precios"
-      className="py-20 px-4 bg-gradient-to-b from-pink-50 to-pink-50"
+      className="py-20 px-4 bg-blush"
     >
       <div className="container mx-auto max-w-7xl">
         {/* Header */}

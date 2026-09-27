@@ -1,83 +1,77 @@
-"use client"
-
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Sparkles, Zap, Atom, FlaskConical } from "lucide-react"
+import { FlaskConical, GraduationCap, MessageCircle, ShieldCheck } from "lucide-react"
+
+const WHATSAPP_URL =
+  "https://wa.me/56976257106?text=Hola%20Neuron,%20vengo%20de%20la%20web%20y%20quiero%20cotizar%20un%20cumpleaños!"
+
+const trust = [
+  { icon: ShieldCheck, label: "Experimentos seguros" },
+  { icon: GraduationCap, label: "Educadores certificados" },
+  { icon: FlaskConical, label: "Cumpleaños y eventos corporativos" },
+]
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen bg-pink-50 overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 text-primary/20 animate-bounce-slow">
-          <Atom className="w-16 h-16 md:w-24 md:h-24" />
-        </div>
-        <div className="absolute top-40 right-20 text-secondary/20 animate-spin-slow">
-          <FlaskConical className="w-12 h-12 md:w-20 md:h-20" />
-        </div>
-        <div className="absolute bottom-32 left-1/4 text-accent/30 animate-pulse">
-          <Sparkles className="w-14 h-14 md:w-20 md:h-20" />
-        </div>
-        <div className="absolute bottom-20 right-1/3 text-primary/15 animate-bounce">
-          <Zap className="w-10 h-10 md:w-16 md:h-16" />
-        </div>
-      </div>
-
-      <div className="relative container mx-auto px-4 py-12 md:py-20 lg:py-28">
-        <div className="flex flex-col items-center justify-center text-center max-w-5xl mx-auto">
-          <div className="mb-8 md:mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-              <Atom className="w-5 h-5 text-primary animate-spin-slow" />
-              <span className="text-sm md:text-base font-semibold text-primary tracking-wider">NEURON</span>
-            </div>
-          </div>
-
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-balance mb-6 md:mb-8 leading-[1.1] tracking-tight">
-            <span className="inline-block">Cumpleaños</span>{" "}
-            <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-accent animate-gradient">
-              Científicos
-            </span>{" "}
-            <span className="inline-block">Inolvidables</span>
+    <section className="relative overflow-hidden bg-blush">
+      <div className="container mx-auto grid items-center gap-12 px-4 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:pb-28 lg:pt-36">
+        <div className="text-center lg:text-left">
+          <h1 className="font-display text-balance text-5xl font-extrabold leading-[1.02] tracking-tight text-ink sm:text-6xl lg:text-7xl">
+            Cumpleaños{" "}
+            <span className="inline-block -rotate-1 rounded-xl bg-spark px-3 text-ink">Científicos</span>{" "}
+            que nadie va a olvidar
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-muted-foreground text-pretty max-w-3xl mx-auto mb-10 md:mb-12 leading-relaxed">
-            Llevamos el laboratorio a tu casa. Experimentos reales, diversión explosiva y aprendizaje para niños
-            curiosos.
+          <p className="mx-auto mt-6 max-w-xl text-pretty text-lg leading-relaxed text-ink/75 md:text-xl lg:mx-0">
+            Llevamos el laboratorio a tu casa. Experimentos reales, guiados por educadores certificados, para niños
+            curiosos y también para equipos de trabajo.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
+          <ul className="mx-auto mt-8 flex max-w-xl flex-col gap-3 text-left sm:flex-row sm:flex-wrap sm:justify-center lg:mx-0 lg:justify-start">
+            {trust.map(({ icon: Icon, label }) => (
+              <li key={label} className="flex items-center gap-2 text-sm font-medium text-ink/80 md:text-base">
+                <Icon className="h-5 w-5 shrink-0 text-lab-strong" aria-hidden="true" />
+                {label}
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-10 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
             <Button
+              asChild
               size="lg"
-              className="w-full sm:w-auto text-base md:text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="h-auto bg-bubble-strong px-8 py-4 text-base font-bold text-white shadow-lg shadow-bubble-strong/25 transition-all hover:-translate-y-0.5 hover:bg-bubble-strong/90 hover:shadow-xl md:text-lg"
             >
-              <Sparkles className="w-5 h-5 mr-2" />
-              <a href="#precios">Ver Servicios</a>
+              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-5 w-5" aria-hidden="true" />
+                Cotizar por WhatsApp
+              </a>
             </Button>
             <Button
+              asChild
               size="lg"
-              variant="outline"
-              className="w-full sm:w-auto text-base md:text-lg px-8 py-6 border-2 border-foreground hover:bg-foreground hover:text-background font-bold transition-all hover:scale-105 bg-transparent"
+              variant="ghost"
+              className="h-auto px-6 py-4 text-base font-bold text-ink underline decoration-bubble-strong decoration-2 underline-offset-8 hover:bg-transparent hover:text-bubble-strong md:text-lg"
             >
-              Hablemos
+              <a href="#precios">Ver planes y precios</a>
             </Button>
           </div>
+        </div>
 
-          <div className="mt-12 md:mt-16 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="font-medium">Experimentos seguros</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-              <span className="font-medium">Educadores certificados</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-              <span className="font-medium">100% diversión garantizada</span>
-            </div>
+        <div className="relative mx-auto w-full max-w-sm lg:max-w-md">
+          <div className="absolute -bottom-4 -left-4 h-full w-full rotate-3 rounded-3xl bg-lab" aria-hidden="true" />
+          <div className="relative aspect-[3/4] overflow-hidden rounded-3xl shadow-xl shadow-ink/20">
+            <Image
+              src="/images/gallery/evento-2.jpg"
+              alt="Niño sorprendido sostiene una pipeta durante un experimento en un cumpleaños científico"
+              fill
+              priority
+              sizes="(min-width: 1024px) 28rem, (min-width: 640px) 24rem, 90vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-muted/30 to-transparent" />
     </section>
   )
 }
