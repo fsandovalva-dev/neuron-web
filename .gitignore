@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# graphify: respaldos con fecha y caché regenerables (el grafo en sí sí se versiona)
+/graphify-out/20*/
+/graphify-out/cache/
+
+# Claude Code: configuración local
+.claude/settings.local.json
