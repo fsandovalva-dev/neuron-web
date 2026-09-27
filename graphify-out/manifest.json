@@ -120,15 +120,15 @@
     "semantic_hash": ""
   },
   "app/layout.tsx": {
-    "mtime": 1790376372.1631014,
-    "seen": 1790376414.0597904,
-    "ast_hash": "2cf90592d10768e99da0f1ee76e0797b",
+    "mtime": 1790476946.9658341,
+    "seen": 1790477027.2846603,
+    "ast_hash": "1266326eac33ead55627545e165257b6",
     "semantic_hash": ""
   },
   "app/page.tsx": {
-    "mtime": 1790376790.5311048,
-    "seen": 1790376809.6714764,
-    "ast_hash": "c94ffb7fc5bee47bf8e5eb8d45a046f2",
+    "mtime": 1790476946.9734943,
+    "seen": 1790477027.2846627,
+    "ast_hash": "b26b777c0e2758b91c80e55f1e5a947d",
     "semantic_hash": ""
   },
   "components.json": {
@@ -138,45 +138,45 @@
     "semantic_hash": ""
   },
   "components/CTA.tsx": {
-    "mtime": 1790376764.8562467,
-    "seen": 1790376809.6715474,
-    "ast_hash": "3c74e790954b0a9eec89472e3ad42f05",
+    "mtime": 1790480929.7007306,
+    "seen": 1790480936.5283082,
+    "ast_hash": "29db8eba440928587d35b800c6f61f19",
     "semantic_hash": ""
   },
   "components/FAQ.tsx": {
-    "mtime": 1790376372.1687078,
-    "seen": 1790376414.0597942,
-    "ast_hash": "180849ba6ae00bf0abfeaf7d9195e2ec",
+    "mtime": 1790480223.8182867,
+    "seen": 1790480245.491658,
+    "ast_hash": "e22f3054e7d8661820cc6fb896c7fe51",
     "semantic_hash": ""
   },
   "components/Gallery.tsx": {
-    "mtime": 1790376372.1687078,
-    "seen": 1790376414.059795,
-    "ast_hash": "9fa121b8f2dda0740ae87de365da371e",
+    "mtime": 1790480929.6936536,
+    "seen": 1790480936.5284483,
+    "ast_hash": "2a54c39af165c9c526fd95d825b30c4f",
     "semantic_hash": ""
   },
   "components/Hero.tsx": {
-    "mtime": 1790376790.5311048,
-    "seen": 1790376809.6717417,
-    "ast_hash": "e171946d018221cbf1c83ea10f991227",
+    "mtime": 1790479813.4935308,
+    "seen": 1790479857.2455785,
+    "ast_hash": "2feaf04dd817f11d0219e0d0782f46bb",
     "semantic_hash": ""
   },
   "components/Navbar.tsx": {
-    "mtime": 1790376790.5311048,
-    "seen": 1790376809.6717427,
-    "ast_hash": "ff7161634dce5f3fa35f545be4244fef",
+    "mtime": 1790480775.6678865,
+    "seen": 1790480936.5285194,
+    "ast_hash": "19d691204b1a42f45ba3a55410f28db4",
     "semantic_hash": ""
   },
   "components/Pricing.tsx": {
-    "mtime": 1790376790.5311048,
-    "seen": 1790376809.6717436,
-    "ast_hash": "4f1865e48c994f6305c7d540d29bbdb7",
+    "mtime": 1790479813.5025291,
+    "seen": 1790479857.2456737,
+    "ast_hash": "f9d8fd4ce76cc09eb2d817e37c91a863",
     "semantic_hash": ""
   },
   "components/Services.tsx": {
-    "mtime": 1790376765.9066274,
-    "seen": 1790376809.6717448,
-    "ast_hash": "f3b46703b6a599f4449fb44da14964dc",
+    "mtime": 1790479813.4935308,
+    "seen": 1790479857.2456768,
+    "ast_hash": "762a77ff8453eb5ee562c489dd058cd7",
     "semantic_hash": ""
   },
   "components/WhatsAppButton.tsx": {
@@ -264,9 +264,9 @@
     "semantic_hash": ""
   },
   "skills-lock.json": {
-    "mtime": 1790374875.2626543,
-    "seen": 1790376414.0598202,
-    "ast_hash": "6036c76edea6fce9912c71ed0a3a4c49",
+    "mtime": 1790477636.8392658,
+    "seen": 1790478072.7092588,
+    "ast_hash": "6b83aee790c94bde20178db267fa36da",
     "semantic_hash": ""
   },
   "tsconfig.json": {
@@ -981,6 +981,150 @@
     "mtime": 1790376763.746923,
     "seen": 1790376809.671549,
     "ast_hash": "0efe73e5a428922e82cf1dc02a435083",
+    "semantic_hash": ""
+  },
+  "components/Bubbles.tsx": {
+    "mtime": 1790479813.4935308,
+    "seen": 1790479857.2453833,
+    "ast_hash": "ded7e804dd16e04cea48e38fd3b5e81d",
+    "semantic_hash": ""
+  },
+  "components/Testimonials.tsx": {
+    "mtime": 1790479813.5025291,
+    "seen": 1790479857.2456782,
+    "ast_hash": "e674977b5a9003a985e4a5718815e3e0",
+    "semantic_hash": ""
+  },
+  ".agents/skills/threejs-animation/SKILL.md": {
+    "mtime": 1790477572.4509733,
+    "seen": 1790478072.7135777,
+    "ast_hash": "164472c866456cf5143ba7d570474093",
+    "semantic_hash": ""
+  },
+  ".agents/skills/threejs-fundamentals/SKILL.md": {
+    "mtime": 1790477572.4509733,
+    "seen": 1790478072.7135794,
+    "ast_hash": "b02173c8f6a4f5fc970df7eb89607e21",
+    "semantic_hash": ""
+  },
+  ".agents/skills/threejs-geometry/SKILL.md": {
+    "mtime": 1790477572.4529877,
+    "seen": 1790478072.7135808,
+    "ast_hash": "9ac6ec474da3c5708662af3dc5e71c15",
+    "semantic_hash": ""
+  },
+  ".agents/skills/threejs-interaction/SKILL.md": {
+    "mtime": 1790477572.4589388,
+    "seen": 1790478072.713582,
+    "ast_hash": "774b3bcce52cb048107816c30e5967cb",
+    "semantic_hash": ""
+  },
+  ".agents/skills/threejs-lighting/SKILL.md": {
+    "mtime": 1790477572.466955,
+    "seen": 1790478072.713583,
+    "ast_hash": "f4344ac4d326b4a59ebdbcccec8c6a2d",
+    "semantic_hash": ""
+  },
+  ".agents/skills/threejs-loaders/SKILL.md": {
+    "mtime": 1790477572.4675531,
+    "seen": 1790478072.7135887,
+    "ast_hash": "7af2b7dc71fde6e2663a497c62e5684c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/threejs-materials/SKILL.md": {
+    "mtime": 1790477572.4675531,
+    "seen": 1790478072.7135897,
+    "ast_hash": "7a7bad68af34d3c41155a57d48754764",
+    "semantic_hash": ""
+  },
+  ".agents/skills/threejs-postprocessing/SKILL.md": {
+    "mtime": 1790477572.4675531,
+    "seen": 1790478072.7135906,
+    "ast_hash": "8994f36a1cacb4697c16968640d2c19c",
+    "semantic_hash": ""
+  },
+  ".agents/skills/threejs-shaders/SKILL.md": {
+    "mtime": 1790477572.4675531,
+    "seen": 1790478072.7135916,
+    "ast_hash": "74e91f50ce7f8a4588241cf9131e76d0",
+    "semantic_hash": ""
+  },
+  ".agents/skills/threejs-textures/SKILL.md": {
+    "mtime": 1790477572.4675531,
+    "seen": 1790478072.7135923,
+    "ast_hash": "51752dfeb67ad92bdf1c76d71b634da7",
+    "semantic_hash": ""
+  },
+  ".claude/skills/threejs-animation/SKILL.md": {
+    "mtime": 1790477572.4509733,
+    "seen": 1790478072.7190154,
+    "ast_hash": "164472c866456cf5143ba7d570474093",
+    "semantic_hash": ""
+  },
+  ".claude/skills/threejs-fundamentals/SKILL.md": {
+    "mtime": 1790477572.4509733,
+    "seen": 1790478072.7190173,
+    "ast_hash": "b02173c8f6a4f5fc970df7eb89607e21",
+    "semantic_hash": ""
+  },
+  ".claude/skills/threejs-geometry/SKILL.md": {
+    "mtime": 1790477572.4529877,
+    "seen": 1790478072.7190228,
+    "ast_hash": "9ac6ec474da3c5708662af3dc5e71c15",
+    "semantic_hash": ""
+  },
+  ".claude/skills/threejs-interaction/SKILL.md": {
+    "mtime": 1790477572.4589388,
+    "seen": 1790478072.719024,
+    "ast_hash": "774b3bcce52cb048107816c30e5967cb",
+    "semantic_hash": ""
+  },
+  ".claude/skills/threejs-lighting/SKILL.md": {
+    "mtime": 1790477572.466955,
+    "seen": 1790478072.7190251,
+    "ast_hash": "f4344ac4d326b4a59ebdbcccec8c6a2d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/threejs-loaders/SKILL.md": {
+    "mtime": 1790477572.4675531,
+    "seen": 1790478072.719026,
+    "ast_hash": "7af2b7dc71fde6e2663a497c62e5684c",
+    "semantic_hash": ""
+  },
+  ".claude/skills/threejs-materials/SKILL.md": {
+    "mtime": 1790477572.4675531,
+    "seen": 1790478072.7190273,
+    "ast_hash": "7a7bad68af34d3c41155a57d48754764",
+    "semantic_hash": ""
+  },
+  ".claude/skills/threejs-postprocessing/SKILL.md": {
+    "mtime": 1790477572.4675531,
+    "seen": 1790478072.7190282,
+    "ast_hash": "8994f36a1cacb4697c16968640d2c19c",
+    "semantic_hash": ""
+  },
+  ".claude/skills/threejs-shaders/SKILL.md": {
+    "mtime": 1790477572.4675531,
+    "seen": 1790478072.7190292,
+    "ast_hash": "74e91f50ce7f8a4588241cf9131e76d0",
+    "semantic_hash": ""
+  },
+  ".claude/skills/threejs-textures/SKILL.md": {
+    "mtime": 1790477572.4675531,
+    "seen": 1790478072.7190304,
+    "ast_hash": "51752dfeb67ad92bdf1c76d71b634da7",
+    "semantic_hash": ""
+  },
+  "components/HeroCluster.tsx": {
+    "mtime": 1790480929.7007306,
+    "seen": 1790480936.528518,
+    "ast_hash": "f7721d10fe257344e8ea360e9a0bf99b",
+    "semantic_hash": ""
+  },
+  "components/Reveal.tsx": {
+    "mtime": 1790479788.2993493,
+    "seen": 1790479857.2456753,
+    "ast_hash": "c078778d9f114d2be62a83dc7a24b0d2",
     "semantic_hash": ""
   }
 }
