@@ -1,19 +1,13 @@
 "use client";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { Check, FlaskConical } from "lucide-react";
+import { FlaskConical } from "lucide-react";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { MotionConfig, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { Bubbles } from "@/components/Bubbles";
 
 const microPlans = [
   {
@@ -137,6 +131,44 @@ function AnimatedTabTrigger({
   );
 }
 
+type Plan = { name: string; price: string; tagline: string; experiments: string[] };
+
+// Cada plan conserva su color en micro y macro para que se reconozca al cambiar de pestaña.
+const planTones: Record<string, { header: string; text: string }> = {
+  Explosivo: { header: "bg-spark text-ink", text: "text-ink/80" },
+  Cientístico: { header: "bg-spark text-ink", text: "text-ink/80" },
+  Kinésico: { header: "bg-lab text-ink", text: "text-ink/80" },
+  NeurOn: { header: "bg-bubble-strong text-white", text: "text-white/90" },
+  Ingeniero: { header: "bg-lab-strong text-white", text: "text-white/90" },
+};
+
+function PlanCard({ plan, whatsappUrl }: { plan: Plan; whatsappUrl: string }) {
+  const tone = planTones[plan.name] ?? planTones.NeurOn;
+  return (
+    <Card className="gap-0 overflow-hidden rounded-2xl border-0 py-0 shadow-md shadow-ink/10 transition-shadow duration-300 hover:shadow-xl">
+      <div className={`px-6 pt-6 pb-7 ${tone.header}`}>
+        <h3 className="font-display text-2xl font-bold">{plan.name}</h3>
+        <p className="mt-3 font-display text-4xl font-extrabold tracking-tight">{plan.price}</p>
+        <p className={`mt-3 text-sm text-balance ${tone.text}`}>{plan.tagline}</p>
+      </div>
+      <div className="flex flex-1 flex-col gap-6 p-6">
+        <ul className="flex flex-wrap gap-2">
+          {plan.experiments.map((experiment, index) => (
+            <li key={index} className="rounded-full bg-blush px-3 py-1.5 text-sm font-medium text-ink">
+              {experiment}
+            </li>
+          ))}
+        </ul>
+        <Button asChild className="mt-auto w-full bg-bubble-strong hover:bg-bubble-strong/90 text-white" size="lg">
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+            Cotizar {plan.name}
+          </a>
+        </Button>
+      </div>
+    </Card>
+  );
+}
+
 export function PricingSection() {
   // Estado para la pestaña activa y el menú móvil
   const [isOpen, setIsOpen] = useState(false);
@@ -151,11 +183,13 @@ export function PricingSection() {
     "https://wa.me/56976257106?text=Hola%20Neuron,%20vengo%20de%20la%20web%20y%20quiero%20cotizar%20un%20cumpleaños!";
 
   return (
+    <MotionConfig reducedMotion="user">
     <section
       id="precios"
-      className="py-20 px-4 bg-blush"
+      className="relative overflow-hidden py-20 px-4 bg-blush"
     >
-      <div className="container mx-auto max-w-7xl">
+      <Bubbles variant={2} light />
+      <div className="container relative mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-ink mb-4 text-balance">
@@ -206,46 +240,7 @@ export function PricingSection() {
               variants={fadeInUpAnimation}
             >
               {microPlans.map((plan) => (
-                <Card
-                  key={plan.name}
-                  className="border-0 shadow-md shadow-ink/10 hover:shadow-xl transition-shadow duration-300"
-                >
-                  <CardHeader>
-                    <CardTitle className="font-display text-2xl font-bold text-ink">
-                      {plan.name}
-                    </CardTitle>
-                    <CardDescription className="text-3xl font-bold text-bubble-strong mt-2">
-                      {plan.price}
-                    </CardDescription>
-                    <p className="text-sm italic text-ink/70 mt-2 text-balance">
-                      {plan.tagline}
-                    </p>
-                  </CardHeader>
-                  <Separator className="mb-4" />
-                  <CardContent className="space-y-6">
-                    <ul className="space-y-3">
-                      {plan.experiments.map((experiment, index) => (
-                        <li key={index} className="flex items-start gap-2">
-                          <Check className="w-5 h-5 text-lab-strong flex-shrink-0 mt-0.5" />
-                          <span className="text-ink/85">{experiment}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button
-                      asChild
-                      className="w-full bg-bubble-strong hover:bg-bubble-strong/90 text-white"
-                      size="lg"
-                    >
-                      <a
-                        href={whatsappUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Cotizar {plan.name}
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
+                <PlanCard key={plan.name} plan={plan} whatsappUrl={whatsappUrl} />
               ))}
             </motion.div>
           </TabsContent>
@@ -260,46 +255,7 @@ export function PricingSection() {
               variants={fadeInUpAnimation}
             >
               {macroPlans.map((plan) => (
-                <Card
-                  key={plan.name}
-                  className="border-0 shadow-md shadow-ink/10 hover:shadow-xl transition-shadow duration-300"
-                >
-                  <CardHeader>
-                    <CardTitle className="font-display text-2xl font-bold text-ink">
-                      {plan.name}
-                    </CardTitle>
-                    <CardDescription className="text-3xl font-bold text-bubble-strong mt-2">
-                      {plan.price}
-                    </CardDescription>
-                    <p className="text-sm italic text-ink/70 mt-2 text-balance">
-                      {plan.tagline}
-                    </p>
-                  </CardHeader>
-                  <Separator className="mb-4" />
-                  <CardContent className="space-y-6">
-                    <ul className="space-y-3">
-                      {plan.experiments.map((experiment, index) => (
-                        <li key={index} className="flex items-start gap-2">
-                          <Check className="w-5 h-5 text-lab-strong flex-shrink-0 mt-0.5" />
-                          <span className="text-ink/85">{experiment}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <Button
-                      asChild
-                      className="w-full bg-bubble-strong hover:bg-bubble-strong/90 text-white"
-                      size="lg"
-                    >
-                      <a
-                        href={whatsappUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Cotizar {plan.name}
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
+                <PlanCard key={plan.name} plan={plan} whatsappUrl={whatsappUrl} />
               ))}
             </motion.div>
           </TabsContent>
@@ -327,5 +283,6 @@ export function PricingSection() {
         </Card>
       </div>
     </section>
+    </MotionConfig>
   );
 }

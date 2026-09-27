@@ -1,3 +1,7 @@
+import { Bubbles } from "@/components/Bubbles"
+import { Button } from "@/components/ui/button"
+import { MessageCircle } from "lucide-react"
+import { Reveal } from "@/components/Reveal"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 const faqs = [
@@ -38,32 +42,67 @@ const faqs = [
   },
 ]
 
+// Cada pregunta lleva su color de marca; al abrirse, la tarjeta se tiñe de ese color.
+const tones = [
+  { dot: "bg-bubble-strong", open: "data-[state=open]:bg-[color-mix(in_oklab,var(--color-bubble)_18%,white)]" },
+  { dot: "bg-lab-strong", open: "data-[state=open]:bg-[color-mix(in_oklab,var(--color-lab)_30%,white)]" },
+  { dot: "bg-spark", open: "data-[state=open]:bg-[color-mix(in_oklab,var(--color-spark)_45%,white)]" },
+]
+
+const FAQ_WHATSAPP_URL =
+  "https://wa.me/56976257106?text=Hola%20Neuron,%20tengo%20una%20duda%20sobre%20los%20cumplea%C3%B1os%20cient%C3%ADficos!"
+
 export function FAQSection() {
   return (
-    <section id="faqs" className="py-20 px-4 bg-blush">
-      <div className="max-w-3xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Preguntas Frecuentes</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+    <section id="faqs" className="relative overflow-hidden py-20 px-4 bg-blush">
+      <Bubbles variant={0} light />
+      <div className="relative mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+        {/* Encabezado fijo mientras se recorren las preguntas */}
+        <div className="text-center lg:sticky lg:top-28 lg:self-start lg:text-left">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-ink mb-4 text-balance">
+            Preguntas{" "}
+            <span className="inline-block -rotate-1 rounded-xl bg-bubble px-3 text-white">Frecuentes</span>
+          </h2>
+          <p className="mx-auto max-w-xl text-lg md:text-xl text-ink/75 text-pretty lg:mx-0">
             Todo lo que necesitas saber para un cumpleaños científico perfecto.
           </p>
+
+          <div className="mx-auto mt-8 max-w-md rounded-2xl bg-sky p-6 text-left shadow-md shadow-ink/10 lg:mx-0">
+            <p className="font-display text-xl font-bold text-ink">¿Tienes otra duda?</p>
+            <p className="mt-1 text-ink/75">Escríbenos y te respondemos directamente.</p>
+            <Button
+              asChild
+              className="mt-4 h-auto w-full bg-bubble-strong px-6 py-3 font-bold text-white hover:bg-bubble-strong/90 sm:w-auto"
+            >
+              <a href={FAQ_WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-5 w-5" aria-hidden="true" />
+                Preguntar por WhatsApp
+              </a>
+            </Button>
+          </div>
         </div>
 
         {/* FAQ Accordion */}
         <Accordion type="single" collapsible className="w-full space-y-4">
-          {faqs.map((faq, index) => (
-            <AccordionItem
-              key={index}
-              value={`item-${index}`}
-              className="border border-gray-200 rounded-lg px-6 bg-white shadow-sm hover:shadow-md transition-shadow"
-            >
-              <AccordionTrigger className="text-left text-lg font-semibold text-gray-900 hover:text-cyan-600 py-5">
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-gray-700 leading-relaxed pb-5">{faq.answer}</AccordionContent>
-            </AccordionItem>
-          ))}
+          {faqs.map((faq, index) => {
+            const tone = tones[index % tones.length]
+            return (
+              <Reveal key={index} variant="up" delay={index * 0.05}>
+                <AccordionItem
+                  value={`item-${index}`}
+                  className={`rounded-2xl border-0 bg-white px-6 shadow-md shadow-ink/10 transition-colors duration-300 ${tone.open}`}
+                >
+                  <AccordionTrigger className="py-5 text-left text-lg font-semibold text-ink hover:text-bubble-strong hover:no-underline">
+                    <span className="flex items-start gap-3">
+                      <span aria-hidden="true" className={`mt-2 size-3 shrink-0 rounded-full ${tone.dot}`} />
+                      {faq.question}
+                    </span>
+                  </AccordionTrigger>
+                  <AccordionContent className="pl-6 text-ink/80 leading-relaxed pb-5">{faq.answer}</AccordionContent>
+                </AccordionItem>
+              </Reveal>
+            )
+          })}
         </Accordion>
       </div>
     </section>
