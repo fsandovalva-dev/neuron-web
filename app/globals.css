@@ -130,6 +130,10 @@
   body {
     @apply bg-background text-foreground font-sans;
   }
+  /* El menú es sticky: las secciones ancladas no deben quedar bajo la barra */
+  section[id] {
+    scroll-margin-top: 4rem;
+  }
   ::selection {
     background: var(--color-spark);
     color: var(--color-ink);
@@ -151,7 +155,7 @@
     }
   }
 
-  @keyframes bounce-slow {
+  @keyframes float-slow {
     0%,
     100% {
       transform: translateY(0);
@@ -198,7 +202,7 @@
     animation: spin-slow 8s linear infinite;
   }
 
-  .animate-bounce-slow {
-    animation: bounce-slow 3s ease-in-out infinite;
+  .animate-float-slow {
+    animation: float-slow 4s cubic-bezier(0.25, 1, 0.5, 1) infinite alternate;
   }
 }

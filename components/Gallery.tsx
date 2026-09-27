@@ -1,64 +1,68 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
 import { Dialog, DialogContent, DialogTitle, DialogTrigger, DialogClose } from "@/components/ui/dialog"
 import { X } from "lucide-react"
+import { Reveal } from "@/components/Reveal"
+import { Bubbles } from "@/components/Bubbles"
 
 const galleryImages = [
   {
     id: 1,
     src: "/images/gallery/evento-1.JPG",
-    alt: "Niños haciendo experimento de slime colorido",
+    alt: "Educadora con bata vierte un líquido en un tubo de ensayo mientras niños con la cara pintada extienden sus tubos",
   },
   {
     id: 2,
     src: "/images/gallery/evento-2.jpg",
-    alt: "Niños observando erupción volcánica",
+    alt: "Niños experimentando con pipetas y tubos de ensayo en una mesa, uno de ellos con expresión de sorpresa",
   },
   {
     id: 3,
     src: "/images/gallery/evento-3.JPG",
-    alt: "Niños creando burbujas gigantes",
+    alt: "Niños con la cara pintada observan sus tubos de ensayo junto a educadoras con bata y un banner de Neuron",
   },
   {
     id: 4,
     src: "/images/gallery/evento-4.jpg",
-    alt: "Niños con gafas de seguridad experimentando",
+    alt: "Equipo de una empresa manipulando slime de colores con guantes durante una actividad corporativa",
   },
   {
     id: 5,
     src: "/images/gallery/evento-5.jpg",
-    alt: "Niños jugando con hielo seco",
+    alt: "Tres científicos con bata blanca posan junto a una mascota de peluche en un evento al aire libre",
   },
   {
     id: 6,
     src: "/images/gallery/evento-6.JPG",
-    alt: "Grupo de niños felices en fiesta científica",
+    alt: "Educadora con bata vierte un líquido de colores en una probeta entre dos banners de Neuron",
   },
 ]
 
 export function GallerySection() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-blush" id="galeria">
-      <div className="container px-4 md:px-6 mx-auto">
+    <section className="relative w-full overflow-hidden py-20 bg-blush" id="galeria">
+      <Bubbles variant={3} light />
+      <div className="container relative px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-slate-900">
-              Galería de Momentos <span className="text-cyan-400">Inolvidables</span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-ink mb-4 text-balance">
+              Galería de Momentos{" "}
+              <span className="inline-block rotate-1 rounded-xl bg-lab px-3">Inolvidables</span>
             </h2>
-            <p className="max-w-[900px] text-slate-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="text-lg md:text-xl text-ink/75 max-w-2xl mx-auto text-pretty">
               Sonrisas reales, asombro genuino y ciencia en acción en cada una de nuestras fiestas.
             </p>
           </div>
         </div>
         
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-          {galleryImages.map((image) => (
-            <Dialog key={image.id}>
+          {galleryImages.map((image, i) => (
+            <Reveal key={image.id} variant="pop" delay={(i % 3) * 0.1}>
+            <Dialog>
               <DialogTrigger asChild>
                 {/* Miniatura (se mantiene igual con next/image optimizado) */}
-                <div className="relative aspect-square overflow-hidden rounded-xl cursor-pointer group shadow-sm hover:shadow-md transition-all">
+                <div className="relative aspect-square overflow-hidden rounded-2xl cursor-pointer group shadow-md shadow-ink/10 hover:shadow-xl transition-all">
                   <Image
                     src={image.src}
                     alt={image.alt}
@@ -95,12 +99,13 @@ export function GallerySection() {
                   {/* El botón de cerrar ahora sí está posicionado relativo a la imagen visible.
                     Se movió un poco hacia adentro (top-2 right-2) y es más pequeño (p-1.5) para ser sutil.
                   */}
-                  <DialogClose className="absolute top-3 right-3 p-2 rounded-full bg-black/50 text-white opacity-0 group-hover/lightbox:opacity-100 transition-all hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white/50 cursor-pointer z-50" aria-label="Cerrar">
+                  <DialogClose className="absolute top-3 right-3 p-2 rounded-full bg-black/50 text-white transition-colors hover:bg-black/70 focus:outline-none focus:ring-2 focus:ring-white/50 cursor-pointer z-50" aria-label="Cerrar">
                     <X className="w-5 h-5" />
                   </DialogClose>
                 </div>
               </DialogContent>
             </Dialog>
+            </Reveal>
           ))}
         </div>
       </div>

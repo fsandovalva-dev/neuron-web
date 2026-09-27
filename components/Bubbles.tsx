@@ -27,10 +27,16 @@ const ring = {
   spark: "border-spark bg-spark/20",
 } as const
 
-export function Bubbles() {
+export function Bubbles({ variant = 0, light = false }: { variant?: number; light?: boolean }) {
+  // Cada sección desplaza posiciones y tiempos para que el patrón no se repita; "light" usa la mitad de las burbujas.
+  const list = (light ? bubbles.filter((_, i) => (i + variant) % 2 === 0) : bubbles).map((b) => ({
+    ...b,
+    left: `${(parseFloat(b.left) + variant * 23) % 100}%`,
+    delay: b.delay - variant * 5,
+  }))
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden motion-reduce:hidden" aria-hidden="true">
-      {bubbles.map((b, i) => (
+      {list.map((b, i) => (
         <div
           key={i}
           className={`absolute top-full h-full animate-bubble-rise ${b.size >= 56 ? "max-md:hidden" : ""}`}
