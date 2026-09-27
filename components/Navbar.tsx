@@ -12,6 +12,7 @@ export function Navbar() {
 
   const navigationLinks = [
     { href: "#servicios", label: "Servicios" },
+    { href: "#empresas", label: "Empresas" },
     { href: "#galeria", label: "Galería" },
     { href: "#faqs", label: "FAQs" },
   ]
@@ -32,7 +33,7 @@ export function Navbar() {
           <div className="relative w-16 h-16 transition-transform group-hover:scale-105">
             <Image src="/images/logo-neuron.png" alt="Neuron Logo" fill className="object-contain" priority />
           </div>
-          <span className="ml-3 text-2xl font-bold text-gray-900 font-heading tracking-tight">Neuron</span>
+          <span className="ml-3 text-2xl font-bold text-gray-900 font-display tracking-tight">Neuron</span>
         </Link>
 
         {/* Desktop Navigation */}

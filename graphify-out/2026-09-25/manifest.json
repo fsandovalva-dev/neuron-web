@@ -126,9 +126,9 @@
     "semantic_hash": ""
   },
   "app/page.tsx": {
-    "mtime": 1790376790.5311048,
-    "seen": 1790376809.6714764,
-    "ast_hash": "c94ffb7fc5bee47bf8e5eb8d45a046f2",
+    "mtime": 1790376372.1687078,
+    "seen": 1790376414.059791,
+    "ast_hash": "11512e3bb0e3fd385e87dd6959cb02da",
     "semantic_hash": ""
   },
   "components.json": {
@@ -138,9 +138,9 @@
     "semantic_hash": ""
   },
   "components/CTA.tsx": {
-    "mtime": 1790376764.8562467,
-    "seen": 1790376809.6715474,
-    "ast_hash": "3c74e790954b0a9eec89472e3ad42f05",
+    "mtime": 1790351578.038756,
+    "seen": 1790376414.0597935,
+    "ast_hash": "141fd1a643f7bbab5626b6a31a9933c8",
     "semantic_hash": ""
   },
   "components/FAQ.tsx": {
@@ -156,27 +156,27 @@
     "semantic_hash": ""
   },
   "components/Hero.tsx": {
-    "mtime": 1790376790.5311048,
-    "seen": 1790376809.6717417,
-    "ast_hash": "e171946d018221cbf1c83ea10f991227",
+    "mtime": 1790376391.105138,
+    "seen": 1790376414.0597956,
+    "ast_hash": "50c4f940f0907bb18ba407b3298dfcfb",
     "semantic_hash": ""
   },
   "components/Navbar.tsx": {
-    "mtime": 1790376790.5311048,
-    "seen": 1790376809.6717427,
-    "ast_hash": "ff7161634dce5f3fa35f545be4244fef",
+    "mtime": 1790351578.0407674,
+    "seen": 1790376414.0597978,
+    "ast_hash": "91907bd2af25225f7f16932e7d1b87ea",
     "semantic_hash": ""
   },
   "components/Pricing.tsx": {
-    "mtime": 1790376790.5311048,
-    "seen": 1790376809.6717436,
-    "ast_hash": "4f1865e48c994f6305c7d540d29bbdb7",
+    "mtime": 1790376372.1687078,
+    "seen": 1790376414.0597992,
+    "ast_hash": "c459b3f542c506ea50c81654764d651e",
     "semantic_hash": ""
   },
   "components/Services.tsx": {
-    "mtime": 1790376765.9066274,
-    "seen": 1790376809.6717448,
-    "ast_hash": "f3b46703b6a599f4449fb44da14964dc",
+    "mtime": 1790376372.1687078,
+    "seen": 1790376414.059801,
+    "ast_hash": "2bf18da0be4cb909516e236be83126f9",
     "semantic_hash": ""
   },
   "components/WhatsAppButton.tsx": {
@@ -975,12 +975,6 @@
     "mtime": 1790351578.142632,
     "seen": 1790376414.059916,
     "ast_hash": "a2760511c65806022ad20adf74370ff3",
-    "semantic_hash": ""
-  },
-  "components/Corporate.tsx": {
-    "mtime": 1790376763.746923,
-    "seen": 1790376809.671549,
-    "ast_hash": "0efe73e5a428922e82cf1dc02a435083",
     "semantic_hash": ""
   }
 }

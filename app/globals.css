@@ -161,16 +161,37 @@
     }
   }
 
-  @keyframes gradient {
+  @keyframes bubble-rise {
     0% {
-      background-position: 0% 50%;
+      transform: translateY(0);
+      opacity: 0;
     }
-    50% {
-      background-position: 100% 50%;
+    10%,
+    85% {
+      opacity: 1;
     }
     100% {
-      background-position: 0% 50%;
+      transform: translateY(-115%);
+      opacity: 0;
     }
+  }
+
+  @keyframes bubble-sway {
+    0%,
+    100% {
+      transform: translateX(-12px);
+    }
+    50% {
+      transform: translateX(12px);
+    }
+  }
+
+  .animate-bubble-rise {
+    animation: bubble-rise 18s linear infinite;
+  }
+
+  .animate-bubble-sway {
+    animation: bubble-sway 6s ease-in-out infinite;
   }
 
   .animate-spin-slow {
@@ -179,10 +200,5 @@
 
   .animate-bounce-slow {
     animation: bounce-slow 3s ease-in-out infinite;
-  }
-
-  .animate-gradient {
-    background-size: 200% 200%;
-    animation: gradient 3s ease infinite;
   }
 }

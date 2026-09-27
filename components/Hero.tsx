@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Bubbles } from "@/components/Bubbles"
 import { Button } from "@/components/ui/button"
 import { FlaskConical, GraduationCap, MessageCircle, ShieldCheck } from "lucide-react"
 
@@ -14,7 +15,8 @@ const trust = [
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-blush">
-      <div className="container mx-auto grid items-center gap-12 px-4 pb-16 pt-28 md:pb-20 md:pt-32 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:pb-28 lg:pt-36">
+      <Bubbles />
+      <div className="relative container mx-auto grid items-center gap-12 px-4 py-12 md:py-16 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16 lg:py-24">
         <div className="text-center lg:text-left">
           <h1 className="font-display text-balance text-5xl font-extrabold leading-[1.02] tracking-tight text-ink sm:text-6xl lg:text-7xl">
             Cumpleaños{" "}
