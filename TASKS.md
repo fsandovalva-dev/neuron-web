@@ -4,11 +4,6 @@
 
 Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, después el desarrollo.
 
-- [ ] **Dejar de versionar archivos que no corresponden** - limpieza del repo
-  - Ignorados por `.gitignore` pero commiteados antes de la regla: `graphify-out/cache/`, `graphify-out/2026-09-25/` (respaldo) y `.claude/settings.local.json`
-  - Basura: `.claude/skills/graphify/SKILL.md.bak` y los SVG de plantilla de create-next-app sin uso en `public/` (`file`, `globe`, `next`, `vercel`, `window`)
-- [ ] **Reparar `.claude/skills/impeccable`** - entorno local
-  - Es un symlink roto a la ruta antigua del proyecto (`OneDrive/Escritorio/neuron-web`), por eso git lo ve como borrado. Restaurar la copia versionada (idéntica a `.agents/skills/impeccable`)
 - [ ] **Actualizar README.md** - está desfasado respecto al código
   - Dice Next.js 14 (es 16, con React 19 y Tailwind 4); menciona `tailwind.config.ts`, que ya no existe
   - El banner apunta a `public/neuron-science-logo-colorful.jpg`, que no existe; el logo es `public/images/logo-neuron.png`
@@ -48,6 +43,8 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
+- [x] ~~Dejar de versionar archivos que no corresponden (caché y respaldo de graphify, settings.local.json, .bak, SVG de plantilla)~~ (2026-10-02, rama `chore/limpieza-archivos-versionados`)
+- [x] ~~Reparar `.claude/skills/impeccable` (symlink roto reemplazado por la copia versionada)~~ (2026-10-02)
 - [x] ~~Recibir los textos de los testimonios reales~~ (2026-10-02)
 - [x] ~~Instrucciones de flujo de trabajo en CLAUDE.md y backlog en TASKS.md~~ (2026-10-02, PR #14)
 - [x] ~~Diseño de la ficha de experimento y de la descarga de material educativo~~ (2026-10-02, PR #14)
