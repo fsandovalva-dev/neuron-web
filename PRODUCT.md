@@ -27,7 +27,7 @@ Experimentos reales y seguros dirigidos por educadores certificados, organizados
 - Hay información aún no disponible (precios definitivos, cobertura geográfica, rango de edades, oferta para empresas): se usan datos dummy/placeholder claramente reemplazables y marcados como tales.
 
 ## Brand Commitments
-- Nombre y logo de Neuron son fijos (`public/neuron-science-logo-colorful.jpg`).
+- Nombre y logo de Neuron son fijos (`public/images/logo-neuron.png`).
 - Colores corporativos del logo, vinculantes: rosa, celeste y amarillo. Llamativos y entretenidos.
 - Tono lúdico en español, dirigido a padres e hijos (ej. "¡Con-Ciencia!", "¿Científico/a loco/a? ¡Claro que sí!").
 
