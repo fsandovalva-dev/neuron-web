@@ -4,13 +4,6 @@
 
 Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, después el desarrollo.
 
-- [ ] **Reemplazar los testimonios mock por los reales** - `components/Testimonials.tsx`, hardcodeados en el componente
-  - Textos entregados el 2026-10-02 (se puede corregir solo la puntuación, no las palabras):
-    - "Los niños estaban muy contentos, interesados, nunca se aburrieron, así que felicitaciones por el excelente servicio! Muy bonitas las actividades (lámpara de lava y repollímetro)." - Mamá de Elisa, 6 años
-    - "Hermosa la presentación, muy didáctica y la carita de asombro de los peques lo dice todo. Luciérnagas, repollímetro y fluido no newtoniano fueron las estrellas." - Papá de Fernando, 8 años
-    - "Muy interesante, entretenido y didáctico. Los niños quedaron muy contentos y una experiencia para repetir. Excelente iniciativa Felicitaciones." - Mamá de Victoria, 7 años
-  - Las tres son de familias: ajustar el subtítulo "Familias y docentes que ya vivieron la experiencia"
-  - Las citas son más largas que las mock; revisar el tamaño de letra de los globos
 - [ ] **Implementar la ficha de experimento al pasar sobre un experimento** - en las tarjetas de Planes y Precios
   - Diseño: [docs/design/ficha-experimento-hover.md](docs/design/ficha-experimento-hover.md)
   - Se puede implementar ya con textos borrador e imágenes placeholder marcados; las preguntas abiertas están en Waiting On
@@ -38,7 +31,8 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
-- [x] ~~Excluir `.agents/`, `.claude/` y `graphify-out/` de ESLint~~ (2026-10-02, rama `chore/eslint-ignora-skills`)
+- [x] ~~Reemplazar los testimonios mock por los reales (Elisa, Fernando y Victoria)~~ (2026-10-02, rama `feature/testimonios-reales`)
+- [x] ~~Excluir `.agents/`, `.claude/` y `graphify-out/` de ESLint~~ (2026-10-02, PR #19)
 - [x] ~~Centralizar el enlace de WhatsApp en `lib/whatsapp.ts`~~ (2026-10-02, PR #18)
 - [x] ~~Actualizar README.md (stack, Node 20.9+, logo, estructura, secciones, URL del repo, flujo de trabajo)~~ (2026-10-02, rama `docs/actualiza-readme`)
 - [x] ~~Dejar de versionar archivos que no corresponden (caché y respaldo de graphify, settings.local.json, .bak, SVG de plantilla)~~ (2026-10-02, rama `chore/limpieza-archivos-versionados`)

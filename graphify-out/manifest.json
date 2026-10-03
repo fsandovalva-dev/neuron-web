@@ -180,9 +180,9 @@
     "semantic_hash": ""
   },
   "eslint.config.mjs": {
-    "mtime": 1790987920.379922,
-    "seen": 1790987949.9629064,
-    "ast_hash": "8005cc7bda2c200d9dd872471c213a96",
+    "mtime": 1790988027.5695267,
+    "seen": 1790988348.288712,
+    "ast_hash": "6fcfcee155c10a188c7239905b834ebf",
     "semantic_hash": ""
   },
   "lib/utils.ts": {
@@ -546,9 +546,9 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1790987938.0879104,
-    "seen": 1790987949.9805148,
-    "ast_hash": "d5148e0ad18a6db178cc210c6164d395",
+    "mtime": 1790988027.5652187,
+    "seen": 1790988348.3069382,
+    "ast_hash": "9f12c144f2da435940351d8b491ad0a9",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -642,9 +642,9 @@
     "semantic_hash": ""
   },
   "components/Testimonials.tsx": {
-    "mtime": 1790978215.5217838,
-    "seen": 1790978368.8891382,
-    "ast_hash": "8f8f7ae0a8f224def092b28394718566",
+    "mtime": 1790988064.3462384,
+    "seen": 1790988348.2875803,
+    "ast_hash": "6a71f187a1ad5250882b6268024e078a",
     "semantic_hash": ""
   },
   ".agents/skills/threejs-animation/SKILL.md": {
@@ -780,9 +780,9 @@
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1790987938.0879104,
-    "seen": 1790987949.9807937,
-    "ast_hash": "7d72cf7ba2bd32b0bbbc32150f28c596",
+    "mtime": 1790988337.0207343,
+    "seen": 1790988348.3071957,
+    "ast_hash": "b54f121a6909b07197effe86e43ec399",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {
