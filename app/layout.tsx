@@ -28,6 +28,24 @@ export const metadata: Metadata = {
     "ciencia divertida",
     "animación cumpleaños",
   ],
+  // URL base para las imágenes al compartir (app/opengraph-image.tsx). Mientras no haya dominio
+  // propio se usa el de producción de Vercel; al comprarlo, reemplazar por new URL("https://<dominio>").
+  metadataBase: new URL(
+    process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "http://localhost:3000",
+  ),
+  openGraph: {
+    type: "website",
+    locale: "es_CL",
+    siteName: "Neuron",
+    title: "Neuron - Cumpleaños Científicos Inolvidables",
+    description:
+      "Experimentos reales guiados por educadores, para cumpleaños infantiles y eventos de empresa en Chile.",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({

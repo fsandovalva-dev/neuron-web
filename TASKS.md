@@ -15,7 +15,7 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 - [ ] **Nuevos precios y contenido de los planes** - de Neuron, since 2026-10-03. Pedido inicial: Micro $170.000 con "los primeros dos" experimentos y Macro $220.000 con "los 3 experimentos de cada uno"
   - Falta confirmar si cambian solo los precios o también qué experimentos y planes muestra cada pestaña. No tocar `components/Pricing.tsx` hasta tener la confirmación
-- [ ] **Dominio de producción** - since 2026-10-02, aún no se compra. Al tenerlo: corregir el enlace del README (`neuron-web.vercel.app` es la app de otra persona) y agregar `metadataBase` para SEO
+- [ ] **Dominio de producción** - since 2026-10-02, aún no se compra. Al tenerlo: corregir el enlace del README (`neuron-web.vercel.app` es la app de otra persona) y reemplazar `metadataBase` en `app/layout.tsx` (hoy usa el dominio de producción de Vercel)
 - [ ] **Datos de los experimentos** - de Neuron, since 2026-10-02
   - Nombres oficiales (hay variantes: "Lámpara" / "Lámpara de lava", "Fluido no newtoniano" / "newtoneano", "Luciérnagas" / "Luciérnagas electrónicas")
   - ¿"Pasta de dientes experimental" es la misma que "Pasta de dientes de elefante"?
@@ -28,13 +28,13 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 ## Someday
 
 - [ ] **Vulnerabilidades restantes en la cadena de ESLint** - 5 altas (`braces`, `micromatch`, `fast-glob`) vía `eslint-config-next`; solo afectan al lint local. Revisar cuando salga un `eslint-config-next` que las corrija. Revisado 2026-10-03: seguimos en la última versión (16.3.8) y `braces` no tiene versión corregida
-- [ ] **SEO social** - agregar Open Graph / Twitter card con imagen en `app/layout.tsx` (hoy solo hay title y description)
 - [ ] **Revisión de accesibilidad mínima** - contraste, navegación por teclado y `prefers-reduced-motion` en las animaciones (Framer Motion, Reveal, Bubbles)
   - Radix avisa que el diálogo de la galería no tiene descripción (`aria-describedby`)
 
 ## Done
 
-- [x] ~~Mensaje de WhatsApp por plan: cada "Cotizar" prellena el plan y su duración~~ (2026-10-03, rama `feature/whatsapp-por-plan`)
+- [x] ~~SEO social: Open Graph y tarjeta de X con imagen generada (`app/opengraph-image.tsx`, JPEG de 77 KB para que WhatsApp la muestre)~~ (2026-10-03, rama `feature/seo-social`)
+- [x] ~~Mensaje de WhatsApp por plan: cada "Cotizar" prellena el plan y su duración~~ (2026-10-03, PR #25)
 - [x] ~~Logo con `sizes`, 0 warnings de lint y vista ampliada de la galería optimizada (de hasta 7,8 MB a ~170 KB por foto)~~ (2026-10-03, PR #24)
 - [x] ~~Contenido visible aunque el JavaScript no cargue (`Reveal` y tarjetas de Planes visibles desde el servidor)~~ (2026-10-02, PR #23)
 - [x] ~~Permitir abrir el servidor de desarrollo desde otro equipo (`allowedDevOrigins` para 192.168.x.x y Tailscale)~~ (2026-10-02, PR #22)

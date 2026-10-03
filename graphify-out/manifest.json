@@ -66,9 +66,9 @@
     "semantic_hash": ""
   },
   "app/layout.tsx": {
-    "mtime": 1790978215.5001504,
-    "seen": 1790978368.888984,
-    "ast_hash": "1266326eac33ead55627545e165257b6",
+    "mtime": 1790997280.5535238,
+    "seen": 1790997368.3852813,
+    "ast_hash": "5aca2cec143b68fddab2e6fb4651ea62",
     "semantic_hash": ""
   },
   "app/page.tsx": {
@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "components/Pricing.tsx": {
-    "mtime": 1790997063.429546,
-    "seen": 1790997132.6432815,
-    "ast_hash": "4dd18e4d7f2e84413f32f055a3a10713",
+    "mtime": 1790997181.6587403,
+    "seen": 1790997368.3859775,
+    "ast_hash": "2e8b75a7afabadced7100ac841286f42",
     "semantic_hash": ""
   },
   "components/Services.tsx": {
@@ -198,9 +198,9 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1790991252.2172332,
-    "seen": 1790992545.0016322,
-    "ast_hash": "173616e93bb92f6d35478c349e6d7b93",
+    "mtime": 1790997326.2950835,
+    "seen": 1790997368.3870475,
+    "ast_hash": "55fdbf2d85323520250acb87138ff3a3",
     "semantic_hash": ""
   },
   "postcss.config.mjs": {
@@ -780,9 +780,9 @@
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1790997118.1206608,
-    "seen": 1790997132.653055,
-    "ast_hash": "05db60a975c031b17033266f6b101fcb",
+    "mtime": 1790997362.8734386,
+    "seen": 1790997368.3965762,
+    "ast_hash": "8f1443708827430c727b0819693c42bd",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {
@@ -1113,6 +1113,12 @@
     "mtime": 1790987910.2084289,
     "seen": 1790987949.9630387,
     "ast_hash": "ca1af01397f810f1d73b92462e39d415",
+    "semantic_hash": ""
+  },
+  "app/opengraph-image.tsx": {
+    "mtime": 1790997326.9295564,
+    "seen": 1790997368.3852835,
+    "ast_hash": "b307c75302ee19e847ee7600a59652d7",
     "semantic_hash": ""
   }
 }
