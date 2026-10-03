@@ -1,6 +1,6 @@
 # Diseño: ficha de experimento al pasar sobre un experimento
 
-Estado: **propuesta de diseño, sin implementar**. Tarea en [TASKS.md](../../TASKS.md).
+Estado: **implementado** (2026-10-03) en `components/ExperimentChip.tsx` y `lib/experiments.ts`. Las diferencias con la propuesta original están marcadas como *Implementado*.
 
 ## Lectura del encargo
 
@@ -17,12 +17,14 @@ La sección **Experimentos** (`Services.tsx`) ya muestra foto y descripción, as
 | Contexto | Abrir | Cerrar |
 |---|---|---|
 | Mouse (`hover: hover` y `pointer: fine`) | Pasar el cursor sobre el chip (retardo 100 ms) | Sacar el cursor (100 ms), `Esc` |
-| Teclado | Foco en el chip (Tab) | Quitar el foco, `Esc` |
+| Teclado | `Enter` o `Espacio` sobre el chip | `Esc`, pasar a otro elemento con Tab |
 | Táctil | Tocar el chip | Tocar fuera, tocar otro chip, `Esc` |
 
 - Pasar de un chip a otro cambia la ficha de inmediato, sin parpadeo.
 - Solo hay una ficha abierta a la vez.
 - La ficha no tiene contenido interactivo: no hace falta poder mover el cursor dentro de ella.
+- *Implementado:* con teclado se abre con `Enter`/`Espacio` y no al enfocar, porque abrir al enfocar choca con el clic del mouse (el clic enfoca y alterna a la vez). El foco se queda en el chip.
+- *Implementado:* con el cursor encima, un clic no cierra la ficha que el hover ya abrió.
 
 **Por qué no un HoverCard puro:** el HoverCard de Radix ignora las pantallas táctiles y los lectores de pantalla, y buena parte del tráfico llega desde el móvil (PRODUCT.md). Se usa **Popover de Radix** (`@radix-ui/react-popover`, vía `npx shadcn@latest add popover`), controlado: se abre con hover/foco en dispositivos con puntero fino y con tap en táctiles.
 
@@ -41,11 +43,11 @@ La sección **Experimentos** (`Services.tsx`) ya muestra foto y descripción, as
                                                 (flecha al chip)
 ```
 
-- **Contenedor:** `w-60` (15rem), `max-w-[calc(100vw-2rem)]`, `rounded-2xl`, `p-3`, `bg-ink text-blush`, sombra `shadow-xl shadow-ink/25`, flecha de Radix en `fill-ink`.
+- **Contenedor:** `w-64` (16rem; *implementado*: algo más ancha porque los textos reales llegan a ~140 caracteres), `max-w-[calc(100vw-2rem)]`, `rounded-2xl`, `p-3`, `bg-ink text-blush`, sombra `shadow-xl shadow-ink/25`, flecha de Radix en `fill-ink`.
   - El fondo `ink` separa la ficha como una capa sobre la tarjeta blanca y repite el color de la sección Empresas, sin introducir colores nuevos.
-- **Imagen:** `aspect-[15/7]`, `rounded-xl`, `object-cover`, `next/image` con `sizes="240px"`. Mientras carga muestra `bg-lab/30`, para que el tamaño no salte.
+- **Imagen (opcional; sin foto la ficha muestra solo nombre y texto):** `aspect-[15/7]`, `rounded-xl`, `object-cover`, `next/image` con `sizes="240px"`. Mientras carga muestra `bg-lab/30`, para que el tamaño no salte.
 - **Nombre:** `font-display text-lg font-bold leading-tight`, `mt-3`.
-- **Texto:** `text-sm text-blush/80 leading-snug`, `mt-1`, máximo 2 líneas (`line-clamp-2`) como red de seguridad; el contenido debe caber sin cortarse.
+- **Texto:** `text-sm text-blush/80 leading-snug`, `mt-1`, sin recorte (*implementado*: los textos reales ocupan hasta 5 líneas).
 - **Posición:** `side="top"` por defecto, con `collisionPadding={16}` para que Radix la mueva abajo o a los lados cerca de los bordes de la pantalla. `sideOffset={8}`.
 
 ### El chip
@@ -81,35 +83,34 @@ export const experiments: Record<string, Experiment> = { /* ... */ }
 
 Los planes pasan a referenciar `slug`s (`experiments: ["lampara-de-lava", "slime", ...]`), y el chip toma nombre, texto e imagen del catálogo.
 
-### Contenido provisorio
+*Implementado:* mientras Neuron confirma los nuevos planes, `components/Pricing.tsx` no se tocó: los planes siguen con sus textos y `findExperiment(label)` traduce cada nombre (incluidas las variantes) a su ficha con un mapa de alias. Al rehacer los planes conviene pasar a slugs.
 
-Imágenes: se reutilizan las fotos que ya existen cuando coinciden (`galactic-slime.jpg` para Slime, `elephant-toothpaste.jpg` para Pasta de dientes de elefante). El resto usa un mismo placeholder: un bloque `bg-lab/30` con el ícono `FlaskConical` centrado, y `alt` = nombre del experimento. Todas quedan con `placeholder: true`.
+### Contenido
 
-Textos: **borradores para validar con Neuron**, todos con `placeholder: true`. No afirman nada sobre seguridad, edades ni lo que se llevan los niños.
+Textos entregados por Neuron el 2026-10-03 (solo se corrigió la puntuación). Los experimentos sin texto se muestran como antes, sin ficha: no se publica contenido inventado.
 
-| Experimento | Borrador (≤ 80 caracteres) |
-|---|---|
-| Lámpara de lava | Burbujas de colores que suben y bajan dentro de un frasco. |
-| Fiesta de gases | Reacciones que producen gas e inflan globos sin soplar. |
-| Pasta de dientes de elefante | Una reacción química que lanza una torre de espuma gigante. |
-| Slime | Mezclan ingredientes hasta crear una masa elástica y brillante. |
-| Luciérnagas electrónicas | Arman un pequeño circuito que enciende una luz. |
-| Lancha supersónica | Construyen un bote que avanza solo sobre el agua. |
-| Aerodeslizador | Arman un vehículo que flota sobre un colchón de aire. |
-| Burbugrafía | Pintan con burbujas de colores y crean su propia obra. |
-| Arcoíris viajero | El agua de colores sube por el papel y forma un arcoíris. |
-| Repollímetro | Usan repollo morado para descubrir qué es ácido y qué no. |
-| Colores danzantes | Gotas de color que se mueven solas sobre la leche. |
-| Fluido no newtoniano | Un líquido que se pone duro cuando lo golpeas. |
-| Gelificaciones | Convierten líquidos en perlas y gelatinas de colores. |
-| Carrera de autos | Construyen un auto y lo ponen a competir. |
+| Experimento | Texto | Foto |
+|---|---|---|
+| Lámpara de lava | A través de una reacción química, los participantes crearán una pequeña lámpara de lava. | pendiente |
+| Slime | ¡Síntesis de slime desde cero! | `services/galactic-slime.jpg` |
+| Fluido no newtoniano | ¿Líquido o sólido? Preparamos nuestro propio fluido con propiedades especiales. | pendiente |
+| Repollímetro | ¿Ácido, base o neutro? Aprendemos a identificar las propiedades de distintos líquidos gracias a la reacción química del jugo del repollo. | pendiente |
+| Burbugrafía | Experiencia recreativa donde coloreas un dibujo utilizando tu lanzador de burbujas casero. | pendiente |
+| Luciérnagas electrónicas | A través de un circuito electrónico simple fabricamos nuestra propia luciérnaga. | pendiente |
+| Aerodeslizador | Construyamos una nave espacial impulsada por el aire. | pendiente |
+| Gelificaciones | Crearás tus propios gusanos de alginato. | pendiente |
+| Pelea de robots | Construye tu propio robot a pilas y decóralo como quieras. | pendiente (aún no está en ningún plan) |
+| Anillos de humo | Crea anillos de humo con una botella y un globo. | pendiente (aún no está en ningún plan) |
+
+Sin texto todavía: Fiesta de gases, Pasta de dientes (y "Pasta de dientes experimental"), Lancha supersónica, Arcoíris viajero, Colores danzantes y Carrera de autos.
+
+Fotos: se guardan en `public/images/experiments/<slug>.jpg` (slug = clave en `lib/experiments.ts`, p. ej. `lampara-de-lava.jpg`) y se declaran en el campo `image` del catálogo.
 
 ## Preguntas abiertas para Neuron
 
-1. Nombres oficiales de cada experimento (resolver las inconsistencias de arriba).
-2. ¿"Pasta de dientes experimental" es la misma experiencia que "Pasta de dientes de elefante"?
-3. Fotos de cada experimento (idealmente horizontales, mínimo 480 × 224 px).
-4. Validar o corregir los textos borrador.
+1. Textos de los 6 experimentos que aún no tienen ficha.
+2. Fotos de cada experimento (idealmente horizontales, mínimo 480 × 224 px).
+3. Nombres oficiales: los planes usan variantes ("Lámpara" / "Lámpara de lava", "Fluido no newtoneano", "Luciérnagas"); hoy se resuelven con un mapa de alias en `lib/experiments.ts`. Conviene unificarlos cuando se confirmen los nuevos planes.
 
 ## Plan de implementación
 

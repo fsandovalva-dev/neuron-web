@@ -4,9 +4,6 @@
 
 Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, después el desarrollo.
 
-- [ ] **Implementar la ficha de experimento al pasar sobre un experimento** - en las tarjetas de Planes y Precios
-  - Diseño: [docs/design/ficha-experimento-hover.md](docs/design/ficha-experimento-hover.md)
-  - Se puede implementar ya con textos borrador e imágenes placeholder marcados; las preguntas abiertas están en Waiting On
 - [ ] **Implementar la descarga de material educativo con formulario (región y ocupación)**
   - Diseño: [docs/design/descarga-material-educativo.md](docs/design/descarga-material-educativo.md)
   - Antes de implementar: decidir dónde se guardan las respuestas (recomendado: Supabase)
@@ -17,9 +14,9 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
   - Falta confirmar si cambian solo los precios o también qué experimentos y planes muestra cada pestaña. No tocar `components/Pricing.tsx` hasta tener la confirmación
 - [ ] **Dominio de producción** - since 2026-10-02, aún no se compra. Al tenerlo: corregir el enlace del README (`neuron-web.vercel.app` es la app de otra persona) y reemplazar `metadataBase` en `app/layout.tsx` (hoy usa el dominio de producción de Vercel)
 - [ ] **Datos de los experimentos** - de Neuron, since 2026-10-02
-  - Nombres oficiales (hay variantes: "Lámpara" / "Lámpara de lava", "Fluido no newtoniano" / "newtoneano", "Luciérnagas" / "Luciérnagas electrónicas")
-  - ¿"Pasta de dientes experimental" es la misma que "Pasta de dientes de elefante"?
-  - Una foto por experimento y validación de los textos borrador
+  - Fotos: van en `public/images/experiments/<slug>.jpg` (slugs en `lib/experiments.ts`); hoy solo Slime tiene foto
+  - Textos que faltan: Fiesta de gases, Pasta de dientes (y "experimental"), Lancha supersónica, Arcoíris viajero, Colores danzantes, Carrera de autos
+  - Nombres oficiales para unificar las variantes de los planes al rehacerlos
 - [ ] **Material educativo** - de Neuron, since 2026-10-02: nombre, PDF final, imagen de portada y validación de las opciones de ocupación
 - [ ] **Precios definitivos** - de Neuron; los planes de `components/Pricing.tsx` usan valores provisorios
 - [ ] **Oferta para empresas** - de Neuron; formatos, precios y cobertura (TODO en `components/Corporate.tsx`)
@@ -31,7 +28,8 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
-- [x] ~~Revisión de accesibilidad mínima: Lighthouse de 92 a 100 (galería operable con teclado, contraste AA, movimiento reducido en scroll y transiciones CSS)~~ (2026-10-03, rama `fix/accesibilidad-minima`)
+- [x] ~~Ficha de experimento en Planes (hover, toque y teclado) con los textos de Neuron para 8 experimentos~~ (2026-10-03, rama `feature/ficha-experimento`)
+- [x] ~~Revisión de accesibilidad mínima: Lighthouse de 92 a 100 (galería operable con teclado, contraste AA, movimiento reducido en scroll y transiciones CSS)~~ (2026-10-03, PR #27)
 - [x] ~~SEO social: Open Graph y tarjeta de X con imagen generada (`app/opengraph-image.tsx`, JPEG de 77 KB para que WhatsApp la muestre)~~ (2026-10-03, PR #26)
 - [x] ~~Mensaje de WhatsApp por plan: cada "Cotizar" prellena el plan y su duración~~ (2026-10-03, PR #25)
 - [x] ~~Logo con `sizes`, 0 warnings de lint y vista ampliada de la galería optimizada (de hasta 7,8 MB a ~170 KB por foto)~~ (2026-10-03, PR #24)
