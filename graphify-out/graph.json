@@ -25312,7 +25312,7 @@
       "node_kind": "heading",
       "norm_label": "done",
       "source_file": "TASKS.md",
-      "source_location": "L34"
+      "source_location": "L31"
     },
     {
       "id": "tasks_someday",
@@ -39589,6 +39589,7 @@
     {
       "id": "ref_node_fs",
       "label": "ref_node_fs",
+      "_origin": "semantic",
       "community": 79,
       "community_name": "opengraph-image.tsx",
       "external": true,
@@ -39600,6 +39601,7 @@
     {
       "id": "ref_node_path",
       "label": "ref_node_path",
+      "_origin": "semantic",
       "community": 79,
       "community_name": "opengraph-image.tsx",
       "external": true,
@@ -76008,6 +76010,18 @@
     },
     {
       "source": "components_gallery_gallerysection",
+      "target": "components_ui_dialog_dialogtitle",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "components/Gallery.tsx",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "components_gallery_gallerysection",
       "target": "components_ui_dialog_dialogclose",
       "relation": "calls",
       "_origin": "ast",
@@ -76015,7 +76029,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Gallery.tsx",
-      "source_location": "L118",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -76075,19 +76089,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Gallery.tsx",
-      "source_location": "L95",
-      "weight": 1.0
-    },
-    {
-      "source": "components_gallery_gallerysection",
-      "target": "components_ui_dialog_dialogtitle",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "components/Gallery.tsx",
-      "source_location": "L96",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -112302,7 +112304,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L34",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -115976,10 +115978,10 @@
       "confidence_score": 0.95,
       "context": "Reveal",
       "source_file": "TASKS.md",
-      "source_location": "L39",
+      "source_location": "L37",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c94c9756deabc243c7c4a424692b459027accf54"
+  "built_at_commit": "57e22d20ba7e0ea5f3997e55fa199e05d92d701f"
 }

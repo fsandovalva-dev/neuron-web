@@ -115,7 +115,7 @@ function AnimatedTabTrigger({
         // Quitamos el fondo por defecto de shadcn cuando está activo para usar el nuestro
         isActive
           ? "data-[state=active]:bg-transparent data-[state=active]:text-ink data-[state=active]:shadow-none"
-          : "text-ink/60 hover:text-ink"
+          : "text-ink/70 hover:text-ink"
       )}
     >
       {label}
@@ -139,8 +139,8 @@ const planTones: Record<string, { header: string; text: string }> = {
   Explosivo: { header: "bg-spark text-ink", text: "text-ink/80" },
   Cientístico: { header: "bg-spark text-ink", text: "text-ink/80" },
   Kinésico: { header: "bg-lab text-ink", text: "text-ink/80" },
-  NeurOn: { header: "bg-bubble-strong text-white", text: "text-white/90" },
-  Ingeniero: { header: "bg-lab-strong text-white", text: "text-white/90" },
+  NeurOn: { header: "bg-bubble-strong text-white", text: "text-white" },
+  Ingeniero: { header: "bg-lab-strong text-white", text: "text-white" },
 };
 
 // duration distingue planes con el mismo nombre en Micro y Macro dentro del mensaje de WhatsApp.
