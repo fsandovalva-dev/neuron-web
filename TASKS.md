@@ -4,6 +4,10 @@
 
 Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, después el desarrollo.
 
+- [ ] **Que el contenido se vea aunque el JavaScript no cargue** - hoy las secciones con `Reveal` y las tarjetas de Planes se renderizan en el servidor con `opacity: 0` y solo aparecen al hidratar
+  - Si el JS falla o tarda (red lenta, error, equipo sin batería), la página se ve vacía. Pasó al abrir el servidor de desarrollo desde otro PC
+  - Renderizar visible en el servidor y animar solo después de hidratar, respetando `prefers-reduced-motion`
+- [ ] **Corregir el enlace del sitio en el README** - `neuron-web.vercel.app` es la app de otra persona ("Create Next App"); falta saber el dominio real de producción
 - [ ] **Implementar la ficha de experimento al pasar sobre un experimento** - en las tarjetas de Planes y Precios
   - Diseño: [docs/design/ficha-experimento-hover.md](docs/design/ficha-experimento-hover.md)
   - Se puede implementar ya con textos borrador e imágenes placeholder marcados; las preguntas abiertas están en Waiting On
@@ -25,6 +29,7 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 ## Someday
 
 - [ ] **Vulnerabilidades restantes en la cadena de ESLint** - 5 altas (`braces`, `micromatch`, `fast-glob`) vía `eslint-config-next`; solo afectan al lint local. Revisar cuando salga un `eslint-config-next` que las corrija
+- [ ] **Imagen del logo sin `sizes`** - `components/Navbar.tsx` usa `fill` sin `sizes` en el logo de escritorio; Next lo advierte en consola
 - [ ] **Resolver los 2 warnings de lint de la web** - `<img>` en el lightbox de `components/Gallery.tsx` y `isOpen` sin uso en `components/Pricing.tsx`
 - [ ] **Mensaje de WhatsApp por plan** - que "Cotizar Explosivo" prellene el nombre del plan (`whatsappUrl()` en `lib/whatsapp.ts` ya lo permite)
 - [ ] **SEO social** - agregar Open Graph / Twitter card con imagen en `app/layout.tsx` (hoy solo hay title y description)
@@ -32,7 +37,8 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
-- [x] ~~Actualizar Next.js a 16.3.8 por vulnerabilidades críticas (DoS, postcss, sharp) y alinear eslint-config-next~~ (2026-10-02, rama `chore/sincroniza-dependencias`)
+- [x] ~~Permitir abrir el servidor de desarrollo desde otro equipo (`allowedDevOrigins` para 192.168.x.x y Tailscale)~~ (2026-10-02, rama `fix/acceso-dev-red-local`)
+- [x] ~~Actualizar Next.js a 16.3.8 por vulnerabilidades críticas (DoS, postcss, sharp) y alinear eslint-config-next~~ (2026-10-02, PR #21)
 - [x] ~~Reemplazar los testimonios mock por los reales (Elisa, Fernando y Victoria)~~ (2026-10-02, PR #20)
 - [x] ~~Excluir `.agents/`, `.claude/` y `graphify-out/` de ESLint~~ (2026-10-02, PR #19)
 - [x] ~~Centralizar el enlace de WhatsApp en `lib/whatsapp.ts`~~ (2026-10-02, PR #18)
