@@ -20,7 +20,7 @@ El diseño es vibrante, divertido y profesional, con los colores del logo (rosa,
 * **Hero:** propuesta de valor, llamado a cotizar y un racimo de fotos en burbujas que se mueven al hacer scroll.
 * **Experimentos:** el experimento destacado y dos secundarios, con foto y descripción.
 * **Opiniones:** testimonios de familias en globos de diálogo.
-* **Planes y Precios:** planes Micro (1 hora) y Macro (2 horas) en pestañas. Cada experimento con descripción abre una ficha (al pasar el mouse, al tocarlo o con el teclado) y cada botón "Cotizar" prellena el plan en WhatsApp.
+* **Planes y Precios:** cuatro planes (NeurOn, Cientístico, Ingenioso y Cósmico) en versión Micro (1 hora) y Macro (2 horas), en pestañas. Cada experimento abre una ficha (al pasar el mouse, al tocarlo o con el teclado) y cada botón "Cotizar" prellena el plan en WhatsApp. Un aviso recuerda que la pasta de dientes de elefante viene en todos los cumpleaños.
 * **Empresas:** propuesta para eventos corporativos.
 * **Galería:** fotos reales de eventos pasados con vista ampliada (lightbox).
 * **Preguntas Frecuentes:** acordeón con las dudas comunes de los padres.
@@ -112,6 +112,7 @@ neuron-web/
 │   ├── Testimonials.tsx    # Opiniones
 │   ├── Pricing.tsx         # Planes y precios
 │   ├── ExperimentChip.tsx  # Experimento de un plan, con su ficha
+│   ├── ToothpasteBanner.tsx # Aviso de la pasta de dientes de elefante
 │   ├── Corporate.tsx       # Eventos para empresas
 │   ├── Gallery.tsx         # Galería con lightbox
 │   ├── FAQ.tsx             # Preguntas frecuentes

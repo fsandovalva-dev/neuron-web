@@ -34,7 +34,8 @@ Fuentes de verdad, por tema:
 ### Dónde vive el contenido editable
 - Experimentos de la ficha (textos, fotos, variantes de nombre): `lib/experiments.ts`.
 - Número y mensajes de WhatsApp: `lib/whatsapp.ts`.
-- Planes y precios: `components/Pricing.tsx` (congelado hasta que Neuron confirme los cambios; ver TASKS.md).
+- Planes y precios: `components/Pricing.tsx` (cada plan con su precio Micro y Macro, y sus experimentos por slug de `lib/experiments.ts`).
+- Aviso de la pasta de dientes de elefante y su foto: `components/ToothpasteBanner.tsx`.
 - Testimonios: `components/Testimonials.tsx`. Imagen para compartir: `app/opengraph-image.tsx`.
 
 ### Lecciones del entorno (Windows)

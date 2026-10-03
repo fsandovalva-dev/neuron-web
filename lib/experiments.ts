@@ -1,4 +1,5 @@
-// Catálogo de experimentos para la ficha que se abre en las tarjetas de Planes y Precios.
+// Catálogo de experimentos: los planes de components/Pricing.tsx los nombran por slug y cada uno
+// abre su ficha al pasar el cursor o tocarlo.
 // Textos entregados por Neuron (2026-10-03); solo se corrigió la puntuación.
 // `image` es opcional: sin foto, la ficha muestra solo el texto. Para agregar una, guardarla en
 // public/images/experiments/<slug>.jpg y declararla aquí.
@@ -53,24 +54,4 @@ export const experiments = {
   },
 } satisfies Record<string, Experiment>
 
-// Cómo aparece cada experimento en los planes (hay variantes del mismo nombre) -> ficha del catálogo.
-const labels: Record<string, keyof typeof experiments> = {
-  "Lámpara de lava": "lampara-de-lava",
-  Lámpara: "lampara-de-lava",
-  Slime: "slime",
-  "Fluido no newtoniano": "fluido-no-newtoniano",
-  "Fluido no newtoneano": "fluido-no-newtoniano",
-  Repollímetro: "repollimetro",
-  Burbugrafía: "burbugrafia",
-  "Luciérnagas electrónicas": "luciernagas-electronicas",
-  Luciérnagas: "luciernagas-electronicas",
-  Aerodeslizador: "aerodeslizador",
-  "Pelea de robots": "pelea-de-robots",
-  Gelificaciones: "gelificaciones",
-  "Anillos de humo": "anillos-de-humo",
-}
-
-export function findExperiment(label: string): Experiment | undefined {
-  const slug = labels[label]
-  return slug ? experiments[slug] : undefined
-}
+export type ExperimentSlug = keyof typeof experiments

@@ -83,7 +83,7 @@ export const experiments: Record<string, Experiment> = { /* ... */ }
 
 Los planes pasan a referenciar `slug`s (`experiments: ["lampara-de-lava", "slime", ...]`), y el chip toma nombre, texto e imagen del catálogo.
 
-*Implementado:* mientras Neuron confirma los nuevos planes, `components/Pricing.tsx` no se tocó: los planes siguen con sus textos y `findExperiment(label)` traduce cada nombre (incluidas las variantes) a su ficha con un mapa de alias. Al rehacer los planes conviene pasar a slugs.
+*Implementado:* con los planes nuevos (2026-10-03) los planes nombran cada experimento por slug y el chip toma nombre, texto e imagen del catálogo. El mapa de alias que traducía las variantes de nombre ya no existe.
 
 ### Contenido
 
@@ -99,18 +99,14 @@ Textos entregados por Neuron el 2026-10-03 (solo se corrigió la puntuación). L
 | Luciérnagas electrónicas | A través de un circuito electrónico simple fabricamos nuestra propia luciérnaga. | pendiente |
 | Aerodeslizador | Construyamos una nave espacial impulsada por el aire. | pendiente |
 | Gelificaciones | Crearás tus propios gusanos de alginato. | pendiente |
-| Pelea de robots | Construye tu propio robot a pilas y decóralo como quieras. | pendiente (aún no está en ningún plan) |
-| Anillos de humo | Crea anillos de humo con una botella y un globo. | pendiente (aún no está en ningún plan) |
-
-Sin texto todavía: Fiesta de gases, Pasta de dientes (y "Pasta de dientes experimental"), Lancha supersónica, Arcoíris viajero, Colores danzantes y Carrera de autos.
+| Pelea de robots | Construye tu propio robot a pilas y decóralo como quieras. | pendiente |
+| Anillos de humo | Crea anillos de humo con una botella y un globo. | pendiente |
 
 Fotos: se guardan en `public/images/experiments/<slug>.jpg` (slug = clave en `lib/experiments.ts`, p. ej. `lampara-de-lava.jpg`) y se declaran en el campo `image` del catálogo.
 
 ## Preguntas abiertas para Neuron
 
-1. Textos de los 6 experimentos que aún no tienen ficha.
-2. Fotos de cada experimento (idealmente horizontales, mínimo 480 × 224 px).
-3. Nombres oficiales: los planes usan variantes ("Lámpara" / "Lámpara de lava", "Fluido no newtoneano", "Luciérnagas"); hoy se resuelven con un mapa de alias en `lib/experiments.ts`. Conviene unificarlos cuando se confirmen los nuevos planes.
+1. Fotos de cada experimento (idealmente horizontales, mínimo 480 × 224 px).
 
 ## Plan de implementación
 

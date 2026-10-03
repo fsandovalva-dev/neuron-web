@@ -3,90 +3,58 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import { FlaskConical } from "lucide-react";
 import { useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Bubbles } from "@/components/Bubbles";
 import { ExperimentChip } from "@/components/ExperimentChip";
+import { ToothpasteBanner } from "@/components/ToothpasteBanner";
 import { whatsappUrl } from "@/lib/whatsapp";
+import { experiments, type ExperimentSlug } from "@/lib/experiments";
 
-const microPlans = [
-  {
-    name: "Explosivo",
-    price: "$200.000",
-    tagline: "¿Científico/a loco/a? ¡Claro que sí!",
-    experiments: ["Lámpara de lava", "Fiesta de gases", "Pasta de dientes"],
-  },
-  {
-    name: "Kinésico",
-    price: "$200.000",
-    tagline: "Lleva lo sensorial a otro nivel ¡Con-Ciencia!",
-    experiments: ["Slime", "Luciérnagas electrónicas", "Pasta de dientes"],
-  },
+const durations = {
+  micro: "Micro (1 hora)",
+  macro: "Macro (2 horas)",
+} as const;
+
+type Duration = keyof typeof durations;
+
+type Plan = {
+  name: string;
+  prices: Record<Duration, string>;
+  tagline: string;
+  experiments: ExperimentSlug[];
+  // Experimentos que solo entran en la versión Macro del plan.
+  macroOnly?: ExperimentSlug[];
+};
+
+// Micro y Macro ofrecen los mismos planes y experimentos (confirmado por Neuron el 2026-10-03);
+// cambian la duración y el precio.
+const plans: Plan[] = [
   {
     name: "NeurOn",
-    price: "$200.000",
+    prices: { micro: "$170.000", macro: "$220.000" },
     tagline: "Selección de los preferidos de nuestros científicos.",
-    experiments: ["Lámpara de lava", "Slime", "Pasta de dientes"],
+    experiments: ["lampara-de-lava", "slime", "fluido-no-newtoniano"],
   },
-  {
-    name: "Ingeniero",
-    price: "$205.000",
-    tagline: "¿Te gustan los desafíos? ¡Este es tu tipo!",
-    experiments: ["Lancha supersónica", "Aerodeslizador", "Pasta de dientes"],
-  },
-];
-
-const macroPlans = [
   {
     name: "Cientístico",
-    price: "$225.000",
+    prices: { micro: "$170.000", macro: "$220.000" },
     tagline: "¿Arte y Ciencia? ¡Claro que sí!",
-    experiments: [
-      "Burbugrafía",
-      "Arcoíris viajero",
-      "Repollímetro",
-      "Colores danzantes",
-      "Pasta de dientes",
-    ],
+    experiments: ["repollimetro", "burbugrafia", "luciernagas-electronicas"],
   },
   {
-    name: "Kinésico",
-    price: "$225.000",
-    tagline:
-      "Lleva lo sensorial a otro nivel ¡Con-Ciencia! (versión extendida).",
-    experiments: [
-      "Slime",
-      "Luciérnagas electrónicas",
-      "Fluido no newtoniano",
-      "Gelificaciones",
-      "Pasta de dientes experimental",
-    ],
+    name: "Ingenioso",
+    prices: { micro: "$205.000", macro: "$220.000" },
+    tagline: "¿Te gustan los desafíos? ¡Este es tu tipo!",
+    experiments: ["aerodeslizador", "pelea-de-robots", "luciernagas-electronicas"],
+    macroOnly: ["pelea-de-robots"],
   },
   {
-    name: "NeurOn",
-    price: "$225.000",
-    tagline: "Los favoritos de Neuron en versión extendida.",
-    experiments: [
-      "Lámpara",
-      "Slime",
-      "Fluido no newtoneano",
-      "Luciérnagas",
-      "Pasta de dientes",
-    ],
-  },
-  {
-    name: "Ingeniero",
-    price: "$230.000",
-    tagline: "Para los amantes de los desafíos y la ingeniería.",
-    experiments: [
-      "Carrera de autos",
-      "Lancha supersónica",
-      "Luciérnagas",
-      "Aerodeslizador",
-      "Pasta de dientes",
-    ],
+    name: "Cósmico",
+    prices: { micro: "$200.000", macro: "$225.000" },
+    tagline: "Naves espaciales, anillos de humo y mucho más: ¡ciencia de otro planeta!",
+    experiments: ["aerodeslizador", "gelificaciones", "anillos-de-humo"],
   },
 ];
 
@@ -133,36 +101,41 @@ function AnimatedTabTrigger({
   );
 }
 
-type Plan = { name: string; price: string; tagline: string; experiments: string[] };
-
 // Cada plan conserva su color en micro y macro para que se reconozca al cambiar de pestaña.
 const planTones: Record<string, { header: string; text: string }> = {
-  Explosivo: { header: "bg-spark text-ink", text: "text-ink/80" },
-  Cientístico: { header: "bg-spark text-ink", text: "text-ink/80" },
-  Kinésico: { header: "bg-lab text-ink", text: "text-ink/80" },
   NeurOn: { header: "bg-bubble-strong text-white", text: "text-white" },
-  Ingeniero: { header: "bg-lab-strong text-white", text: "text-white" },
+  Cientístico: { header: "bg-spark text-ink", text: "text-ink/80" },
+  Ingenioso: { header: "bg-lab-strong text-white", text: "text-white" },
+  Cósmico: { header: "bg-lab text-ink", text: "text-ink/80" },
 };
 
-// duration distingue planes con el mismo nombre en Micro y Macro dentro del mensaje de WhatsApp.
-function PlanCard({ plan, duration }: { plan: Plan; duration: string }) {
+function PlanCard({ plan, duration }: { plan: Plan; duration: Duration }) {
   const tone = planTones[plan.name] ?? planTones.NeurOn;
+  const macroOnly = plan.macroOnly ?? [];
+  const included = duration === "micro" ? plan.experiments.filter((slug) => !macroOnly.includes(slug)) : plan.experiments;
   return (
     <Card className="gap-0 overflow-hidden rounded-2xl border-0 py-0 shadow-md shadow-ink/10 transition-shadow duration-300 hover:shadow-xl">
       <div className={`px-6 pt-6 pb-7 ${tone.header}`}>
         <h3 className="font-display text-2xl font-bold">{plan.name}</h3>
-        <p className="mt-3 font-display text-4xl font-extrabold tracking-tight">{plan.price}</p>
+        <p className="mt-3 font-display text-4xl font-extrabold tracking-tight">{plan.prices[duration]}</p>
         <p className={`mt-3 text-sm text-balance ${tone.text}`}>{plan.tagline}</p>
       </div>
       <div className="flex flex-1 flex-col gap-6 p-6">
-        <ul className="flex flex-wrap gap-2">
-          {plan.experiments.map((experiment, index) => (
-            <ExperimentChip key={index} label={experiment} />
-          ))}
-        </ul>
+        <div>
+          <ul className="flex flex-wrap gap-2">
+            {included.map((slug) => (
+              <ExperimentChip key={slug} slug={slug} />
+            ))}
+          </ul>
+          {duration === "micro" && macroOnly.length > 0 && (
+            <p className="mt-3 text-sm text-ink/70">
+              Solo en Macro: {macroOnly.map((slug) => experiments[slug].name).join(", ")}.
+            </p>
+          )}
+        </div>
         <Button asChild className="mt-auto w-full bg-bubble-strong hover:bg-bubble-strong/90 text-white" size="lg">
           <a
-            href={whatsappUrl(`Hola Neuron, vengo de la web y quiero cotizar el plan ${plan.name} ${duration}!`)}
+            href={whatsappUrl(`Hola Neuron, vengo de la web y quiero cotizar el plan ${plan.name} ${durations[duration]}!`)}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -228,13 +201,7 @@ export function PricingSection() {
             />
           </TabsList>
 
-          {/* Elephant Toothpaste Banner */}
-          <div className="mb-12 flex items-center justify-center gap-3 rounded-2xl bg-spark p-6 text-center">
-            <FlaskConical className="h-7 w-7 shrink-0 text-ink" aria-hidden="true" />
-            <p className="font-display text-2xl font-bold text-ink text-balance">
-              ¡Pasta de dientes de elefante incluida en TODOS los cumpleaños!
-            </p>
-          </div>
+          <ToothpasteBanner />
 
           {/* Micro Tab Content */}
           <TabsContent value="micro">
@@ -245,8 +212,8 @@ export function PricingSection() {
               animate="animate"
               variants={fadeInUpAnimation}
             >
-              {microPlans.map((plan) => (
-                <PlanCard key={plan.name} plan={plan} duration="Micro (1 hora)" />
+              {plans.map((plan) => (
+                <PlanCard key={plan.name} plan={plan} duration="micro" />
               ))}
             </motion.div>
           </TabsContent>
@@ -260,8 +227,8 @@ export function PricingSection() {
               animate="animate"
               variants={fadeInUpAnimation}
             >
-              {macroPlans.map((plan) => (
-                <PlanCard key={plan.name} plan={plan} duration="Macro (2 horas)" />
+              {plans.map((plan) => (
+                <PlanCard key={plan.name} plan={plan} duration="macro" />
               ))}
             </motion.div>
           </TabsContent>
