@@ -1,25 +1,25 @@
 # Graph Report - neuron-web  (2026-10-02)
 
 ## Corpus Check
-- 174 files · ~1,016,661 words
+- 175 files · ~1,016,848 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 15 file(s) not represented in the graph (top: .toml 8, (none) 4, .cmd 2)
 
 ## Summary
-- 3287 nodes · 6592 edges · 166 communities (161 shown, 5 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 131 edges (avg confidence: 0.85)
+- 3291 nodes · 6611 edges · 167 communities (162 shown, 5 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 132 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `0627116b`
+- Built from commit: `a2745e87`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - sheet.tsx
-- cn
+- Pricing.tsx
 - package.json
-- page.tsx
+- FAQ.tsx
 - components.json
 - compilerOptions
 - .agents/skills/impeccable/scripts/live-browser.js
@@ -71,7 +71,7 @@
 - 🧠 Neuron - Cumpleaños Científicos Inolvidables
 - New visual work
 - optimize.md
-- dialog.tsx
+- cn
 - graphify reference: extra exports and benchmark
 - Scan mode (approach C: auto-extract, then confirm descriptive language)
 - generate.md
@@ -96,7 +96,7 @@
 - Common Effects
 - Three.js Lighting
 - showToast
-- Reveal
+- Reveal.tsx
 - Common Cognitive Load Violations
 - iOS platform
 - graphify reference: add a URL and watch a folder
@@ -158,7 +158,7 @@
 - .claude/skills/impeccable/reference/quieter.md
 - Responsive Design
 - Init flow
-- FAQ.tsx
+- devDependencies
 - Common Cognitive Load Violations
 - iOS platform
 - Shape
@@ -171,7 +171,7 @@
 - Impeccable Finish Reviewer
 - Impeccable Manual Edit Applier
 - .claude/skills/impeccable/scripts/live-browser-ignores.js
-- Diagnostic Scan
+- Tasks
 - .claude/skills/impeccable/reference/bolder.md
 - Visualize: Direction Comps & Asset Production
 - .claude/skills/impeccable/scripts/impeccable
@@ -182,6 +182,7 @@
 - scripts
 - Heuristics Scoring Guide
 - Command guidance
+- .claude/skills/impeccable/reference/doctor.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 40 edges
@@ -202,31 +203,31 @@
   docs/design/descarga-material-educativo.md → components/FAQ.tsx
 - `Plan de implementación` --references--> `GallerySection()`  [INFERRED]
   docs/design/descarga-material-educativo.md → components/Gallery.tsx
-- `DialogHeader()` --calls--> `cn()`  [EXTRACTED]
-  components/ui/dialog.tsx → lib/utils.ts
-- `DialogFooter()` --calls--> `cn()`  [EXTRACTED]
-  components/ui/dialog.tsx → lib/utils.ts
+- `Someday` --references--> `whatsappUrl()`  [INFERRED]
+  TASKS.md → lib/whatsapp.ts
+- `CardHeader()` --calls--> `cn()`  [EXTRACTED]
+  components/ui/card.tsx → lib/utils.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (166 total, 5 thin omitted)
+## Communities (167 total, 5 thin omitted)
 
 ### Community 0 - "sheet.tsx"
-Cohesion: 0.16
-Nodes (17): app_globals, bricolage, figtree, metadata, RootLayout(), menuDots, Navbar(), Sheet() (+9 more)
+Cohesion: 0.14
+Nodes (19): app_globals, bricolage, figtree, metadata, RootLayout(), menuDots, Navbar(), Sheet() (+11 more)
 
-### Community 1 - "cn"
-Cohesion: 0.20
-Nodes (20): AnimatedTabTrigger(), fadeInUpAnimation, macroPlans, microPlans, Plan, PlanCard(), planTones, PricingSection() (+12 more)
+### Community 1 - "Pricing.tsx"
+Cohesion: 0.14
+Nodes (22): AnimatedTabTrigger(), fadeInUpAnimation, macroPlans, microPlans, Plan, PlanCard(), planTones, PricingSection() (+14 more)
 
 ### Community 2 - "package.json"
-Cohesion: 0.08
-Nodes (25): buttonVariants, Separator(), eslintConfig, name, private, version, class-variance-authority, clsx (+17 more)
+Cohesion: 0.09
+Nodes (25): Badge(), badgeVariants, Separator(), eslintConfig, name, private, version, class-variance-authority (+17 more)
 
-### Community 3 - "page.tsx"
-Cohesion: 0.16
-Nodes (16): Home(), Bubbles, fill, ring, CorporateSection(), TODO: texto provisorio. La oferta para empresas aún no está definida (formatos,…, CTASection(), HeroSection() (+8 more)
+### Community 3 - "FAQ.tsx"
+Cohesion: 0.17
+Nodes (23): Home(), Bubbles, fill, ring, CorporateSection(), TODO: texto provisorio. La oferta para empresas aún no está definida (formatos,…, CTASection(), faqs (+15 more)
 
 ### Community 4 - "components.json"
 Cohesion: 0.11
@@ -241,8 +242,8 @@ Cohesion: 0.03
 Nodes (131): addManualContextText(), applyGlobalBarLabelState(), applyLiveBarPreference(), applyPlaceholderSizingStyles(), averageRgb01(), bindEditBadgeProxy(), bufferToBase64(), buildPlaceholderResizeHandles() (+123 more)
 
 ### Community 7 - "dependencies"
-Cohesion: 0.08
-Nodes (24): dependencies, class-variance-authority, clsx, framer-motion, lucide-react, next, @radix-ui/react-accordion, @radix-ui/react-dialog (+16 more)
+Cohesion: 0.14
+Nodes (14): dependencies, class-variance-authority, clsx, framer-motion, lucide-react, next, @radix-ui/react-accordion, @radix-ui/react-dialog (+6 more)
 
 ### Community 8 - "el"
 Cohesion: 0.07
@@ -373,8 +374,8 @@ Cohesion: 0.08
 Nodes (21): Before you finish, Scope is sovereign, The amplification, The skeleton test, Why it reads flat, Craft floor, Refuse, Verify (+13 more)
 
 ### Community 41 - "Diseño: descarga de material educativo con formulario"
-Cohesion: 0.17
-Nodes (12): Campos, Composición, Criterios de aceptación, Diseño: descarga de material educativo con formulario, Dónde guardar las respuestas (decisión pendiente), Estados, Flujo técnico, Lectura del encargo (+4 more)
+Cohesion: 0.18
+Nodes (11): Campos, Composición, Criterios de aceptación, Diseño: descarga de material educativo con formulario, Dónde guardar las respuestas (decisión pendiente), Estados, Flujo técnico, Lectura del encargo (+3 more)
 
 ### Community 42 - "setLiveState"
 Cohesion: 0.09
@@ -389,7 +390,7 @@ Cohesion: 0.26
 Nodes (18): actOnAgentTarget(), agentTargetBusyReason(), agentTargetOverlayGone(), agentTargetTaken(), claimAgentTarget(), claimAndActOnAgentTarget(), declineAgentTargetBusy(), declineAgentTargetUnresolvable() (+10 more)
 
 ### Community 45 - "Product"
-Cohesion: 0.17
+Cohesion: 0.18
 Nodes (11): Accessibility & Inclusion, Brand Commitments, Capabilities and Constraints, Evidence on Hand, Operating Context, Platform, Positioning, Product (+3 more)
 
 ### Community 46 - ".claude/skills/impeccable/scripts/modern-screenshot.umd.js"
@@ -418,7 +419,7 @@ Nodes (14): 1. Accessibility (A11y), 2. Performance, 3. Theming, 4. Responsive D
 
 ### Community 52 - "🧠 Neuron - Cumpleaños Científicos Inolvidables"
 Cohesion: 0.18
-Nodes (10): ✨ Características Principales (MVP), 🤝 Contribución y Flujo de Trabajo, 🚀 Cómo Ejecutar el Proyecto Localmente, 📂 Estructura del Proyecto, 📄 Licencia, 🧠 Neuron - Cumpleaños Científicos Inolvidables, Pasos, Prerrequisitos (+2 more)
+Nodes (11): 🤝 Contribución y Flujo de Trabajo, 🚀 Cómo Ejecutar el Proyecto Localmente, 📂 Estructura del Proyecto, 📄 Licencia, 🧠 Neuron - Cumpleaños Científicos Inolvidables, Otros comandos, Pasos, Prerrequisitos (+3 more)
 
 ### Community 53 - "New visual work"
 Cohesion: 0.14
@@ -428,9 +429,9 @@ Nodes (14): 1. Decide what is already true, 2. Ask what will change the work, 3.
 Cohesion: 0.14
 Nodes (13): Animation Performance, Assess Performance Issues, Core Web Vitals Optimization, Cumulative Layout Shift (CLS < 0.1), Interaction to Next Paint (INP < 200ms), Largest Contentful Paint (LCP < 2.5s), Loading Performance, Network Optimization (+5 more)
 
-### Community 55 - "dialog.tsx"
-Cohesion: 0.31
-Nodes (11): galleryImages, GallerySection(), Dialog(), DialogClose(), DialogContent(), DialogFooter(), DialogHeader(), DialogOverlay() (+3 more)
+### Community 55 - "cn"
+Cohesion: 0.28
+Nodes (14): galleryImages, GallerySection(), Dialog(), DialogClose(), DialogContent(), DialogDescription(), DialogFooter(), DialogHeader() (+6 more)
 
 ### Community 56 - "graphify reference: extra exports and benchmark"
 Cohesion: 0.22
@@ -446,7 +447,7 @@ Nodes (11): Step 1: Parse the request, Step 2: Reuse the page, then start, Step 
 
 ### Community 59 - ".claude/skills/impeccable/SKILL.md"
 Cohesion: 0.07
-Nodes (29): Assess Adaptation Challenge, Implement & Verify, Recommended Actions, Craft (deprecated alias), Monorepo notes, Opting out of the boot check, Step 1: Run the pass, Step 2: Act by severity (+21 more)
+Nodes (28): Assess Adaptation Challenge, Implement & Verify, 1. Accessibility (VoiceOver / TalkBack), 2. Performance, 3. Appearance & Theming, 4. Platform Conformance (CRITICAL), 5. Adaptivity, Diagnostic Scan (+20 more)
 
 ### Community 60 - "critique.md"
 Cohesion: 0.17
@@ -505,8 +506,8 @@ Cohesion: 0.08
 Nodes (39): buildCollapsible(), buildColorModels(), buildDesignHeader(), buildListHtml(), buildRadiiModels(), buildTypographyModels(), cssSafe(), designEmptyMessage() (+31 more)
 
 ### Community 74 - "Diseño: ficha de experimento al pasar sobre un experimento"
-Cohesion: 0.10
-Nodes (17): Anatomía, Comportamiento, Contenido provisorio, Criterios de aceptación, Datos, Diseño: ficha de experimento al pasar sobre un experimento, Dónde vive, El chip (+9 more)
+Cohesion: 0.17
+Nodes (12): Anatomía, Comportamiento, Contenido provisorio, Criterios de aceptación, Datos, Diseño: ficha de experimento al pasar sobre un experimento, Dónde vive, El chip (+4 more)
 
 ### Community 75 - "graphify reference: query, path, explain"
 Cohesion: 0.33
@@ -528,9 +529,9 @@ Nodes (27): AmbientLight, Common Lighting Setups, Contact Shadows (Fake, Fast), 
 Cohesion: 0.09
 Nodes (35): abandonForeignSession(), abandonSupersededGo(), clearSteerAwaitTimer(), configureVoiceContext(), copyToClipboard(), discardOrphanedSession(), dismissToast(), finishVoiceSession() (+27 more)
 
-### Community 80 - "Reveal"
-Cohesion: 0.29
-Nodes (8): offsets, Reveal(), RevealVariant, testimonials, TestimonialsSection(), CardContent(), CardFooter(), framer-motion
+### Community 80 - "Reveal.tsx"
+Cohesion: 0.33
+Nodes (4): HeroCluster(), offsets, RevealVariant, framer-motion
 
 ### Community 81 - "Common Cognitive Load Violations"
 Cohesion: 0.22
@@ -557,7 +558,7 @@ Cohesion: 0.22
 Nodes (9): Color, Components, Layout, Motion, Operate mode depth (and Read notes), Product constraints, Product permissions, The product slop test (+1 more)
 
 ### Community 89 - "Flujo de trabajo"
-Cohesion: 0.25
+Cohesion: 0.20
 Nodes (7): Al empezar una sesión, Commits y PRs, Flujo de trabajo, graphify, Neuron web, Por cada tarea, Reglas del producto (resumen de PRODUCT.md)
 
 ### Community 92 - "Shape"
@@ -760,9 +761,9 @@ Nodes (10): Breakpoints: Content-Driven, Detect Input Method, Not Just Screen Si
 Cohesion: 0.20
 Nodes (10): Completion gate, Init flow, Step 1: Load current state, Step 2: Explore the project, Step 3: Interview for product truth, Step 4: Write PRODUCT.md, Step 5: Record workflow defaults, Step 6: Wrap up or resume (+2 more)
 
-### Community 142 - "FAQ.tsx"
-Cohesion: 0.40
-Nodes (8): faqs, FAQSection(), tones, Accordion(), AccordionContent(), AccordionItem(), AccordionTrigger(), lucide-react
+### Community 142 - "devDependencies"
+Cohesion: 0.20
+Nodes (10): devDependencies, eslint, eslint-config-next, tailwindcss, @tailwindcss/postcss, tw-animate-css, @types/node, @types/react (+2 more)
 
 ### Community 143 - "Common Cognitive Load Violations"
 Cohesion: 0.22
@@ -812,9 +813,9 @@ Nodes (6): Checks, Entry Atomicity, Impeccable Manual Edit Applier, Input Contra
 Cohesion: 0.52
 Nodes (6): globToRegex(), matchesScope(), normalizeIgnoreRule(), normalizeIgnoreValue(), pageCandidates(), resolveDetectIgnores()
 
-### Community 155 - "Diagnostic Scan"
-Cohesion: 0.33
-Nodes (6): 1. Accessibility (VoiceOver / TalkBack), 2. Performance, 3. Appearance & Theming, 4. Platform Conformance (CRITICAL), 5. Adaptivity, Diagnostic Scan
+### Community 155 - "Tasks"
+Cohesion: 0.22
+Nodes (6): whatsappUrl(), Active, Done, Someday, Tasks, Waiting On
 
 ### Community 156 - ".claude/skills/impeccable/reference/bolder.md"
 Cohesion: 0.33
@@ -856,9 +857,13 @@ Nodes (4): Heuristics Scoring Guide, Issue Severity (P0–P3), Reference Materia
 Cohesion: 0.50
 Nodes (3): Command guidance, No-argument routing: the context-aware menu, Workflow questions
 
+### Community 166 - ".claude/skills/impeccable/reference/doctor.md"
+Cohesion: 0.25
+Nodes (7): Monorepo notes, Opting out of the boot check, Step 1: Run the pass, Step 2: Act by severity, Step 3: Deprecated fields are binding, Step 4: Do not overclaim on truth drift, What this owns, and what it does not
+
 ## Knowledge Gaps
 - **1427 isolated node(s):** `figtree`, `bricolage`, `metadata`, `$schema`, `style` (+1422 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1504 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1501 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
@@ -868,13 +873,13 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Why does `Reference Material` connect `Heuristics Scoring Guide` to `Cognitive Load Assessment`, `critique.md`, `Persona-Based Design Testing`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `Nielsen's 10 Heuristics` connect `Nielsen's 10 Heuristics` to `Heuristics Scoring Guide`?**
+- **Why does `Heuristics Scoring Guide` connect `Heuristics Scoring Guide` to `Nielsen's 10 Heuristics`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `figtree`, `bricolage`, `metadata` to the rest of the system?**
   _1427 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `sheet.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.14130434782608695 - nodes in this community are weakly interconnected._
+- **Should `Pricing.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.14153846153846153 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.08275862068965517 - nodes in this community are weakly interconnected._
-- **Should `components.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
-- **Should `compilerOptions` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08505747126436781 - nodes in this community are weakly interconnected._

@@ -2,9 +2,7 @@ import { Bubbles } from "@/components/Bubbles"
 import { HeroCluster } from "@/components/HeroCluster"
 import { Button } from "@/components/ui/button"
 import { FlaskConical, GraduationCap, MessageCircle, ShieldCheck } from "lucide-react"
-
-const WHATSAPP_URL =
-  "https://wa.me/56976257106?text=Hola%20Neuron,%20vengo%20de%20la%20web%20y%20quiero%20cotizar%20un%20cumpleaños!"
+import { WHATSAPP_URLS } from "@/lib/whatsapp"
 
 const trust = [
   { icon: ShieldCheck, label: "Experimentos seguros", chip: "bg-lab/25", iconColor: "text-lab-strong" },
@@ -47,7 +45,7 @@ export function HeroSection() {
               size="lg"
               className="h-auto bg-bubble-strong px-8 py-4 text-base font-bold text-white shadow-lg shadow-bubble-strong/25 transition-all hover:-translate-y-0.5 hover:bg-bubble-strong/90 hover:shadow-xl md:text-lg"
             >
-              <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+              <a href={WHATSAPP_URLS.cumpleanos} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" aria-hidden="true" />
                 Cotizar por WhatsApp
               </a>

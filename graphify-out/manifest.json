@@ -84,15 +84,15 @@
     "semantic_hash": ""
   },
   "components/CTA.tsx": {
-    "mtime": 1790978215.5001504,
-    "seen": 1790978368.8890584,
-    "ast_hash": "ed7b8fe9cbeacdc77a226d8c758d5641",
+    "mtime": 1790986877.901327,
+    "seen": 1790986899.3592942,
+    "ast_hash": "827388eaa9bd635a64343d4997cc485f",
     "semantic_hash": ""
   },
   "components/FAQ.tsx": {
-    "mtime": 1790978215.515974,
-    "seen": 1790978368.889129,
-    "ast_hash": "b8ff173ca799018ed36b313130c7c947",
+    "mtime": 1790986877.9019706,
+    "seen": 1790986899.3592973,
+    "ast_hash": "24a6739dcbc751d238b7c18b73375caf",
     "semantic_hash": ""
   },
   "components/Gallery.tsx": {
@@ -102,9 +102,9 @@
     "semantic_hash": ""
   },
   "components/Hero.tsx": {
-    "mtime": 1790978215.515974,
-    "seen": 1790978368.8891315,
-    "ast_hash": "811337323f3022e528ae61bcdfe3528f",
+    "mtime": 1790986877.9039857,
+    "seen": 1790986899.359367,
+    "ast_hash": "bf761277630657508b49956f0fa92738",
     "semantic_hash": ""
   },
   "components/Navbar.tsx": {
@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "components/Pricing.tsx": {
-    "mtime": 1790978215.5202248,
-    "seen": 1790978368.8891351,
-    "ast_hash": "f9d8fd4ce76cc09eb2d817e37c91a863",
+    "mtime": 1790986877.904662,
+    "seen": 1790986899.359505,
+    "ast_hash": "9d0ddca4ef3467a8365b885b6624614e",
     "semantic_hash": ""
   },
   "components/Services.tsx": {
@@ -126,9 +126,9 @@
     "semantic_hash": ""
   },
   "components/WhatsAppButton.tsx": {
-    "mtime": 1790351578.042055,
-    "seen": 1790376414.0598018,
-    "ast_hash": "6b202aaf78d74954c46295f5781a2e8f",
+    "mtime": 1790986877.9061735,
+    "seen": 1790986899.3597147,
+    "ast_hash": "62411680ff4244d001f9e362d9676f0c",
     "semantic_hash": ""
   },
   "components/ui/accordion.tsx": {
@@ -546,21 +546,21 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1790980503.0664315,
-    "seen": 1790980571.8385234,
-    "ast_hash": "2f80ed3f5c7988d0df373d78129e5a9b",
+    "mtime": 1790986758.1654313,
+    "seen": 1790986899.3694148,
+    "ast_hash": "6cac85668943226a26e7611e28fe79ea",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
-    "mtime": 1790980503.0995677,
-    "seen": 1790980571.8385246,
-    "ast_hash": "96a9af84bd680935770b2e302f0d584a",
+    "mtime": 1790986758.1654313,
+    "seen": 1790986899.3694162,
+    "ast_hash": "20c9580392465d068d836d4bdad49b41",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1790351577.9948652,
-    "seen": 1790376414.059905,
-    "ast_hash": "bed2b5f86883ef1752dd74cb3c78a3c3",
+    "mtime": 1790986781.1079702,
+    "seen": 1790986899.3694174,
+    "ast_hash": "8d66ed517be3502b1d95ebd9721dde24",
     "semantic_hash": ""
   },
   "app/icon.png": {
@@ -630,9 +630,9 @@
     "semantic_hash": ""
   },
   "components/Corporate.tsx": {
-    "mtime": 1790376763.746923,
-    "seen": 1790376809.671549,
-    "ast_hash": "0efe73e5a428922e82cf1dc02a435083",
+    "mtime": 1790986877.9019706,
+    "seen": 1790986899.359296,
+    "ast_hash": "e60538f7b6ab16c43027f714fa5129d8",
     "semantic_hash": ""
   },
   "components/Bubbles.tsx": {
@@ -780,21 +780,21 @@
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1790980532.1128263,
-    "seen": 1790980571.8385928,
-    "ast_hash": "273d9aff9fd4ebdb56a0750c58e652db",
+    "mtime": 1790986893.1457462,
+    "seen": 1790986899.369419,
+    "ast_hash": "5e786738bc6b1408892f739fb6f729cf",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {
-    "mtime": 1790978321.7436655,
-    "seen": 1790978368.8956108,
-    "ast_hash": "e0e7cc425844897e06acfaecea62cd1b",
+    "mtime": 1790982352.99823,
+    "seen": 1790986899.36942,
+    "ast_hash": "3907fe74ce16ae6841c4f39ac1fd2cf5",
     "semantic_hash": ""
   },
   "docs/design/ficha-experimento-hover.md": {
-    "mtime": 1790978264.773053,
-    "seen": 1790978368.895612,
-    "ast_hash": "5d0d0893d4e91f20522c59eda6a5d220",
+    "mtime": 1790982353.0070367,
+    "seen": 1790986899.369421,
+    "ast_hash": "ba5e2055402d3586b2694559e7f13b59",
     "semantic_hash": ""
   },
   ".claude/skills/impeccable/scripts/command-metadata.json": {
@@ -1107,6 +1107,12 @@
     "mtime": 1790980524.6731732,
     "seen": 1790980571.8378036,
     "ast_hash": "62118ec2ee136b71edcf66bce6f4705c",
+    "semantic_hash": ""
+  },
+  "lib/whatsapp.ts": {
+    "mtime": 1790986814.1249793,
+    "seen": 1790986899.3603845,
+    "ast_hash": "fd03b60215f5f9f887afd2b0202e9def",
     "semantic_hash": ""
   }
 }

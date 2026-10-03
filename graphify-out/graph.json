@@ -10,11 +10,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "plan",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L134"
+      "source_location": "L135"
     },
     {
       "id": "components_reveal_revealvariant",
@@ -23,7 +23,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 80,
-      "community_name": "Reveal",
+      "community_name": "Reveal.tsx",
       "file_type": "code",
       "norm_label": "revealvariant",
       "source_file": "components/Reveal.tsx",
@@ -183,7 +183,7 @@
       "file_type": "code",
       "norm_label": "whatsappbutton()",
       "source_file": "components/WhatsAppButton.tsx",
-      "source_location": "L3"
+      "source_location": "L4"
     },
     {
       "id": "components_pricing_animatedtabtrigger",
@@ -191,11 +191,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "animatedtabtrigger()",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L99"
+      "source_location": "L100"
     },
     {
       "id": "components_pricing_plancard",
@@ -203,11 +203,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "plancard()",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L145"
+      "source_location": "L146"
     },
     {
       "id": "components_pricing_pricingsection",
@@ -215,23 +215,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "pricingsection()",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L172"
+      "source_location": "L173"
     },
     {
-      "id": "components_ui_button_button",
-      "label": "Button()",
+      "id": "components_testimonials_testimonialssection",
+      "label": "TestimonialsSection()",
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
-      "norm_label": "button()",
-      "source_file": "components/ui/button.tsx",
-      "source_location": "L39"
+      "norm_label": "testimonialssection()",
+      "source_file": "components/Testimonials.tsx",
+      "source_location": "L37"
     },
     {
       "id": "components_ui_card_card",
@@ -239,7 +239,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "card()",
       "source_file": "components/ui/card.tsx",
@@ -251,11 +251,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "cardaction()",
       "source_file": "components/ui/card.tsx",
       "source_location": "L51"
+    },
+    {
+      "id": "components_ui_card_cardcontent",
+      "label": "CardContent()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Pricing.tsx",
+      "file_type": "code",
+      "norm_label": "cardcontent()",
+      "source_file": "components/ui/card.tsx",
+      "source_location": "L64"
     },
     {
       "id": "components_ui_card_carddescription",
@@ -263,11 +275,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "carddescription()",
       "source_file": "components/ui/card.tsx",
       "source_location": "L41"
+    },
+    {
+      "id": "components_ui_card_cardfooter",
+      "label": "CardFooter()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Pricing.tsx",
+      "file_type": "code",
+      "norm_label": "cardfooter()",
+      "source_file": "components/ui/card.tsx",
+      "source_location": "L74"
     },
     {
       "id": "components_ui_card_cardheader",
@@ -275,7 +299,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "cardheader()",
       "source_file": "components/ui/card.tsx",
@@ -287,23 +311,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "cardtitle()",
       "source_file": "components/ui/card.tsx",
       "source_location": "L31"
-    },
-    {
-      "id": "components_ui_dialog_dialogdescription",
-      "label": "DialogDescription()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "dialogdescription()",
-      "source_file": "components/ui/dialog.tsx",
-      "source_location": "L119"
     },
     {
       "id": "components_ui_tabs_tabs",
@@ -311,7 +323,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "tabs()",
       "source_file": "components/ui/tabs.tsx",
@@ -323,7 +335,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "tabscontent()",
       "source_file": "components/ui/tabs.tsx",
@@ -335,7 +347,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "tabslist()",
       "source_file": "components/ui/tabs.tsx",
@@ -347,23 +359,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "tabstrigger()",
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L37"
-    },
-    {
-      "id": "lib_utils_cn",
-      "label": "cn()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "cn",
-      "file_type": "code",
-      "norm_label": "cn()",
-      "source_file": "lib/utils.ts",
-      "source_location": "L4"
     },
     {
       "id": "agents_skills_impeccable_scripts_live_browser_ignores_globtoregex",
@@ -3330,66 +3330,6 @@
       "source_location": "L10906"
     },
     {
-      "id": "components_faq_faqsection",
-      "label": "FAQSection()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 142,
-      "community_name": "FAQ.tsx",
-      "file_type": "code",
-      "norm_label": "faqsection()",
-      "source_file": "components/FAQ.tsx",
-      "source_location": "L55"
-    },
-    {
-      "id": "components_ui_accordion_accordion",
-      "label": "Accordion()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 142,
-      "community_name": "FAQ.tsx",
-      "file_type": "code",
-      "norm_label": "accordion()",
-      "source_file": "components/ui/accordion.tsx",
-      "source_location": "L9"
-    },
-    {
-      "id": "components_ui_accordion_accordioncontent",
-      "label": "AccordionContent()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 142,
-      "community_name": "FAQ.tsx",
-      "file_type": "code",
-      "norm_label": "accordioncontent()",
-      "source_file": "components/ui/accordion.tsx",
-      "source_location": "L50"
-    },
-    {
-      "id": "components_ui_accordion_accordionitem",
-      "label": "AccordionItem()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 142,
-      "community_name": "FAQ.tsx",
-      "file_type": "code",
-      "norm_label": "accordionitem()",
-      "source_file": "components/ui/accordion.tsx",
-      "source_location": "L15"
-    },
-    {
-      "id": "components_ui_accordion_accordiontrigger",
-      "label": "AccordionTrigger()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 142,
-      "community_name": "FAQ.tsx",
-      "file_type": "code",
-      "norm_label": "accordiontrigger()",
-      "source_file": "components/ui/accordion.tsx",
-      "source_location": "L28"
-    },
-    {
       "id": "agents_skills_impeccable_scripts_live_browser_applyediting",
       "label": "applyEditing()",
       "_callable": true,
@@ -4204,6 +4144,18 @@
       "norm_label": "resolvedetectignores()",
       "source_file": ".claude/skills/impeccable/scripts/live-browser-ignores.js",
       "source_location": "L195"
+    },
+    {
+      "id": "lib_whatsapp_whatsappurl",
+      "label": "whatsappUrl()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 155,
+      "community_name": "Tasks",
+      "file_type": "code",
+      "norm_label": "whatsappurl()",
+      "source_file": "lib/whatsapp.ts",
+      "source_location": "L4"
     },
     {
       "id": "claude_skills_impeccable_scripts_live_browser_collecteditabletextrows",
@@ -5092,6 +5044,18 @@
       "norm_label": "variantstateselector()",
       "source_file": ".agents/skills/impeccable/scripts/live-browser.js",
       "source_location": "L6674"
+    },
+    {
+      "id": "components_ui_badge_badge",
+      "label": "Badge()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "badge()",
+      "source_file": "components/ui/badge.tsx",
+      "source_location": "L28"
     },
     {
       "id": "components_ui_separator_separator",
@@ -6671,7 +6635,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "home()",
       "source_file": "app/page.tsx",
@@ -6683,7 +6647,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "bubbles",
       "source_file": "components/Bubbles.tsx",
@@ -6695,11 +6659,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "corporatesection()",
       "source_file": "components/Corporate.tsx",
-      "source_location": "L8"
+      "source_location": "L6"
     },
     {
       "id": "components_cta_ctasection",
@@ -6707,11 +6671,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "ctasection()",
       "source_file": "components/CTA.tsx",
-      "source_location": "L10"
+      "source_location": "L11"
+    },
+    {
+      "id": "components_faq_faqsection",
+      "label": "FAQSection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FAQ.tsx",
+      "file_type": "code",
+      "norm_label": "faqsection()",
+      "source_file": "components/FAQ.tsx",
+      "source_location": "L53"
     },
     {
       "id": "components_hero_herosection",
@@ -6719,23 +6695,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "herosection()",
       "source_file": "components/Hero.tsx",
-      "source_location": "L15"
+      "source_location": "L13"
     },
     {
-      "id": "components_herocluster_herocluster",
-      "label": "HeroCluster()",
+      "id": "components_reveal_reveal",
+      "label": "Reveal()",
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
-      "norm_label": "herocluster()",
-      "source_file": "components/HeroCluster.tsx",
-      "source_location": "L7"
+      "norm_label": "reveal()",
+      "source_file": "components/Reveal.tsx",
+      "source_location": "L16"
     },
     {
       "id": "components_services_servicessection",
@@ -6743,23 +6719,71 @@
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "servicessection()",
       "source_file": "components/Services.tsx",
       "source_location": "L46"
     },
     {
-      "id": "components_ui_badge_badge",
-      "label": "Badge()",
+      "id": "components_ui_accordion_accordion",
+      "label": "Accordion()",
       "_callable": true,
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
-      "norm_label": "badge()",
-      "source_file": "components/ui/badge.tsx",
+      "norm_label": "accordion()",
+      "source_file": "components/ui/accordion.tsx",
+      "source_location": "L9"
+    },
+    {
+      "id": "components_ui_accordion_accordioncontent",
+      "label": "AccordionContent()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FAQ.tsx",
+      "file_type": "code",
+      "norm_label": "accordioncontent()",
+      "source_file": "components/ui/accordion.tsx",
+      "source_location": "L50"
+    },
+    {
+      "id": "components_ui_accordion_accordionitem",
+      "label": "AccordionItem()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FAQ.tsx",
+      "file_type": "code",
+      "norm_label": "accordionitem()",
+      "source_file": "components/ui/accordion.tsx",
+      "source_location": "L15"
+    },
+    {
+      "id": "components_ui_accordion_accordiontrigger",
+      "label": "AccordionTrigger()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FAQ.tsx",
+      "file_type": "code",
+      "norm_label": "accordiontrigger()",
+      "source_file": "components/ui/accordion.tsx",
       "source_location": "L28"
+    },
+    {
+      "id": "components_ui_button_button",
+      "label": "Button()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FAQ.tsx",
+      "file_type": "code",
+      "norm_label": "button()",
+      "source_file": "components/ui/button.tsx",
+      "source_location": "L39"
     },
     {
       "id": "agents_skills_impeccable_scripts_live_browser_abandonforeignsession",
@@ -11819,7 +11843,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "gallerysection()",
       "source_file": "components/Gallery.tsx",
@@ -11831,7 +11855,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "dialog()",
       "source_file": "components/ui/dialog.tsx",
@@ -11843,7 +11867,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "dialogclose()",
       "source_file": "components/ui/dialog.tsx",
@@ -11855,11 +11879,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "dialogcontent()",
       "source_file": "components/ui/dialog.tsx",
       "source_location": "L49"
+    },
+    {
+      "id": "components_ui_dialog_dialogdescription",
+      "label": "DialogDescription()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "dialogdescription()",
+      "source_file": "components/ui/dialog.tsx",
+      "source_location": "L119"
     },
     {
       "id": "components_ui_dialog_dialogfooter",
@@ -11867,7 +11903,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "dialogfooter()",
       "source_file": "components/ui/dialog.tsx",
@@ -11879,7 +11915,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "dialogheader()",
       "source_file": "components/ui/dialog.tsx",
@@ -11891,7 +11927,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "dialogoverlay()",
       "source_file": "components/ui/dialog.tsx",
@@ -11903,7 +11939,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "dialogportal()",
       "source_file": "components/ui/dialog.tsx",
@@ -11915,7 +11951,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "dialogtitle()",
       "source_file": "components/ui/dialog.tsx",
@@ -11927,11 +11963,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "dialogtrigger()",
       "source_file": "components/ui/dialog.tsx",
       "source_location": "L15"
+    },
+    {
+      "id": "lib_utils_cn",
+      "label": "cn()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "cn",
+      "file_type": "code",
+      "norm_label": "cn()",
+      "source_file": "lib/utils.ts",
+      "source_location": "L4"
     },
     {
       "id": "agents_skills_impeccable_scripts_live_browser_addmanualcontexttext",
@@ -15186,52 +15234,16 @@
       "source_location": "L1488"
     },
     {
-      "id": "components_reveal_reveal",
-      "label": "Reveal()",
+      "id": "components_herocluster_herocluster",
+      "label": "HeroCluster()",
       "_callable": true,
       "_origin": "ast",
       "community": 80,
-      "community_name": "Reveal",
+      "community_name": "Reveal.tsx",
       "file_type": "code",
-      "norm_label": "reveal()",
-      "source_file": "components/Reveal.tsx",
-      "source_location": "L16"
-    },
-    {
-      "id": "components_testimonials_testimonialssection",
-      "label": "TestimonialsSection()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 80,
-      "community_name": "Reveal",
-      "file_type": "code",
-      "norm_label": "testimonialssection()",
-      "source_file": "components/Testimonials.tsx",
-      "source_location": "L37"
-    },
-    {
-      "id": "components_ui_card_cardcontent",
-      "label": "CardContent()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 80,
-      "community_name": "Reveal",
-      "file_type": "code",
-      "norm_label": "cardcontent()",
-      "source_file": "components/ui/card.tsx",
-      "source_location": "L64"
-    },
-    {
-      "id": "components_ui_card_cardfooter",
-      "label": "CardFooter()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 80,
-      "community_name": "Reveal",
-      "file_type": "code",
-      "norm_label": "cardfooter()",
-      "source_file": "components/ui/card.tsx",
-      "source_location": "L74"
+      "norm_label": "herocluster()",
+      "source_file": "components/HeroCluster.tsx",
+      "source_location": "L7"
     },
     {
       "id": "agents_skills_impeccable_scripts_modern_screenshot_umd_ae",
@@ -16739,22 +16751,44 @@
       "source_location": "L1"
     },
     {
-      "id": "components_whatsappbutton",
-      "label": "WhatsAppButton.tsx",
+      "id": "next_config",
+      "label": "next.config.ts",
       "_origin": "ast",
       "community": 0,
       "community_name": "sheet.tsx",
       "file_type": "code",
-      "norm_label": "whatsappbutton.tsx",
-      "source_file": "components/WhatsAppButton.tsx",
+      "norm_label": "next.config.ts",
+      "source_file": "next.config.ts",
       "source_location": "L1"
+    },
+    {
+      "id": "next_config_nextconfig",
+      "label": "nextConfig",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "sheet.tsx",
+      "file_type": "code",
+      "norm_label": "nextconfig",
+      "source_file": "next.config.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "ref_next",
+      "label": "next",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "sheet.tsx",
+      "file_type": "concept",
+      "norm_label": "next",
+      "source_file": "package.json",
+      "source_location": "L21"
     },
     {
       "id": "components_pricing",
       "label": "Pricing.tsx",
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "pricing.tsx",
       "source_file": "components/Pricing.tsx",
@@ -16765,51 +16799,73 @@
       "label": "fadeInUpAnimation",
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "fadeinupanimation",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L92"
+      "source_location": "L93"
     },
     {
       "id": "components_pricing_macroplans",
       "label": "macroPlans",
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "macroplans",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L39"
+      "source_location": "L40"
     },
     {
       "id": "components_pricing_microplans",
       "label": "microPlans",
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "microplans",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L12"
+      "source_location": "L13"
     },
     {
       "id": "components_pricing_plantones",
       "label": "planTones",
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "plantones",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L137"
+      "source_location": "L138"
+    },
+    {
+      "id": "components_testimonials",
+      "label": "Testimonials.tsx",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Pricing.tsx",
+      "file_type": "code",
+      "norm_label": "testimonials.tsx",
+      "source_file": "components/Testimonials.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_testimonials_testimonials",
+      "label": "testimonials",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Pricing.tsx",
+      "file_type": "code",
+      "norm_label": "testimonials",
+      "source_file": "components/Testimonials.tsx",
+      "source_location": "L4"
     },
     {
       "id": "components_ui_card",
       "label": "card.tsx",
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "card.tsx",
       "source_file": "components/ui/card.tsx",
@@ -16820,11 +16876,22 @@
       "label": "tabs.tsx",
       "_origin": "ast",
       "community": 1,
-      "community_name": "cn",
+      "community_name": "Pricing.tsx",
       "file_type": "code",
       "norm_label": "tabs.tsx",
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "ref_radix_ui_react_tabs",
+      "label": "@radix-ui/react-tabs",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Pricing.tsx",
+      "file_type": "concept",
+      "norm_label": "@radix-ui/react-tabs",
+      "source_file": "package.json",
+      "source_location": "L16"
     },
     {
       "id": "postcss_config",
@@ -22830,59 +22897,114 @@
       "source_location": "L49"
     },
     {
-      "id": "components_faq",
-      "label": "FAQ.tsx",
+      "id": "package_devdependencies",
+      "label": "devDependencies",
       "_origin": "ast",
       "community": 142,
-      "community_name": "FAQ.tsx",
+      "community_name": "devDependencies",
       "file_type": "code",
-      "norm_label": "faq.tsx",
-      "source_file": "components/FAQ.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "components_faq_faqs",
-      "label": "faqs",
-      "_origin": "ast",
-      "community": 142,
-      "community_name": "FAQ.tsx",
-      "file_type": "code",
-      "norm_label": "faqs",
-      "source_file": "components/FAQ.tsx",
-      "source_location": "L7"
-    },
-    {
-      "id": "components_faq_tones",
-      "label": "tones",
-      "_origin": "ast",
-      "community": 142,
-      "community_name": "FAQ.tsx",
-      "file_type": "code",
-      "norm_label": "tones",
-      "source_file": "components/FAQ.tsx",
-      "source_location": "L46"
-    },
-    {
-      "id": "components_ui_accordion",
-      "label": "accordion.tsx",
-      "_origin": "ast",
-      "community": 142,
-      "community_name": "FAQ.tsx",
-      "file_type": "code",
-      "norm_label": "accordion.tsx",
-      "source_file": "components/ui/accordion.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "ref_lucide_react",
-      "label": "lucide-react",
-      "_origin": "ast",
-      "community": 142,
-      "community_name": "FAQ.tsx",
-      "file_type": "concept",
-      "norm_label": "lucide-react",
+      "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L20"
+      "source_location": "L26"
+    },
+    {
+      "id": "package_devdependencies_eslint",
+      "label": "eslint",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "eslint",
+      "source_file": "package.json",
+      "source_location": "L31"
+    },
+    {
+      "id": "package_devdependencies_eslint_config_next",
+      "label": "eslint-config-next",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "eslint-config-next",
+      "source_file": "package.json",
+      "source_location": "L32"
+    },
+    {
+      "id": "package_devdependencies_tailwindcss",
+      "label": "tailwindcss",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "tailwindcss",
+      "source_file": "package.json",
+      "source_location": "L33"
+    },
+    {
+      "id": "package_devdependencies_tailwindcss_postcss",
+      "label": "@tailwindcss/postcss",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@tailwindcss/postcss",
+      "source_file": "package.json",
+      "source_location": "L27"
+    },
+    {
+      "id": "package_devdependencies_tw_animate_css",
+      "label": "tw-animate-css",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "tw-animate-css",
+      "source_file": "package.json",
+      "source_location": "L34"
+    },
+    {
+      "id": "package_devdependencies_types_node",
+      "label": "@types/node",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@types/node",
+      "source_file": "package.json",
+      "source_location": "L28"
+    },
+    {
+      "id": "package_devdependencies_types_react",
+      "label": "@types/react",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@types/react",
+      "source_file": "package.json",
+      "source_location": "L29"
+    },
+    {
+      "id": "package_devdependencies_types_react_dom",
+      "label": "@types/react-dom",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@types/react-dom",
+      "source_file": "package.json",
+      "source_location": "L30"
+    },
+    {
+      "id": "package_devdependencies_typescript",
+      "label": "typescript",
+      "_origin": "ast",
+      "community": 142,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "typescript",
+      "source_file": "package.json",
+      "source_location": "L35"
     },
     {
       "id": "claude_skills_impeccable_reference_critique_1_the_wall_of_options",
@@ -23940,76 +24062,100 @@
       "source_location": "L1"
     },
     {
-      "id": "claude_skills_impeccable_reference_audit_native_1_accessibility_voiceover_talkback",
-      "label": "1. Accessibility (VoiceOver / TalkBack)",
+      "id": "docs_design_descarga_material_educativo",
+      "label": "descarga-material-educativo.md",
       "_origin": "ast",
       "community": 155,
-      "community_name": "Diagnostic Scan",
+      "community_name": "Tasks",
       "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "1. accessibility (voiceover / talkback)",
-      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
-      "source_location": "L9"
+      "node_kind": "page",
+      "norm_label": "descarga-material-educativo.md",
+      "source_file": "docs/design/descarga-material-educativo.md",
+      "source_location": "L1"
     },
     {
-      "id": "claude_skills_impeccable_reference_audit_native_2_performance",
-      "label": "2. Performance",
+      "id": "docs_design_ficha_experimento_hover",
+      "label": "ficha-experimento-hover.md",
       "_origin": "ast",
       "community": 155,
-      "community_name": "Diagnostic Scan",
+      "community_name": "Tasks",
       "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "2. performance",
-      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
-      "source_location": "L21"
+      "node_kind": "page",
+      "norm_label": "ficha-experimento-hover.md",
+      "source_file": "docs/design/ficha-experimento-hover.md",
+      "source_location": "L1"
     },
     {
-      "id": "claude_skills_impeccable_reference_audit_native_3_appearance_theming",
-      "label": "3. Appearance & Theming",
+      "id": "tasks",
+      "label": "TASKS.md",
       "_origin": "ast",
       "community": 155,
-      "community_name": "Diagnostic Scan",
+      "community_name": "Tasks",
       "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "3. appearance & theming",
-      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
-      "source_location": "L33"
+      "node_kind": "page",
+      "norm_label": "tasks.md",
+      "source_file": "TASKS.md",
+      "source_location": "L1"
     },
     {
-      "id": "claude_skills_impeccable_reference_audit_native_4_platform_conformance_critical",
-      "label": "4. Platform Conformance (CRITICAL)",
+      "id": "tasks_active",
+      "label": "Active",
       "_origin": "ast",
       "community": 155,
-      "community_name": "Diagnostic Scan",
+      "community_name": "Tasks",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "4. platform conformance (critical)",
-      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
-      "source_location": "L43"
+      "norm_label": "active",
+      "source_file": "TASKS.md",
+      "source_location": "L3"
     },
     {
-      "id": "claude_skills_impeccable_reference_audit_native_5_adaptivity",
-      "label": "5. Adaptivity",
+      "id": "tasks_done",
+      "label": "Done",
       "_origin": "ast",
       "community": 155,
-      "community_name": "Diagnostic Scan",
+      "community_name": "Tasks",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "5. adaptivity",
-      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
-      "source_location": "L55"
+      "norm_label": "done",
+      "source_file": "TASKS.md",
+      "source_location": "L41"
     },
     {
-      "id": "claude_skills_impeccable_reference_audit_native_diagnostic_scan",
-      "label": "Diagnostic Scan",
+      "id": "tasks_someday",
+      "label": "Someday",
       "_origin": "ast",
       "community": 155,
-      "community_name": "Diagnostic Scan",
+      "community_name": "Tasks",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "diagnostic scan",
-      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
-      "source_location": "L5"
+      "norm_label": "someday",
+      "source_file": "TASKS.md",
+      "source_location": "L34"
+    },
+    {
+      "id": "tasks_tasks",
+      "label": "Tasks",
+      "_origin": "ast",
+      "community": 155,
+      "community_name": "Tasks",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "tasks",
+      "source_file": "TASKS.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "tasks_waiting_on",
+      "label": "Waiting On",
+      "_origin": "ast",
+      "community": 155,
+      "community_name": "Tasks",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "waiting on",
+      "source_file": "TASKS.md",
+      "source_location": "L23"
     },
     {
       "id": "claude_skills_impeccable_reference_bolder",
@@ -24989,6 +25135,102 @@
       "source_location": "L3"
     },
     {
+      "id": "claude_skills_impeccable_reference_doctor",
+      "label": ".claude/skills/impeccable/reference/doctor.md",
+      "_origin": "ast",
+      "community": 166,
+      "community_name": ".claude/skills/impeccable/reference/doctor.md",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": ".claude/skills/impeccable/reference/doctor.md",
+      "source_file": ".claude/skills/impeccable/reference/doctor.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_doctor_monorepo_notes",
+      "label": "Monorepo notes",
+      "_origin": "ast",
+      "community": 166,
+      "community_name": ".claude/skills/impeccable/reference/doctor.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "monorepo notes",
+      "source_file": ".claude/skills/impeccable/reference/doctor.md",
+      "source_location": "L45"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_doctor_opting_out_of_the_boot_check",
+      "label": "Opting out of the boot check",
+      "_origin": "ast",
+      "community": 166,
+      "community_name": ".claude/skills/impeccable/reference/doctor.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "opting out of the boot check",
+      "source_file": ".claude/skills/impeccable/reference/doctor.md",
+      "source_location": "L52"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_doctor_step_1_run_the_pass",
+      "label": "Step 1: Run the pass",
+      "_origin": "ast",
+      "community": 166,
+      "community_name": ".claude/skills/impeccable/reference/doctor.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "step 1: run the pass",
+      "source_file": ".claude/skills/impeccable/reference/doctor.md",
+      "source_location": "L13"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_doctor_step_2_act_by_severity",
+      "label": "Step 2: Act by severity",
+      "_origin": "ast",
+      "community": 166,
+      "community_name": ".claude/skills/impeccable/reference/doctor.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "step 2: act by severity",
+      "source_file": ".claude/skills/impeccable/reference/doctor.md",
+      "source_location": "L25"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_doctor_step_3_deprecated_fields_are_binding",
+      "label": "Step 3: Deprecated fields are binding",
+      "_origin": "ast",
+      "community": 166,
+      "community_name": ".claude/skills/impeccable/reference/doctor.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "step 3: deprecated fields are binding",
+      "source_file": ".claude/skills/impeccable/reference/doctor.md",
+      "source_location": "L35"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_doctor_step_4_do_not_overclaim_on_truth_drift",
+      "label": "Step 4: Do not overclaim on truth drift",
+      "_origin": "ast",
+      "community": 166,
+      "community_name": ".claude/skills/impeccable/reference/doctor.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "step 4: do not overclaim on truth drift",
+      "source_file": ".claude/skills/impeccable/reference/doctor.md",
+      "source_location": "L39"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_doctor_what_this_owns_and_what_it_does_not",
+      "label": "What this owns, and what it does not",
+      "_origin": "ast",
+      "community": 166,
+      "community_name": ".claude/skills/impeccable/reference/doctor.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "what this owns, and what it does not",
+      "source_file": ".claude/skills/impeccable/reference/doctor.md",
+      "source_location": "L5"
+    },
+    {
       "id": "claude_skills_graphify_skill",
       "label": "graphify/SKILL.md",
       "_origin": "ast",
@@ -25293,25 +25535,25 @@
       "source_location": "L49"
     },
     {
-      "id": "components_ui_button",
-      "label": "button.tsx",
+      "id": "components_ui_badge",
+      "label": "badge.tsx",
       "_origin": "ast",
       "community": 2,
       "community_name": "package.json",
       "file_type": "code",
-      "norm_label": "button.tsx",
-      "source_file": "components/ui/button.tsx",
+      "norm_label": "badge.tsx",
+      "source_file": "components/ui/badge.tsx",
       "source_location": "L1"
     },
     {
-      "id": "components_ui_button_buttonvariants",
-      "label": "buttonVariants",
+      "id": "components_ui_badge_badgevariants",
+      "label": "badgeVariants",
       "_origin": "ast",
       "community": 2,
       "community_name": "package.json",
       "file_type": "code",
-      "norm_label": "buttonvariants",
-      "source_file": "components/ui/button.tsx",
+      "norm_label": "badgevariants",
+      "source_file": "components/ui/badge.tsx",
       "source_location": "L7"
     },
     {
@@ -25489,17 +25731,6 @@
       "norm_label": "@radix-ui/react-slot",
       "source_file": "package.json",
       "source_location": "L15"
-    },
-    {
-      "id": "ref_radix_ui_react_tabs",
-      "label": "@radix-ui/react-tabs",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "concept",
-      "norm_label": "@radix-ui/react-tabs",
-      "source_file": "package.json",
-      "source_location": "L16"
     },
     {
       "id": "ref_react",
@@ -28883,7 +29114,7 @@
       "label": "page.tsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "page.tsx",
       "source_file": "app/page.tsx",
@@ -28894,7 +29125,7 @@
       "label": "Bubbles.tsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "bubbles.tsx",
       "source_file": "components/Bubbles.tsx",
@@ -28905,7 +29136,7 @@
       "label": "fill",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "fill",
       "source_file": "components/Bubbles.tsx",
@@ -28916,7 +29147,7 @@
       "label": "ring",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "ring",
       "source_file": "components/Bubbles.tsx",
@@ -28927,7 +29158,7 @@
       "label": "Corporate.tsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "corporate.tsx",
       "source_file": "components/Corporate.tsx",
@@ -28938,18 +29169,51 @@
       "label": "CTA.tsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "cta.tsx",
       "source_file": "components/CTA.tsx",
       "source_location": "L1"
     },
     {
+      "id": "components_faq",
+      "label": "FAQ.tsx",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FAQ.tsx",
+      "file_type": "code",
+      "norm_label": "faq.tsx",
+      "source_file": "components/FAQ.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_faq_faqs",
+      "label": "faqs",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FAQ.tsx",
+      "file_type": "code",
+      "norm_label": "faqs",
+      "source_file": "components/FAQ.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "components_faq_tones",
+      "label": "tones",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FAQ.tsx",
+      "file_type": "code",
+      "norm_label": "tones",
+      "source_file": "components/FAQ.tsx",
+      "source_location": "L47"
+    },
+    {
       "id": "components_hero",
       "label": "Hero.tsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "hero.tsx",
       "source_file": "components/Hero.tsx",
@@ -28960,29 +29224,18 @@
       "label": "trust",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "trust",
       "source_file": "components/Hero.tsx",
-      "source_location": "L9"
-    },
-    {
-      "id": "components_herocluster",
-      "label": "HeroCluster.tsx",
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "page.tsx",
-      "file_type": "code",
-      "norm_label": "herocluster.tsx",
-      "source_file": "components/HeroCluster.tsx",
-      "source_location": "L1"
+      "source_location": "L7"
     },
     {
       "id": "components_services",
       "label": "Services.tsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "services.tsx",
       "source_file": "components/Services.tsx",
@@ -28993,77 +29246,99 @@
       "label": "experiments",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
       "norm_label": "experiments",
       "source_file": "components/Services.tsx",
       "source_location": "L7"
     },
     {
-      "id": "components_ui_badge",
-      "label": "badge.tsx",
+      "id": "components_ui_accordion",
+      "label": "accordion.tsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
-      "norm_label": "badge.tsx",
-      "source_file": "components/ui/badge.tsx",
+      "norm_label": "accordion.tsx",
+      "source_file": "components/ui/accordion.tsx",
       "source_location": "L1"
     },
     {
-      "id": "components_ui_badge_badgevariants",
-      "label": "badgeVariants",
+      "id": "components_ui_button",
+      "label": "button.tsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
-      "norm_label": "badgevariants",
-      "source_file": "components/ui/badge.tsx",
+      "norm_label": "button.tsx",
+      "source_file": "components/ui/button.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "components_ui_button_buttonvariants",
+      "label": "buttonVariants",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FAQ.tsx",
+      "file_type": "code",
+      "norm_label": "buttonvariants",
+      "source_file": "components/ui/button.tsx",
       "source_location": "L7"
     },
     {
-      "id": "next_config",
-      "label": "next.config.ts",
+      "id": "components_whatsappbutton",
+      "label": "WhatsAppButton.tsx",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
-      "norm_label": "next.config.ts",
-      "source_file": "next.config.ts",
+      "norm_label": "whatsappbutton.tsx",
+      "source_file": "components/WhatsAppButton.tsx",
       "source_location": "L1"
     },
     {
-      "id": "next_config_nextconfig",
-      "label": "nextConfig",
+      "id": "lib_whatsapp",
+      "label": "whatsapp.ts",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "code",
-      "norm_label": "nextconfig",
-      "source_file": "next.config.ts",
-      "source_location": "L3"
+      "norm_label": "whatsapp.ts",
+      "source_file": "lib/whatsapp.ts",
+      "source_location": "L1"
     },
     {
-      "id": "ref_next",
-      "label": "next",
+      "id": "lib_whatsapp_whatsapp_urls",
+      "label": "WHATSAPP_URLS",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
-      "file_type": "concept",
-      "norm_label": "next",
-      "source_file": "package.json",
-      "source_location": "L21"
+      "community_name": "FAQ.tsx",
+      "file_type": "code",
+      "norm_label": "whatsapp_urls",
+      "source_file": "lib/whatsapp.ts",
+      "source_location": "L8"
     },
     {
-      "id": "components_corporate_rationale_4",
+      "id": "ref_lucide_react",
+      "label": "lucide-react",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "FAQ.tsx",
+      "file_type": "concept",
+      "norm_label": "lucide-react",
+      "source_file": "package.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "components_corporate_rationale_5",
       "label": "TODO: texto provisorio. La oferta para empresas a\u00fan no est\u00e1 definida (formatos,\u2026",
       "_origin": "ast",
       "community": 3,
-      "community_name": "page.tsx",
+      "community_name": "FAQ.tsx",
       "file_type": "rationale",
       "norm_label": "todo: texto provisorio. la oferta para empresas aun no esta definida (formatos,...",
       "source_file": "components/Corporate.tsx",
-      "source_location": "L4"
+      "source_location": "L5"
     },
     {
       "id": "agents_skills_impeccable_reference_android",
@@ -31206,18 +31481,6 @@
       "source_location": "L5"
     },
     {
-      "id": "docs_design_descarga_material_educativo_plan_de_implementaci\u00f3n",
-      "label": "Plan de implementaci\u00f3n",
-      "_origin": "ast",
-      "community": 41,
-      "community_name": "Dise\u00f1o: descarga de material educativo con formulario",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "plan de implementacion",
-      "source_file": "docs/design/descarga-material-educativo.md",
-      "source_location": "L121"
-    },
-    {
       "id": "docs_design_descarga_material_educativo_preguntas_abiertas_para_neuron",
       "label": "Preguntas abiertas para Neuron",
       "_origin": "ast",
@@ -31262,18 +31525,6 @@
       "file_type": "code",
       "norm_label": ".agents/skills/impeccable/scripts/live-browser-session.js",
       "source_file": ".agents/skills/impeccable/scripts/live-browser-session.js",
-      "source_location": "L1"
-    },
-    {
-      "id": "product",
-      "label": "PRODUCT.md",
-      "_origin": "ast",
-      "community": 45,
-      "community_name": "Product",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "product.md",
-      "source_file": "PRODUCT.md",
       "source_location": "L1"
     },
     {
@@ -32481,30 +32732,6 @@
       "source_location": "L115"
     },
     {
-      "id": "readme",
-      "label": "README.md",
-      "_origin": "ast",
-      "community": 52,
-      "community_name": "\ud83e\udde0 Neuron - Cumplea\u00f1os Cient\u00edficos Inolvidables",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "readme.md",
-      "source_file": "README.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "readme_caracter\u00edsticas_principales_mvp",
-      "label": "\u2728 Caracter\u00edsticas Principales (MVP)",
-      "_origin": "ast",
-      "community": 52,
-      "community_name": "\ud83e\udde0 Neuron - Cumplea\u00f1os Cient\u00edficos Inolvidables",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u2728 caracteristicas principales (mvp)",
-      "source_file": "README.md",
-      "source_location": "L18"
-    },
-    {
       "id": "readme_contribuci\u00f3n_y_flujo_de_trabajo",
       "label": "\ud83e\udd1d Contribuci\u00f3n y Flujo de Trabajo",
       "_origin": "ast",
@@ -32514,7 +32741,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83e\udd1d contribucion y flujo de trabajo",
       "source_file": "README.md",
-      "source_location": "L119"
+      "source_location": "L128"
     },
     {
       "id": "readme_c\u00f3mo_ejecutar_el_proyecto_localmente",
@@ -32526,7 +32753,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\ude80 como ejecutar el proyecto localmente",
       "source_file": "README.md",
-      "source_location": "L48"
+      "source_location": "L52"
     },
     {
       "id": "readme_estructura_del_proyecto",
@@ -32538,7 +32765,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\udcc2 estructura del proyecto",
       "source_file": "README.md",
-      "source_location": "L92"
+      "source_location": "L94"
     },
     {
       "id": "readme_licencia",
@@ -32550,7 +32777,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\udcc4 licencia",
       "source_file": "README.md",
-      "source_location": "L129"
+      "source_location": "L141"
     },
     {
       "id": "readme_neuron_cumplea\u00f1os_cient\u00edficos_inolvidables",
@@ -32565,6 +32792,18 @@
       "source_location": "L1"
     },
     {
+      "id": "readme_otros_comandos",
+      "label": "Otros comandos",
+      "_origin": "ast",
+      "community": 52,
+      "community_name": "\ud83e\udde0 Neuron - Cumplea\u00f1os Cient\u00edficos Inolvidables",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "otros comandos",
+      "source_file": "README.md",
+      "source_location": "L84"
+    },
+    {
       "id": "readme_pasos",
       "label": "Pasos",
       "_origin": "ast",
@@ -32574,7 +32813,7 @@
       "node_kind": "heading",
       "norm_label": "pasos",
       "source_file": "README.md",
-      "source_location": "L57"
+      "source_location": "L59"
     },
     {
       "id": "readme_prerrequisitos",
@@ -32586,7 +32825,19 @@
       "node_kind": "heading",
       "norm_label": "prerrequisitos",
       "source_file": "README.md",
-      "source_location": "L52"
+      "source_location": "L54"
+    },
+    {
+      "id": "readme_secciones_de_la_p\u00e1gina",
+      "label": "\u2728 Secciones de la p\u00e1gina",
+      "_origin": "ast",
+      "community": 52,
+      "community_name": "\ud83e\udde0 Neuron - Cumplea\u00f1os Cient\u00edficos Inolvidables",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u2728 secciones de la pagina",
+      "source_file": "README.md",
+      "source_location": "L18"
     },
     {
       "id": "readme_sobre_el_proyecto",
@@ -32610,7 +32861,7 @@
       "node_kind": "heading",
       "norm_label": "\ud83d\udee0\ufe0f stack tecnologico",
       "source_file": "README.md",
-      "source_location": "L34"
+      "source_location": "L39"
     },
     {
       "id": "agents_skills_impeccable_reference_new_work_1_decide_what_is_already_true",
@@ -32953,7 +33204,7 @@
       "label": "Gallery.tsx",
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "gallery.tsx",
       "source_file": "components/Gallery.tsx",
@@ -32964,7 +33215,7 @@
       "label": "galleryImages",
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "galleryimages",
       "source_file": "components/Gallery.tsx",
@@ -32975,11 +33226,23 @@
       "label": "dialog.tsx",
       "_origin": "ast",
       "community": 55,
-      "community_name": "dialog.tsx",
+      "community_name": "cn",
       "file_type": "code",
       "norm_label": "dialog.tsx",
       "source_file": "components/ui/dialog.tsx",
       "source_location": "L1"
+    },
+    {
+      "id": "docs_design_descarga_material_educativo_plan_de_implementaci\u00f3n",
+      "label": "Plan de implementaci\u00f3n",
+      "_origin": "ast",
+      "community": 55,
+      "community_name": "cn",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "plan de implementacion",
+      "source_file": "docs/design/descarga-material-educativo.md",
+      "source_location": "L121"
     },
     {
       "id": "claude_skills_graphify_references_exports",
@@ -33478,6 +33741,78 @@
       "source_location": "L1"
     },
     {
+      "id": "claude_skills_impeccable_reference_audit_native_1_accessibility_voiceover_talkback",
+      "label": "1. Accessibility (VoiceOver / TalkBack)",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": ".claude/skills/impeccable/SKILL.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "1. accessibility (voiceover / talkback)",
+      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
+      "source_location": "L9"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_audit_native_2_performance",
+      "label": "2. Performance",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": ".claude/skills/impeccable/SKILL.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "2. performance",
+      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
+      "source_location": "L21"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_audit_native_3_appearance_theming",
+      "label": "3. Appearance & Theming",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": ".claude/skills/impeccable/SKILL.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "3. appearance & theming",
+      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
+      "source_location": "L33"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_audit_native_4_platform_conformance_critical",
+      "label": "4. Platform Conformance (CRITICAL)",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": ".claude/skills/impeccable/SKILL.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "4. platform conformance (critical)",
+      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
+      "source_location": "L43"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_audit_native_5_adaptivity",
+      "label": "5. Adaptivity",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": ".claude/skills/impeccable/SKILL.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "5. adaptivity",
+      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
+      "source_location": "L55"
+    },
+    {
+      "id": "claude_skills_impeccable_reference_audit_native_diagnostic_scan",
+      "label": "Diagnostic Scan",
+      "_origin": "ast",
+      "community": 59,
+      "community_name": ".claude/skills/impeccable/SKILL.md",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "diagnostic scan",
+      "source_file": ".claude/skills/impeccable/reference/audit.native.md",
+      "source_location": "L5"
+    },
+    {
       "id": "claude_skills_impeccable_reference_audit_native_recommended_actions",
       "label": "Recommended Actions",
       "_origin": "ast",
@@ -33512,102 +33847,6 @@
       "norm_label": "craft (deprecated alias)",
       "source_file": ".claude/skills/impeccable/reference/craft.md",
       "source_location": "L1"
-    },
-    {
-      "id": "claude_skills_impeccable_reference_doctor",
-      "label": ".claude/skills/impeccable/reference/doctor.md",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": ".claude/skills/impeccable/SKILL.md",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": ".claude/skills/impeccable/reference/doctor.md",
-      "source_file": ".claude/skills/impeccable/reference/doctor.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "claude_skills_impeccable_reference_doctor_monorepo_notes",
-      "label": "Monorepo notes",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": ".claude/skills/impeccable/SKILL.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "monorepo notes",
-      "source_file": ".claude/skills/impeccable/reference/doctor.md",
-      "source_location": "L45"
-    },
-    {
-      "id": "claude_skills_impeccable_reference_doctor_opting_out_of_the_boot_check",
-      "label": "Opting out of the boot check",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": ".claude/skills/impeccable/SKILL.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "opting out of the boot check",
-      "source_file": ".claude/skills/impeccable/reference/doctor.md",
-      "source_location": "L52"
-    },
-    {
-      "id": "claude_skills_impeccable_reference_doctor_step_1_run_the_pass",
-      "label": "Step 1: Run the pass",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": ".claude/skills/impeccable/SKILL.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "step 1: run the pass",
-      "source_file": ".claude/skills/impeccable/reference/doctor.md",
-      "source_location": "L13"
-    },
-    {
-      "id": "claude_skills_impeccable_reference_doctor_step_2_act_by_severity",
-      "label": "Step 2: Act by severity",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": ".claude/skills/impeccable/SKILL.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "step 2: act by severity",
-      "source_file": ".claude/skills/impeccable/reference/doctor.md",
-      "source_location": "L25"
-    },
-    {
-      "id": "claude_skills_impeccable_reference_doctor_step_3_deprecated_fields_are_binding",
-      "label": "Step 3: Deprecated fields are binding",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": ".claude/skills/impeccable/SKILL.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "step 3: deprecated fields are binding",
-      "source_file": ".claude/skills/impeccable/reference/doctor.md",
-      "source_location": "L35"
-    },
-    {
-      "id": "claude_skills_impeccable_reference_doctor_step_4_do_not_overclaim_on_truth_drift",
-      "label": "Step 4: Do not overclaim on truth drift",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": ".claude/skills/impeccable/SKILL.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "step 4: do not overclaim on truth drift",
-      "source_file": ".claude/skills/impeccable/reference/doctor.md",
-      "source_location": "L39"
-    },
-    {
-      "id": "claude_skills_impeccable_reference_doctor_what_this_owns_and_what_it_does_not",
-      "label": "What this owns, and what it does not",
-      "_origin": "ast",
-      "community": 59,
-      "community_name": ".claude/skills/impeccable/SKILL.md",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "what this owns, and what it does not",
-      "source_file": ".claude/skills/impeccable/reference/doctor.md",
-      "source_location": "L5"
     },
     {
       "id": "claude_skills_impeccable_reference_init",
@@ -35689,116 +35928,6 @@
       "source_location": "L24"
     },
     {
-      "id": "package_devdependencies",
-      "label": "devDependencies",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "devdependencies",
-      "source_file": "package.json",
-      "source_location": "L26"
-    },
-    {
-      "id": "package_devdependencies_eslint",
-      "label": "eslint",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "eslint",
-      "source_file": "package.json",
-      "source_location": "L31"
-    },
-    {
-      "id": "package_devdependencies_eslint_config_next",
-      "label": "eslint-config-next",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "eslint-config-next",
-      "source_file": "package.json",
-      "source_location": "L32"
-    },
-    {
-      "id": "package_devdependencies_tailwindcss",
-      "label": "tailwindcss",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "tailwindcss",
-      "source_file": "package.json",
-      "source_location": "L33"
-    },
-    {
-      "id": "package_devdependencies_tailwindcss_postcss",
-      "label": "@tailwindcss/postcss",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@tailwindcss/postcss",
-      "source_file": "package.json",
-      "source_location": "L27"
-    },
-    {
-      "id": "package_devdependencies_tw_animate_css",
-      "label": "tw-animate-css",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "tw-animate-css",
-      "source_file": "package.json",
-      "source_location": "L34"
-    },
-    {
-      "id": "package_devdependencies_types_node",
-      "label": "@types/node",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@types/node",
-      "source_file": "package.json",
-      "source_location": "L28"
-    },
-    {
-      "id": "package_devdependencies_types_react",
-      "label": "@types/react",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@types/react",
-      "source_file": "package.json",
-      "source_location": "L29"
-    },
-    {
-      "id": "package_devdependencies_types_react_dom",
-      "label": "@types/react-dom",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@types/react-dom",
-      "source_file": "package.json",
-      "source_location": "L30"
-    },
-    {
-      "id": "package_devdependencies_typescript",
-      "label": "typescript",
-      "_origin": "ast",
-      "community": 7,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "typescript",
-      "source_file": "package.json",
-      "source_location": "L35"
-    },
-    {
       "id": "agents_skills_impeccable_reference_polish",
       "label": ".agents/skills/impeccable/reference/polish.md",
       "_origin": "ast",
@@ -36063,30 +36192,6 @@
       "source_location": "L59"
     },
     {
-      "id": "docs_design_descarga_material_educativo",
-      "label": "descarga-material-educativo.md",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "Dise\u00f1o: ficha de experimento al pasar sobre un experimento",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "descarga-material-educativo.md",
-      "source_file": "docs/design/descarga-material-educativo.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "docs_design_ficha_experimento_hover",
-      "label": "ficha-experimento-hover.md",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "Dise\u00f1o: ficha de experimento al pasar sobre un experimento",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "ficha-experimento-hover.md",
-      "source_file": "docs/design/ficha-experimento-hover.md",
-      "source_location": "L1"
-    },
-    {
       "id": "docs_design_ficha_experimento_hover_anatom\u00eda",
       "label": "Anatom\u00eda",
       "_origin": "ast",
@@ -36229,78 +36334,6 @@
       "norm_label": "preguntas abiertas para neuron",
       "source_file": "docs/design/ficha-experimento-hover.md",
       "source_location": "L107"
-    },
-    {
-      "id": "tasks",
-      "label": "TASKS.md",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "Dise\u00f1o: ficha de experimento al pasar sobre un experimento",
-      "file_type": "document",
-      "node_kind": "page",
-      "norm_label": "tasks.md",
-      "source_file": "TASKS.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "tasks_active",
-      "label": "Active",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "Dise\u00f1o: ficha de experimento al pasar sobre un experimento",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "active",
-      "source_file": "TASKS.md",
-      "source_location": "L3"
-    },
-    {
-      "id": "tasks_done",
-      "label": "Done",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "Dise\u00f1o: ficha de experimento al pasar sobre un experimento",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "done",
-      "source_file": "TASKS.md",
-      "source_location": "L44"
-    },
-    {
-      "id": "tasks_someday",
-      "label": "Someday",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "Dise\u00f1o: ficha de experimento al pasar sobre un experimento",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "someday",
-      "source_file": "TASKS.md",
-      "source_location": "L39"
-    },
-    {
-      "id": "tasks_tasks",
-      "label": "Tasks",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "Dise\u00f1o: ficha de experimento al pasar sobre un experimento",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "tasks",
-      "source_file": "TASKS.md",
-      "source_location": "L1"
-    },
-    {
-      "id": "tasks_waiting_on",
-      "label": "Waiting On",
-      "_origin": "ast",
-      "community": 74,
-      "community_name": "Dise\u00f1o: ficha de experimento al pasar sobre un experimento",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "waiting on",
-      "source_file": "TASKS.md",
-      "source_location": "L28"
     },
     {
       "id": "claude_skills_graphify_references_query",
@@ -37187,11 +37220,22 @@
       "source_location": "L375"
     },
     {
+      "id": "components_herocluster",
+      "label": "HeroCluster.tsx",
+      "_origin": "ast",
+      "community": 80,
+      "community_name": "Reveal.tsx",
+      "file_type": "code",
+      "norm_label": "herocluster.tsx",
+      "source_file": "components/HeroCluster.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "components_reveal",
       "label": "Reveal.tsx",
       "_origin": "ast",
       "community": 80,
-      "community_name": "Reveal",
+      "community_name": "Reveal.tsx",
       "file_type": "code",
       "norm_label": "reveal.tsx",
       "source_file": "components/Reveal.tsx",
@@ -37202,40 +37246,18 @@
       "label": "offsets",
       "_origin": "ast",
       "community": 80,
-      "community_name": "Reveal",
+      "community_name": "Reveal.tsx",
       "file_type": "code",
       "norm_label": "offsets",
       "source_file": "components/Reveal.tsx",
       "source_location": "L8"
     },
     {
-      "id": "components_testimonials",
-      "label": "Testimonials.tsx",
-      "_origin": "ast",
-      "community": 80,
-      "community_name": "Reveal",
-      "file_type": "code",
-      "norm_label": "testimonials.tsx",
-      "source_file": "components/Testimonials.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "components_testimonials_testimonials",
-      "label": "testimonials",
-      "_origin": "ast",
-      "community": 80,
-      "community_name": "Reveal",
-      "file_type": "code",
-      "norm_label": "testimonials",
-      "source_file": "components/Testimonials.tsx",
-      "source_location": "L4"
-    },
-    {
       "id": "ref_framer_motion",
       "label": "framer-motion",
       "_origin": "ast",
       "community": 80,
-      "community_name": "Reveal",
+      "community_name": "Reveal.tsx",
       "file_type": "concept",
       "norm_label": "framer-motion",
       "source_file": "package.json",
@@ -37876,6 +37898,30 @@
       "norm_label": "reglas del producto (resumen de product.md)",
       "source_file": "CLAUDE.md",
       "source_location": "L31"
+    },
+    {
+      "id": "product",
+      "label": "PRODUCT.md",
+      "_origin": "ast",
+      "community": 89,
+      "community_name": "Flujo de trabajo",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "product.md",
+      "source_file": "PRODUCT.md",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme",
+      "label": "README.md",
+      "_origin": "ast",
+      "community": 89,
+      "community_name": "Flujo de trabajo",
+      "file_type": "document",
+      "node_kind": "page",
+      "norm_label": "readme.md",
+      "source_file": "README.md",
+      "source_location": "L1"
     },
     {
       "id": "agents_skills_impeccable_scripts_modern_screenshot_umd",
@@ -75667,24 +75713,12 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Corporate.tsx",
-      "source_location": "L25",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
       "source": "components_cta_ctasection",
       "target": "components_bubbles_bubbles",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "components/CTA.tsx",
-      "source_location": "L30",
-      "weight": 1.0
-    },
-    {
-      "source": "components_cta_ctasection",
-      "target": "components_reveal_reveal",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -75696,6 +75730,18 @@
     },
     {
       "source": "components_cta_ctasection",
+      "target": "components_reveal_reveal",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "components/CTA.tsx",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "components_cta_ctasection",
       "target": "components_ui_button_button",
       "relation": "calls",
       "_origin": "ast",
@@ -75703,19 +75749,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/CTA.tsx",
-      "source_location": "L50",
-      "weight": 1.0
-    },
-    {
-      "source": "components_faq_faqsection",
-      "target": "components_ui_accordion_accordioncontent",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "components/FAQ.tsx",
-      "source_location": "L101",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -75727,7 +75761,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/FAQ.tsx",
-      "source_location": "L58",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -75739,7 +75773,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/FAQ.tsx",
-      "source_location": "L73",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -75751,7 +75785,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/FAQ.tsx",
-      "source_location": "L86",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -75763,7 +75797,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/FAQ.tsx",
-      "source_location": "L90",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
@@ -75775,7 +75809,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/FAQ.tsx",
-      "source_location": "L91",
+      "source_location": "L89",
       "weight": 1.0
     },
     {
@@ -75787,7 +75821,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/FAQ.tsx",
-      "source_location": "L95",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "components_faq_faqsection",
+      "target": "components_ui_accordion_accordioncontent",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "components/FAQ.tsx",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -75883,7 +75929,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Hero.tsx",
-      "source_location": "L18",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -75895,7 +75941,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Hero.tsx",
-      "source_location": "L45",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -75907,7 +75953,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Hero.tsx",
-      "source_location": "L66",
+      "source_location": "L64",
       "weight": 1.0
     },
     {
@@ -75991,7 +76037,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L110",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
@@ -76003,7 +76049,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L112",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -76015,7 +76061,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L148",
+      "source_location": "L149",
       "weight": 1.0
     },
     {
@@ -76027,7 +76073,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L162",
+      "source_location": "L163",
       "weight": 1.0
     },
     {
@@ -76039,7 +76085,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L191",
+      "source_location": "L190",
       "weight": 1.0
     },
     {
@@ -76051,7 +76097,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L205",
+      "source_location": "L204",
       "weight": 1.0
     },
     {
@@ -76063,7 +76109,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L211",
+      "source_location": "L210",
       "weight": 1.0
     },
     {
@@ -76075,7 +76121,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L213",
+      "source_location": "L212",
       "weight": 1.0
     },
     {
@@ -76087,7 +76133,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L234",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
@@ -76099,7 +76145,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L243",
+      "source_location": "L242",
       "weight": 1.0
     },
     {
@@ -76111,7 +76157,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L265",
+      "source_location": "L264",
       "weight": 1.0
     },
     {
@@ -76123,7 +76169,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L266",
+      "source_location": "L265",
       "weight": 1.0
     },
     {
@@ -76135,7 +76181,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L274",
+      "source_location": "L273",
       "weight": 1.0
     },
     {
@@ -77135,6 +77181,18 @@
       "weight": 1.0
     },
     {
+      "source": "components_corporate",
+      "target": "lib_whatsapp_whatsapp_urls",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/Corporate.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "components_cta",
       "target": "components_ui_button_button",
       "relation": "imports",
@@ -77168,6 +77226,18 @@
       "context": "import",
       "source_file": "components/CTA.tsx",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "components_cta",
+      "target": "lib_whatsapp_whatsapp_urls",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/CTA.tsx",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -77208,7 +77278,7 @@
     },
     {
       "source": "components_faq",
-      "target": "components_ui_accordion_accordion",
+      "target": "lib_whatsapp_whatsapp_urls",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -77216,6 +77286,18 @@
       "context": "import",
       "source_file": "components/FAQ.tsx",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "components_faq",
+      "target": "components_ui_accordion_accordion",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/FAQ.tsx",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -77227,7 +77309,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "components/FAQ.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -77239,7 +77321,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "components/FAQ.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -77251,7 +77333,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "components/FAQ.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -77375,6 +77457,18 @@
       "weight": 1.0
     },
     {
+      "source": "components_hero",
+      "target": "lib_whatsapp_whatsapp_urls",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/Hero.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "components_navbar",
       "target": "components_ui_button_button",
       "relation": "imports",
@@ -77456,6 +77550,18 @@
       "context": "import",
       "source_file": "components/Pricing.tsx",
       "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "components_pricing",
+      "target": "lib_whatsapp_whatsapp_urls",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/Pricing.tsx",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -77732,6 +77838,18 @@
       "context": "import",
       "source_file": "components/ui/tabs.tsx",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "components_whatsappbutton",
+      "target": "lib_whatsapp_whatsapp_urls",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/WhatsAppButton.tsx",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -78168,6 +78286,18 @@
       "weight": 1.0
     },
     {
+      "source": "components_corporate",
+      "target": "lib_whatsapp",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/Corporate.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
       "source": "components_cta",
       "target": "ref_next",
       "relation": "imports_from",
@@ -78229,7 +78359,7 @@
     },
     {
       "source": "components_cta",
-      "target": "ref_react",
+      "target": "lib_whatsapp",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -78237,6 +78367,18 @@
       "context": "import",
       "source_file": "components/CTA.tsx",
       "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "components_cta",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/CTA.tsx",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -78289,7 +78431,7 @@
     },
     {
       "source": "components_faq",
-      "target": "components_ui_accordion",
+      "target": "lib_whatsapp",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -78297,6 +78439,18 @@
       "context": "import",
       "source_file": "components/FAQ.tsx",
       "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "components_faq",
+      "target": "components_ui_accordion",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/FAQ.tsx",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -78408,6 +78562,18 @@
       "weight": 1.0
     },
     {
+      "source": "components_hero",
+      "target": "lib_whatsapp",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/Hero.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
       "source": "components_herocluster",
       "target": "ref_next",
       "relation": "imports_from",
@@ -78501,6 +78667,18 @@
       "context": "import",
       "source_file": "components/Pricing.tsx",
       "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "components_pricing",
+      "target": "lib_whatsapp",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/Pricing.tsx",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -79042,6 +79220,18 @@
       "context": "import",
       "source_file": "components/WhatsAppButton.tsx",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "components_whatsappbutton",
+      "target": "lib_whatsapp",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "components/WhatsAppButton.tsx",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -110001,7 +110191,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Corporate.tsx",
-      "source_location": "L8",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -110012,7 +110202,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/CTA.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -110023,7 +110213,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/FAQ.tsx",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0
     },
     {
@@ -110034,7 +110224,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/FAQ.tsx",
-      "source_location": "L55",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -110045,7 +110235,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/FAQ.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -110078,7 +110268,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Hero.tsx",
-      "source_location": "L15",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -110089,7 +110279,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Hero.tsx",
-      "source_location": "L9",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -110127,13 +110317,24 @@
     },
     {
       "source": "components_pricing",
+      "target": "components_pricing_animatedtabtrigger",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "components/Pricing.tsx",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "components_pricing",
       "target": "components_pricing_microplans",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Pricing.tsx",
-      "source_location": "L12",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -110144,7 +110345,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Pricing.tsx",
-      "source_location": "L134",
+      "source_location": "L135",
       "weight": 1.0
     },
     {
@@ -110155,7 +110356,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Pricing.tsx",
-      "source_location": "L137",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -110166,7 +110367,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Pricing.tsx",
-      "source_location": "L145",
+      "source_location": "L146",
       "weight": 1.0
     },
     {
@@ -110177,7 +110378,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Pricing.tsx",
-      "source_location": "L172",
+      "source_location": "L173",
       "weight": 1.0
     },
     {
@@ -110188,7 +110389,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Pricing.tsx",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -110199,18 +110400,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Pricing.tsx",
-      "source_location": "L92",
-      "weight": 1.0
-    },
-    {
-      "source": "components_pricing",
-      "target": "components_pricing_animatedtabtrigger",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "components/Pricing.tsx",
-      "source_location": "L99",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -110793,7 +110983,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/WhatsAppButton.tsx",
-      "source_location": "L3",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -111080,6 +111270,28 @@
       "confidence_score": 1.0,
       "source_file": "lib/utils.ts",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_whatsapp",
+      "target": "lib_whatsapp_whatsappurl",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/whatsapp.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_whatsapp",
+      "target": "lib_whatsapp_whatsapp_urls",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/whatsapp.ts",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -111596,7 +111808,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L52",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -111607,18 +111819,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L57",
+      "source_location": "L59",
       "weight": 1.0
     },
     {
-      "source": "readme_neuron_cumplea\u00f1os_cient\u00edficos_inolvidables",
-      "target": "readme_contribuci\u00f3n_y_flujo_de_trabajo",
+      "source": "readme_c\u00f3mo_ejecutar_el_proyecto_localmente",
+      "target": "readme_otros_comandos",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L119",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -111634,13 +111846,24 @@
     },
     {
       "source": "readme_neuron_cumplea\u00f1os_cient\u00edficos_inolvidables",
+      "target": "readme_contribuci\u00f3n_y_flujo_de_trabajo",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_neuron_cumplea\u00f1os_cient\u00edficos_inolvidables",
       "target": "readme_licencia",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L129",
+      "source_location": "L141",
       "weight": 1.0
     },
     {
@@ -111651,7 +111874,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L34",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -111662,7 +111885,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L48",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -111673,12 +111896,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L92",
+      "source_location": "L94",
       "weight": 1.0
     },
     {
       "source": "readme_sobre_el_proyecto",
-      "target": "readme_caracter\u00edsticas_principales_mvp",
+      "target": "readme_secciones_de_la_p\u00e1gina",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -111706,7 +111929,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L28",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -111728,7 +111951,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L39",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -111739,7 +111962,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L44",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -112117,14 +112340,14 @@
       "weight": 1.0
     },
     {
-      "source": "components_corporate_rationale_4",
+      "source": "components_corporate_rationale_5",
       "target": "components_corporate",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Corporate.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -113800,6 +114023,39 @@
       "weight": 1.0
     },
     {
+      "source": "readme",
+      "target": "claude",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "tasks",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L137",
+      "weight": 1.0
+    },
+    {
+      "source": "readme",
+      "target": "product",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
       "source": "agents_skills_impeccable_scripts_live_browser",
       "target": "agents_skills_impeccable_scripts_live_browser_init",
       "relation": "indirect_call",
@@ -115370,8 +115626,20 @@
       "source_file": "docs/design/ficha-experimento-hover.md",
       "source_location": "L119",
       "weight": 1.0
+    },
+    {
+      "source": "tasks_someday",
+      "target": "lib_whatsapp_whatsappurl",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "whatsappUrl()",
+      "source_file": "TASKS.md",
+      "source_location": "L37",
+      "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0627116bbecd71596801310007742f380601eefc"
+  "built_at_commit": "a2745e87b1e09353563114a614a65ef0dd148cb4"
 }
