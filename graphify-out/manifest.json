@@ -546,21 +546,21 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1790997027.1586747,
-    "seen": 1790997132.6529148,
-    "ast_hash": "4b456fd76c953b397bc3d28291e7f7c8",
+    "mtime": 1791003515.998866,
+    "seen": 1791003538.8439918,
+    "ast_hash": "d8d638942afe4d691be505d650cc1c78",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
-    "mtime": 1790986758.1654313,
-    "seen": 1790986899.3694162,
-    "ast_hash": "20c9580392465d068d836d4bdad49b41",
+    "mtime": 1791003515.998866,
+    "seen": 1791003538.843994,
+    "ast_hash": "a8c00e1558b3340d04c98abd3461f37d",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1790986781.1079702,
-    "seen": 1790986899.3694174,
-    "ast_hash": "8d66ed517be3502b1d95ebd9721dde24",
+    "mtime": 1791003516.0013208,
+    "seen": 1791003538.843995,
+    "ast_hash": "e7f5b19054b2d385acc5b00e428c9fcf",
     "semantic_hash": ""
   },
   "app/icon.png": {
@@ -780,15 +780,15 @@
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1791003183.9875262,
-    "seen": 1791003201.7126703,
-    "ast_hash": "58bc214b8e2e29dada017d1bf0256257",
+    "mtime": 1791003532.9429436,
+    "seen": 1791003538.843996,
+    "ast_hash": "c985a7bfc65aef0e4226744bc3ca22aa",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {
-    "mtime": 1791003183.986773,
-    "seen": 1791003201.712672,
-    "ast_hash": "baeeae2de0ec8fee25b3f6db62d0387e",
+    "mtime": 1791003248.3751967,
+    "seen": 1791003538.8439975,
+    "ast_hash": "1f6e330332e5494c4abe424e9a832fbb",
     "semantic_hash": ""
   },
   "docs/design/ficha-experimento-hover.md": {

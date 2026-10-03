@@ -4,22 +4,26 @@
 
 Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, después el desarrollo.
 
+- [ ] **Conectar las fotos de los experimentos** - siguiente paso (el usuario las deja el 2026-10-04)
+  - Van en `public/images/experiments/` (carpeta ya creada en la laptop). Nombres sugeridos = slugs de `lib/experiments.ts` (`lampara-de-lava.jpg`, `repollimetro.jpg`...); si llegan con otro nombre, renombrar
+  - Declarar cada una en el campo `image` del catálogo, revisar el encuadre en la ficha (proporción 15:7) y publicar
 - [ ] **Implementar la descarga de material educativo con formulario (región y ocupación)**
   - Diseño: [docs/design/descarga-material-educativo.md](docs/design/descarga-material-educativo.md)
-  - Destino de las respuestas: evaluado en el diseño; recomendado **Google Sheets** (Neuron ve el reporte en una planilla). Falta aprobarlo y crear la planilla
+  - Destino de las respuestas: evaluado en el diseño; recomendado **Google Sheets** (Neuron ve el reporte en una planilla)
+  - Pendiente del usuario: aprobar Google Sheets, crear la planilla en la cuenta de Neuron (Claude entrega el script de Apps Script), decidir si se registra el origen de la visita
   - Bloqueado también por el PDF del material (Waiting On)
 
 ## Waiting On
 
 - [ ] **Nuevos precios y contenido de los planes** - de Neuron, since 2026-10-03. Pedido inicial: Micro $170.000 con "los primeros dos" experimentos y Macro $220.000 con "los 3 experimentos de cada uno"
   - Falta confirmar si cambian solo los precios o también qué experimentos y planes muestra cada pestaña. No tocar `components/Pricing.tsx` hasta tener la confirmación
+  - Al rehacer los planes: incluir Pelea de robots y Anillos de humo si corresponde (ya tienen ficha) y pasar los experimentos a slugs de `lib/experiments.ts`
 - [ ] **Dominio de producción** - since 2026-10-02, aún no se compra. Al tenerlo: corregir el enlace del README (`neuron-web.vercel.app` es la app de otra persona) y reemplazar `metadataBase` en `app/layout.tsx` (hoy usa el dominio de producción de Vercel)
 - [ ] **Datos de los experimentos** - de Neuron, since 2026-10-02
-  - Fotos: van en `public/images/experiments/<slug>.jpg` (slugs en `lib/experiments.ts`); hoy solo Slime tiene foto
+  - Fotos: el usuario las trae el 2026-10-04 (ver Active); hoy solo Slime tiene foto
   - Textos que faltan: Fiesta de gases, Pasta de dientes (y "experimental"), Lancha supersónica, Arcoíris viajero, Colores danzantes, Carrera de autos
   - Nombres oficiales para unificar las variantes de los planes al rehacerlos
 - [ ] **Material educativo** - de Neuron, since 2026-10-02: nombre, PDF final, imagen de portada y validación de las opciones de ocupación
-- [ ] **Precios definitivos** - de Neuron; los planes de `components/Pricing.tsx` usan valores provisorios
 - [ ] **Oferta para empresas** - de Neuron; formatos, precios y cobertura (TODO en `components/Corporate.tsx`)
 - [ ] **Cobertura geográfica y rango de edades** - de Neuron; pendientes según PRODUCT.md
 
@@ -29,6 +33,7 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
+- [x] ~~Evaluar dónde guardar las respuestas del formulario de descarga (recomendado Google Sheets)~~ (2026-10-03, PR #29)
 - [x] ~~Ficha de experimento en Planes (hover, toque y teclado) con los textos de Neuron para 8 experimentos~~ (2026-10-03, PR #28)
 - [x] ~~Revisión de accesibilidad mínima: Lighthouse de 92 a 100 (galería operable con teclado, contraste AA, movimiento reducido en scroll y transiciones CSS)~~ (2026-10-03, PR #27)
 - [x] ~~SEO social: Open Graph y tarjeta de X con imagen generada (`app/opengraph-image.tsx`, JPEG de 77 KB para que WhatsApp la muestre)~~ (2026-10-03, PR #26)
@@ -40,8 +45,8 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 - [x] ~~Reemplazar los testimonios mock por los reales (Elisa, Fernando y Victoria)~~ (2026-10-02, PR #20)
 - [x] ~~Excluir `.agents/`, `.claude/` y `graphify-out/` de ESLint~~ (2026-10-02, PR #19)
 - [x] ~~Centralizar el enlace de WhatsApp en `lib/whatsapp.ts`~~ (2026-10-02, PR #18)
-- [x] ~~Actualizar README.md (stack, Node 20.9+, logo, estructura, secciones, URL del repo, flujo de trabajo)~~ (2026-10-02, rama `docs/actualiza-readme`)
-- [x] ~~Dejar de versionar archivos que no corresponden (caché y respaldo de graphify, settings.local.json, .bak, SVG de plantilla)~~ (2026-10-02, rama `chore/limpieza-archivos-versionados`)
+- [x] ~~Actualizar README.md (stack, Node 20.9+, logo, estructura, secciones, URL del repo, flujo de trabajo)~~ (2026-10-02, PR #16 y #17)
+- [x] ~~Dejar de versionar archivos que no corresponden (caché y respaldo de graphify, settings.local.json, .bak, SVG de plantilla)~~ (2026-10-02, PR #15)
 - [x] ~~Reparar `.claude/skills/impeccable` (symlink roto reemplazado por la copia versionada)~~ (2026-10-02)
 - [x] ~~Recibir los textos de los testimonios reales~~ (2026-10-02)
 - [x] ~~Instrucciones de flujo de trabajo en CLAUDE.md y backlog en TASKS.md~~ (2026-10-02, PR #14)
