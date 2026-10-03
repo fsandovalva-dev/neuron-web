@@ -4,11 +4,6 @@
 
 Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, después el desarrollo.
 
-- [ ] **Actualizar README.md** - está desfasado respecto al código
-  - Dice Next.js 14 (es 16, con React 19 y Tailwind 4); menciona `tailwind.config.ts`, que ya no existe
-  - El banner apunta a `public/neuron-science-logo-colorful.jpg`, que no existe; el logo es `public/images/logo-neuron.png`
-  - Faltan en la estructura: Testimonials, Pricing, Corporate, Reveal, Bubbles, HeroCluster
-  - La URL de clonado apunta a `Breezlyx/neuron-web`; el remoto actual es `fsandovalva-dev/neuron-web`
 - [ ] **Centralizar el enlace de WhatsApp** - el número `56976257106` está repetido en Hero, Pricing, Corporate, CTA y FAQ
   - Pasarlo a una constante compartida (p. ej. en `lib/`) con los distintos mensajes prellenados
 - [ ] **Reemplazar los testimonios mock por los reales** - `components/Testimonials.tsx`, hardcodeados en el componente
@@ -43,6 +38,7 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
+- [x] ~~Actualizar README.md (stack, Node 20.9+, logo, estructura, secciones, URL del repo, flujo de trabajo)~~ (2026-10-02, rama `docs/actualiza-readme`)
 - [x] ~~Dejar de versionar archivos que no corresponden (caché y respaldo de graphify, settings.local.json, .bak, SVG de plantilla)~~ (2026-10-02, rama `chore/limpieza-archivos-versionados`)
 - [x] ~~Reparar `.claude/skills/impeccable` (symlink roto reemplazado por la copia versionada)~~ (2026-10-02)
 - [x] ~~Recibir los textos de los testimonios reales~~ (2026-10-02)

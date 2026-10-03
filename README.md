@@ -1,8 +1,8 @@
 # 🧠 Neuron - Cumpleaños Científicos Inolvidables
 
-![Neuron Banner](/public/neuron-science-logo-colorful.jpg)
+![Logo de Neuron](/public/images/logo-neuron.png)
 
-> **MVP (Producto Mínimo Viable)** para el sitio web de Neuron, una empresa que lleva la magia de la ciencia y los experimentos a cumpleaños infantiles.
+> **MVP (Producto Mínimo Viable)** para el sitio web de Neuron, una empresa que lleva la magia de la ciencia y los experimentos a cumpleaños infantiles y eventos de empresa.
 
 [![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=neuron-web)](https://neuron-web.vercel.app/)
 *Haz clic para ver el despliegue en vivo.*
@@ -11,55 +11,57 @@
 
 ## 📖 Sobre el Proyecto
 
-Este proyecto es el sitio web de presentación y punto de contacto principal para **Neuron**. El objetivo del MVP es validar la propuesta de valor, mostrar los servicios ofrecidos, transmitir confianza a los padres y facilitar el contacto directo para cotizaciones.
+Este proyecto es el sitio web de presentación y punto de contacto principal para **Neuron**. El objetivo del MVP es validar la propuesta de valor, mostrar los servicios ofrecidos, transmitir confianza a los padres y facilitar el contacto directo para cotizaciones por WhatsApp.
 
-El diseño está enfocado en ser vibrante, divertido y profesional, utilizando una paleta de colores llamativa y elementos visuales relacionados con la ciencia.
+El diseño es vibrante, divertido y profesional, con los colores del logo (rosa, celeste y amarillo) y elementos visuales relacionados con la ciencia. El detalle de público, marca y principios está en [PRODUCT.md](PRODUCT.md).
 
-### ✨ Características Principales (MVP)
+### ✨ Secciones de la página
 
-* **Hero Section Impactante:** Una portada atractiva que comunica la propuesta de valor en segundos con un claro llamado a la acción.
-* **Catálogo de Servicios:** Sección que detalla los experimentos disponibles (ej: Slime Galáctico, Volcán) utilizando tarjetas interactivas con iconos.
-* **Galería de Confianza:** Un lightbox con fotos reales de eventos pasados para mostrar la experiencia y generar seguridad en los clientes.
-* **Preguntas Frecuentes (FAQs):** Sección de acordeón para resolver dudas comunes de los padres de forma rápida.
-* **Múltiples Puntos de Contacto:**
-    * Barra de navegación con botón de cotización directo.
-    * Botón flotante de WhatsApp visible en todo el sitio.
-    * Sección final de "Llamado a la Acción" (CTA) para cerrar la conversión.
-* **Diseño Responsivo:** Totalmente adaptado para funcionar perfectamente en dispositivos móviles y escritorio.
-* **UX/UI Pulido:** Incluye navegación con scroll suave, animaciones sutiles y un menú móvil optimizado.
-* **SEO Básico:** Configuración de metadatos (título, descripción) y favicon.
+* **Hero:** propuesta de valor, llamado a cotizar y un racimo de fotos en burbujas que se mueven al hacer scroll.
+* **Experimentos:** el experimento destacado y dos secundarios, con foto y descripción.
+* **Opiniones:** testimonios de familias en globos de diálogo.
+* **Planes y Precios:** planes Micro (1 hora) y Macro (2 horas) en pestañas, cada uno con su botón de cotización.
+* **Empresas:** propuesta para eventos corporativos.
+* **Galería:** fotos reales de eventos pasados con vista ampliada (lightbox).
+* **Preguntas Frecuentes:** acordeón con las dudas comunes de los padres.
+* **Llamado a la Acción final:** cierre con botón a WhatsApp.
+
+Además:
+
+* **Contacto en todo el sitio:** botón de cotizar en la barra de navegación, botón flotante de WhatsApp y enlaces a WhatsApp con mensajes prellenados según la sección.
+* **Diseño responsivo:** adaptado a móvil y escritorio, con menú lateral en móvil.
+* **Animaciones con criterio:** entradas al hacer scroll y burbujas decorativas, que respetan la preferencia de movimiento reducido del sistema.
+* **Accesibilidad básica:** enlace para saltar al contenido, foco visible y textos alternativos en las imágenes.
+* **SEO básico:** título, descripción, palabras clave y favicon.
 
 ---
 
 ## 🛠️ Stack Tecnológico
 
-El proyecto está construido con un stack moderno, centrado en el rendimiento y la experiencia del desarrollador.
-
-* **Framework:** [Next.js 14 (App Router)](https://nextjs.org/) - Para renderizado del lado del servidor (SSR), optimización y estructura de rutas.
-* **Lenguaje:** [TypeScript](https://www.typescriptlang.org/) - Para un código más robusto, mantenible y con tipado estático.
-* **Estilos:** [Tailwind CSS](https://tailwindcss.com/) - Un framework CSS de utilidad primero para un diseño rápido y consistente.
-* **Componentes UI:** [shadcn/ui](https://ui.shadcn.com/) - Una colección de componentes de interfaz de usuario reutilizables y accesibles (basados en Radix UI).
-* **Iconos:** [Lucide React](https://lucide.dev/) - Una biblioteca de iconos limpia y consistente.
-* **Animaciones:** CSS nativo y clases de utilidad de Tailwind.
-* **Despliegue:** [Vercel](https://vercel.com/) - Plataforma de frontend para despliegue instantáneo y escalable.
+* **Framework:** [Next.js 16 (App Router)](https://nextjs.org/) con [React 19](https://react.dev/).
+* **Lenguaje:** [TypeScript](https://www.typescriptlang.org/).
+* **Estilos:** [Tailwind CSS 4](https://tailwindcss.com/). Los colores de marca y las tipografías se definen como tokens en `app/globals.css` (no hay `tailwind.config.ts`).
+* **Componentes UI:** [shadcn/ui](https://ui.shadcn.com/) sobre [Radix UI](https://www.radix-ui.com/).
+* **Animaciones:** [Framer Motion](https://motion.dev/) y `tw-animate-css`.
+* **Iconos:** [Lucide React](https://lucide.dev/).
+* **Tipografías:** Bricolage Grotesque (títulos) y Figtree (texto), vía `next/font`.
+* **Despliegue:** [Vercel](https://vercel.com/).
 
 ---
 
 ## 🚀 Cómo Ejecutar el Proyecto Localmente
 
-Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local.
-
 ### Prerrequisitos
 
-* Tener instalado [Node.js](https://nodejs.org/) (versión 18.17.0 o superior recomendada).
-* Un gestor de paquetes como `npm`, `yarn`, `pnpm` o `bun`.
+* [Node.js](https://nodejs.org/) 20.9 o superior (requisito de Next.js 16).
+* npm (incluido con Node.js).
 
 ### Pasos
 
 1.  **Clona el repositorio:**
 
     ```bash
-    git clone [https://github.com/Breezlyx/neuron-web.git](https://github.com/Breezlyx/neuron-web.git)
+    git clone https://github.com/fsandovalva-dev/neuron-web.git
     cd neuron-web
     ```
 
@@ -67,62 +69,72 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local.
 
     ```bash
     npm install
-    # o si usas otro gestor:
-    # yarn install
-    # pnpm install
-    # bun install
     ```
 
 3.  **Ejecuta el servidor de desarrollo:**
 
     ```bash
     npm run dev
-    # o
-    # yarn dev
-    # pnpm dev
-    # bun dev
     ```
 
 4.  **Abre en tu navegador:**
 
-    Visita [http://localhost:3000](http://localhost:3000) para ver la aplicación en funcionamiento. ¡El sitio se actualizará automáticamente mientras editas el código!
+    Visita [http://localhost:3000](http://localhost:3000). El sitio se actualiza automáticamente mientras editas el código.
+
+### Otros comandos
+
+| Comando | Qué hace |
+|---|---|
+| `npm run build` | Compila la versión de producción |
+| `npm run start` | Sirve la versión compilada |
+| `npm run lint` | Revisa el código con ESLint |
 
 ---
 
 ## 📂 Estructura del Proyecto
 
-Una visión general rápida de la estructura de archivos principal (Next.js App Router).
 ```
 neuron-web/
-├── app/ 
-│   ├── layout.tsx # Layout raíz (navbar, botón flotante, metadatos)
-│   ├── page.tsx # Página de inicio (Home) con todas las secciones 
-│   ├── globals.css # Estilos globales y configuración de Tailwind 
-│   └── icon.png # Favicon del sitio 
-├── components/ # Componentes React reutilizables 
-│   ├── ui/ # Componentes base de shadcn/ui 
-│   ├── Navbar.tsx # Barra de navegación superior 
-│   ├── Hero.tsx # Sección de portada 
-│   ├── Services.tsx # Catálogo de experimentos 
-│   ├── Gallery.tsx # Galería de fotos con Lightbox 
-│   ├── FAQ.tsx # Sección de preguntas frecuentes 
-│   ├── CTA.tsx # Sección final de llamado a la acción 
-│   └── WhatsAppButton.tsx # Botón flotante de contacto 
-├── public/ # Activos estáticos (imágenes, iconos) 
-│   ├── images/ 
-│   └── ... 
-├── tailwind.config.ts # Configuración de Tailwind CSS (colores, fuentes) 
-└── ...
+├── app/
+│   ├── layout.tsx          # Layout raíz: tipografías, metadatos, navbar y botón de WhatsApp
+│   ├── page.tsx            # Página de inicio con todas las secciones
+│   ├── globals.css         # Tailwind y tokens de diseño (colores de marca, tipografías)
+│   └── icon.png            # Favicon
+├── components/
+│   ├── ui/                 # Componentes base de shadcn/ui
+│   ├── Navbar.tsx          # Barra de navegación con menú lateral en móvil
+│   ├── Hero.tsx            # Portada
+│   ├── HeroCluster.tsx     # Fotos en burbujas del hero, con movimiento al hacer scroll
+│   ├── Services.tsx        # Experimentos
+│   ├── Testimonials.tsx    # Opiniones
+│   ├── Pricing.tsx         # Planes y precios
+│   ├── Corporate.tsx       # Eventos para empresas
+│   ├── Gallery.tsx         # Galería con lightbox
+│   ├── FAQ.tsx             # Preguntas frecuentes
+│   ├── CTA.tsx             # Llamado a la acción final
+│   ├── WhatsAppButton.tsx  # Botón flotante de contacto
+│   ├── Reveal.tsx          # Animación de entrada al hacer scroll
+│   └── Bubbles.tsx         # Burbujas decorativas de fondo
+├── lib/utils.ts            # Utilidades (cn)
+├── public/images/          # Logo, fotos de la galería y de los experimentos
+├── docs/design/            # Especificaciones de diseño de features
+├── PRODUCT.md              # Público, marca y principios del producto
+├── TASKS.md                # Backlog del proyecto
+└── CLAUDE.md               # Instrucciones de trabajo para Claude Code
 ```
+
 ---
 
 ## 🤝 Contribución y Flujo de Trabajo
 
-Este proyecto sigue un flujo de trabajo de **Feature Branches**.
+Este proyecto sigue un flujo de trabajo de **Feature Branches**:
 
 1.  La rama `master` contiene el código de producción estable.
-2.  El desarrollo de nuevas características se realiza en ramas separadas (ej: `feature/nueva-seccion`).
-3.  Los cambios se integran a `master` mediante **Pull Requests (PRs)** en GitHub.
+2.  Cada tarea se desarrolla en su propia rama creada desde `master`: `<tipo>/<descripcion-corta>`, con tipo `feature`, `fix`, `docs`, `style`, `refactor` o `chore`.
+3.  Los commits usan un prefijo convencional y descripción en español (por ejemplo `feat: agrega ficha de experimentos`).
+4.  Los cambios se integran a `master` mediante **Pull Requests** en GitHub.
+
+Las tareas pendientes están en [TASKS.md](TASKS.md). El flujo completo está en [CLAUDE.md](CLAUDE.md).
 
 ---
 
