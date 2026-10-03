@@ -192,14 +192,14 @@
     "semantic_hash": ""
   },
   "next.config.ts": {
-    "mtime": 1790351578.046287,
-    "seen": 1790376414.0598176,
-    "ast_hash": "025f4fcb6024b3524d19492cf7ce54a2",
+    "mtime": 1790992398.3632908,
+    "seen": 1790992545.0016255,
+    "ast_hash": "2574e84c2a10e4baf257b4b7abd9514a",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1790989726.0661592,
-    "seen": 1790991200.6787925,
+    "mtime": 1790991252.2172332,
+    "seen": 1790992545.0016322,
     "ast_hash": "173616e93bb92f6d35478c349e6d7b93",
     "semantic_hash": ""
   },
@@ -780,9 +780,9 @@
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1790991189.5370326,
-    "seen": 1790991200.6980677,
-    "ast_hash": "19c4d1d51f6ea82f33a5e2a381524862",
+    "mtime": 1790992501.363967,
+    "seen": 1790992545.0321517,
+    "ast_hash": "058bfeee9b4824c3a4a67bbc6e1cbf72",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {
