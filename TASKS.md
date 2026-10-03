@@ -4,10 +4,6 @@
 
 Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, después el desarrollo.
 
-- [ ] **Que el contenido se vea aunque el JavaScript no cargue** - hoy las secciones con `Reveal` y las tarjetas de Planes se renderizan en el servidor con `opacity: 0` y solo aparecen al hidratar
-  - Si el JS falla o tarda (red lenta, error, equipo sin batería), la página se ve vacía. Pasó al abrir el servidor de desarrollo desde otro PC
-  - Renderizar visible en el servidor y animar solo después de hidratar, respetando `prefers-reduced-motion`
-- [ ] **Corregir el enlace del sitio en el README** - `neuron-web.vercel.app` es la app de otra persona ("Create Next App"); falta saber el dominio real de producción
 - [ ] **Implementar la ficha de experimento al pasar sobre un experimento** - en las tarjetas de Planes y Precios
   - Diseño: [docs/design/ficha-experimento-hover.md](docs/design/ficha-experimento-hover.md)
   - Se puede implementar ya con textos borrador e imágenes placeholder marcados; las preguntas abiertas están en Waiting On
@@ -17,6 +13,7 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Waiting On
 
+- [ ] **Dominio de producción** - since 2026-10-02, aún no se compra. Al tenerlo: corregir el enlace del README (`neuron-web.vercel.app` es la app de otra persona) y agregar `metadataBase` para SEO
 - [ ] **Datos de los experimentos** - de Neuron, since 2026-10-02
   - Nombres oficiales (hay variantes: "Lámpara" / "Lámpara de lava", "Fluido no newtoniano" / "newtoneano", "Luciérnagas" / "Luciérnagas electrónicas")
   - ¿"Pasta de dientes experimental" es la misma que "Pasta de dientes de elefante"?
@@ -37,7 +34,8 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
-- [x] ~~Permitir abrir el servidor de desarrollo desde otro equipo (`allowedDevOrigins` para 192.168.x.x y Tailscale)~~ (2026-10-02, rama `fix/acceso-dev-red-local`)
+- [x] ~~Contenido visible aunque el JavaScript no cargue (`Reveal` y tarjetas de Planes visibles desde el servidor)~~ (2026-10-02, rama `fix/contenido-visible-sin-js`)
+- [x] ~~Permitir abrir el servidor de desarrollo desde otro equipo (`allowedDevOrigins` para 192.168.x.x y Tailscale)~~ (2026-10-02, PR #22)
 - [x] ~~Actualizar Next.js a 16.3.8 por vulnerabilidades críticas (DoS, postcss, sharp) y alinear eslint-config-next~~ (2026-10-02, PR #21)
 - [x] ~~Reemplazar los testimonios mock por los reales (Elisa, Fernando y Victoria)~~ (2026-10-02, PR #20)
 - [x] ~~Excluir `.agents/`, `.claude/` y `graphify-out/` de ESLint~~ (2026-10-02, PR #19)

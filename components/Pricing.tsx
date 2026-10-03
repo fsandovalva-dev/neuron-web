@@ -174,6 +174,12 @@ export function PricingSection() {
   // Estado para la pestaña activa y el menú móvil
   const [isOpen, setIsOpen] = useState(false);
   const [activeTab, setActiveTab] = useState("micro");
+  // La primera carga se muestra sin animar (visible aunque el JS tarde); la entrada solo se anima al cambiar de pestaña.
+  const [hasSwitchedTab, setHasSwitchedTab] = useState(false);
+  const changeTab = (value: string) => {
+    setActiveTab(value);
+    setHasSwitchedTab(true);
+  };
   const triggerHighlight = () => {
     // Creamos y despachamos un evento personalizado llamado 'highlight-cta'
     window.dispatchEvent(new Event("highlight-cta"));
@@ -204,7 +210,7 @@ export function PricingSection() {
         <Tabs
           defaultValue="micro"
           value={activeTab}
-          onValueChange={setActiveTab}
+          onValueChange={changeTab}
           className="w-full"
         >
           <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8 p-1 bg-white rounded-lg">
@@ -234,7 +240,7 @@ export function PricingSection() {
             <motion.div
             key={activeTab}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-              initial="initial"
+              initial={hasSwitchedTab ? "initial" : false}
               animate="animate"
               variants={fadeInUpAnimation}
             >
@@ -249,7 +255,7 @@ export function PricingSection() {
             <motion.div
             key={activeTab + "macro"}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
-              initial="initial"
+              initial={hasSwitchedTab ? "initial" : false}
               animate="animate"
               variants={fadeInUpAnimation}
             >

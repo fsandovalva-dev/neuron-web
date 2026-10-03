@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "components/Pricing.tsx": {
-    "mtime": 1790987910.120527,
-    "seen": 1790987949.9615312,
-    "ast_hash": "9d0ddca4ef3467a8365b885b6624614e",
+    "mtime": 1790992964.9399998,
+    "seen": 1790993108.3182583,
+    "ast_hash": "bf0f7100f97c7b275e334b4e7302daef",
     "semantic_hash": ""
   },
   "components/Services.tsx": {
@@ -192,9 +192,9 @@
     "semantic_hash": ""
   },
   "next.config.ts": {
-    "mtime": 1790992398.3632908,
-    "seen": 1790992545.0016255,
-    "ast_hash": "2574e84c2a10e4baf257b4b7abd9514a",
+    "mtime": 1790992612.37156,
+    "seen": 1790993108.3230655,
+    "ast_hash": "81827349e2d8e09a2fcf4a9a9a04700d",
     "semantic_hash": ""
   },
   "package.json": {
@@ -774,15 +774,15 @@
     "semantic_hash": ""
   },
   "components/Reveal.tsx": {
-    "mtime": 1790978215.5202248,
-    "seen": 1790978368.8891363,
-    "ast_hash": "5a6c09fcb950b34f2b9fdca387c1ffc6",
+    "mtime": 1790992949.8522313,
+    "seen": 1790993108.3182683,
+    "ast_hash": "16b97cce2d110dff81e11134104ddd35",
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1790992501.363967,
-    "seen": 1790992545.0321517,
-    "ast_hash": "058bfeee9b4824c3a4a67bbc6e1cbf72",
+    "mtime": 1790993085.3147428,
+    "seen": 1790993108.3623836,
+    "ast_hash": "888bda835255ad3cdcbd9d940484a88b",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {

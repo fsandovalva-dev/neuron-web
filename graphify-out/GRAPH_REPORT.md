@@ -1,25 +1,25 @@
 # Graph Report - neuron-web  (2026-10-02)
 
 ## Corpus Check
-- 175 files · ~1,017,063 words
+- 175 files · ~1,017,160 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 15 file(s) not represented in the graph (top: .toml 8, (none) 4, .cmd 2)
 
 ## Summary
-- 3291 nodes · 6612 edges · 165 communities (160 shown, 5 thin omitted)
+- 3292 nodes · 6613 edges · 164 communities (159 shown, 5 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 133 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7a941718`
+- Built from commit: `47d085ea`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - sheet.tsx
-- Pricing.tsx
+- cn
 - package.json
-- page.tsx
+- FAQ.tsx
 - components.json
 - compilerOptions
 - .agents/skills/impeccable/scripts/live-browser.js
@@ -68,7 +68,7 @@
 - Handle `generate`
 - el
 - Generate Report
-- cn
+- $impeccable hooks
 - New visual work
 - optimize.md
 - dialog.tsx
@@ -96,7 +96,7 @@
 - Common Effects
 - Three.js Lighting
 - showToast
-- Reveal.tsx
+- Visualize: Direction Comps & Asset Production
 - Common Cognitive Load Violations
 - iOS platform
 - graphify reference: add a URL and watch a folder
@@ -105,7 +105,7 @@
 - Operate mode depth (and Read notes)
 - graphify reference: GitHub clone and cross-repo merge
 - graphify reference: transcribe video and audio
-- FAQ.tsx
+- Diagnostic Scan
 - .claude/CLAUDE.md
 - extraction-spec.md
 - Shape
@@ -180,7 +180,6 @@
 - enableInlineEdit
 - Heuristics Scoring Guide
 - Command guidance
-- .claude/skills/impeccable/reference/doctor.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `cn()` - 40 edges
@@ -195,7 +194,7 @@
 10. `initGlobalBar()` - 30 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Active` --references--> `Reveal()`  [INFERRED]
+- `Done` --references--> `Reveal()`  [INFERRED]
   TASKS.md → components/Reveal.tsx
 - `Plan de implementación` --references--> `FAQSection()`  [INFERRED]
   docs/design/descarga-material-educativo.md → components/FAQ.tsx
@@ -209,23 +208,23 @@
 ## Import Cycles
 - None detected.
 
-## Communities (165 total, 5 thin omitted)
+## Communities (164 total, 5 thin omitted)
 
 ### Community 0 - "sheet.tsx"
 Cohesion: 0.15
 Nodes (18): app_globals, bricolage, figtree, metadata, RootLayout(), menuDots, Navbar(), Sheet() (+10 more)
 
-### Community 1 - "Pricing.tsx"
-Cohesion: 0.17
-Nodes (16): AnimatedTabTrigger(), fadeInUpAnimation, macroPlans, microPlans, Plan, PlanCard(), planTones, PricingSection() (+8 more)
+### Community 1 - "cn"
+Cohesion: 0.13
+Nodes (28): AnimatedTabTrigger(), fadeInUpAnimation, macroPlans, microPlans, Plan, PlanCard(), planTones, PricingSection() (+20 more)
 
 ### Community 2 - "package.json"
-Cohesion: 0.08
-Nodes (25): Separator(), eslintConfig, name, private, scripts, build, dev, lint (+17 more)
+Cohesion: 0.07
+Nodes (30): Badge(), badgeVariants, buttonVariants, Separator(), eslintConfig, name, private, scripts (+22 more)
 
-### Community 3 - "page.tsx"
-Cohesion: 0.16
-Nodes (18): Home(), Bubbles, fill, ring, CorporateSection(), TODO: texto provisorio. La oferta para empresas aún no está definida (formatos,…, CTASection(), HeroSection() (+10 more)
+### Community 3 - "FAQ.tsx"
+Cohesion: 0.13
+Nodes (27): Home(), Bubbles, fill, ring, CorporateSection(), TODO: texto provisorio. La oferta para empresas aún no está definida (formatos,…, CTASection(), faqs (+19 more)
 
 ### Community 4 - "components.json"
 Cohesion: 0.11
@@ -332,8 +331,8 @@ Cohesion: 0.05
 Nodes (89): abandonForeignSession(), abandonSupersededGo(), abortSvelteComponentInjection(), applyOriginalAttrsToSvelteAnchor(), applySavedSessionMeta(), checkpointPayload(), clampVariantIndex(), cleanup() (+81 more)
 
 ### Community 31 - ".agents/skills/impeccable/reference/new-work.md"
-Cohesion: 0.09
-Nodes (20): Recommended Actions, Craft (deprecated alias), Impeccable Documenter, Input Contract, Output Contract, Workflow, Apply, Live-mode signature params (+12 more)
+Cohesion: 0.11
+Nodes (16): Recommended Actions, Craft (deprecated alias), Apply, Live-mode signature params, Set the spatial thesis, Two isolated assessments, Verify, Visitor mode (+8 more)
 
 ### Community 32 - "onAnnotDown"
 Cohesion: 0.20
@@ -368,8 +367,8 @@ Cohesion: 0.08
 Nodes (72): applyParamDefaults(), applyPlaceholderDimensions(), applySavedSessionMeta(), checkpointPayload(), closedClipPath(), completeParameterGenerationIfReady(), completeParameterPublication(), completeSourceInjection() (+64 more)
 
 ### Community 40 - ".agents/skills/impeccable/SKILL.md"
-Cohesion: 0.08
-Nodes (21): Before you finish, Scope is sovereign, The amplification, The skeleton test, Why it reads flat, Craft floor, Refuse, Verify (+13 more)
+Cohesion: 0.10
+Nodes (15): Before you finish, Scope is sovereign, The amplification, The skeleton test, Why it reads flat, Craft floor, Refuse, Verify (+7 more)
 
 ### Community 41 - "Diseño: descarga de material educativo con formulario"
 Cohesion: 0.17
@@ -415,9 +414,9 @@ Nodes (53): actionLabel(), applyConfigureBarChrome(), bindConfigureCountPillTool
 Cohesion: 0.13
 Nodes (14): 1. Accessibility (A11y), 2. Performance, 3. Theming, 4. Responsive Design, 5. Implementation Integrity (CRITICAL), Audit Health Score, Detailed Findings by Severity, Diagnostic Scan (+6 more)
 
-### Community 52 - "cn"
-Cohesion: 0.22
-Nodes (15): Reveal(), testimonials, TestimonialsSection(), Card(), CardAction(), CardContent(), CardDescription(), CardFooter() (+7 more)
+### Community 52 - "$impeccable hooks"
+Cohesion: 0.33
+Nodes (6): Constraints, Failure modes, Flow, $impeccable hooks, Routing, Triage findings
 
 ### Community 53 - "New visual work"
 Cohesion: 0.14
@@ -429,7 +428,7 @@ Nodes (13): Animation Performance, Assess Performance Issues, Core Web Vitals Op
 
 ### Community 55 - "dialog.tsx"
 Cohesion: 0.35
-Nodes (10): galleryImages, GallerySection(), Dialog(), DialogClose(), DialogContent(), DialogHeader(), DialogOverlay(), DialogPortal() (+2 more)
+Nodes (10): galleryImages, GallerySection(), Dialog(), DialogClose(), DialogContent(), DialogFooter(), DialogOverlay(), DialogPortal() (+2 more)
 
 ### Community 56 - "graphify reference: extra exports and benchmark"
 Cohesion: 0.22
@@ -445,7 +444,7 @@ Nodes (11): Step 1: Parse the request, Step 2: Reuse the page, then start, Step 
 
 ### Community 59 - ".claude/skills/impeccable/SKILL.md"
 Cohesion: 0.07
-Nodes (28): Assess Adaptation Challenge, Implement & Verify, 1. Accessibility (VoiceOver / TalkBack), 2. Performance, 3. Appearance & Theming, 4. Platform Conformance (CRITICAL), 5. Adaptivity, Diagnostic Scan (+20 more)
+Nodes (29): Assess Adaptation Challenge, Implement & Verify, Recommended Actions, Craft (deprecated alias), Monorepo notes, Opting out of the boot check, Step 1: Run the pass, Step 2: Act by severity (+21 more)
 
 ### Community 60 - "critique.md"
 Cohesion: 0.17
@@ -476,8 +475,8 @@ Cohesion: 0.07
 Nodes (29): Basic Raycasting, Box Selection, Camera Controls, Click to Select, DragControls, Efficient Raycasting, Event Handling Best Practices, FirstPersonControls (+21 more)
 
 ### Community 67 - ".agents/skills/impeccable/reference/doctor.md"
-Cohesion: 0.13
-Nodes (12): Monorepo notes, Opting out of the boot check, Step 1: Run the pass, Step 2: Act by severity, Step 3: Deprecated fields are binding, Step 4: Do not overclaim on truth drift, What this owns, and what it does not, After approval: the comp becomes a spec (+4 more)
+Cohesion: 0.14
+Nodes (11): Impeccable Documenter, Input Contract, Output Contract, Workflow, Monorepo notes, Opting out of the boot check, Step 1: Run the pass, Step 2: Act by severity (+3 more)
 
 ### Community 68 - "document.md"
 Cohesion: 0.18
@@ -527,9 +526,9 @@ Nodes (27): AmbientLight, Common Lighting Setups, Contact Shadows (Fake, Fast), 
 Cohesion: 0.09
 Nodes (35): abandonForeignSession(), abandonSupersededGo(), clearSteerAwaitTimer(), configureVoiceContext(), copyToClipboard(), discardOrphanedSession(), dismissToast(), finishVoiceSession() (+27 more)
 
-### Community 80 - "Reveal.tsx"
-Cohesion: 0.50
-Nodes (3): offsets, RevealVariant, framer-motion
+### Community 80 - "Visualize: Direction Comps & Asset Production"
+Cohesion: 0.33
+Nodes (5): After approval: the comp becomes a spec, Generate three compositional options, One approval point, Plates and provenance, Visualize: Direction Comps & Asset Production
 
 ### Community 81 - "Common Cognitive Load Violations"
 Cohesion: 0.22
@@ -555,9 +554,9 @@ Nodes (3): For --cluster-only, For --update (incremental re-extraction), graphif
 Cohesion: 0.22
 Nodes (9): Color, Components, Layout, Motion, Operate mode depth (and Read notes), Product constraints, Product permissions, The product slop test (+1 more)
 
-### Community 89 - "FAQ.tsx"
-Cohesion: 0.44
-Nodes (7): faqs, FAQSection(), tones, Accordion(), AccordionContent(), AccordionItem(), AccordionTrigger()
+### Community 89 - "Diagnostic Scan"
+Cohesion: 0.33
+Nodes (6): 1. Accessibility (VoiceOver / TalkBack), 2. Performance, 3. Appearance & Theming, 4. Platform Conformance (CRITICAL), 5. Adaptivity, Diagnostic Scan
 
 ### Community 92 - "Shape"
 Cohesion: 0.22
@@ -847,13 +846,9 @@ Nodes (4): Heuristics Scoring Guide, Issue Severity (P0–P3), Reference Materia
 Cohesion: 0.50
 Nodes (3): Command guidance, No-argument routing: the context-aware menu, Workflow questions
 
-### Community 166 - ".claude/skills/impeccable/reference/doctor.md"
-Cohesion: 0.25
-Nodes (7): Monorepo notes, Opting out of the boot check, Step 1: Run the pass, Step 2: Act by severity, Step 3: Deprecated fields are binding, Step 4: Do not overclaim on truth drift, What this owns, and what it does not
-
 ## Knowledge Gaps
-- **1426 isolated node(s):** `figtree`, `bricolage`, `metadata`, `$schema`, `style` (+1421 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1500 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **1427 isolated node(s):** `figtree`, `bricolage`, `metadata`, `$schema`, `style` (+1422 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1501 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
@@ -866,10 +861,10 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Heuristics Scoring Guide` connect `Heuristics Scoring Guide` to `Nielsen's 10 Heuristics`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `figtree`, `bricolage`, `metadata` to the rest of the system?**
-  _1426 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1427 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `cn` be split into smaller, more focused modules?**
+  _Cohesion score 0.13306451612903225 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.07635467980295567 - nodes in this community are weakly interconnected._
-- **Should `components.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
-- **Should `compilerOptions` be split into smaller, more focused modules?**
-  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06825396825396825 - nodes in this community are weakly interconnected._
+- **Should `FAQ.tsx` be split into smaller, more focused modules?**
+  _Cohesion score 0.13360323886639677 - nodes in this community are weakly interconnected._
