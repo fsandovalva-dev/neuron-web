@@ -54,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth">
+    <html lang="es" className="scroll-smooth motion-reduce:scroll-auto">
       <body
         className={`${figtree.variable} ${bricolage.variable} antialiased bg-blush`}
       >

@@ -74,8 +74,12 @@ export function GallerySection() {
             <Reveal key={image.id} variant="pop" delay={(i % 3) * 0.1}>
             <Dialog>
               <DialogTrigger asChild>
-                {/* Miniatura (se mantiene igual con next/image optimizado) */}
-                <div className="relative aspect-square overflow-hidden rounded-2xl cursor-pointer group shadow-md shadow-ink/10 hover:shadow-xl transition-all">
+                {/* Miniatura: un botón para que también se pueda abrir con teclado */}
+                <button
+                  type="button"
+                  aria-label={`Ampliar foto: ${image.alt}`}
+                  className="relative block w-full aspect-square overflow-hidden rounded-2xl cursor-pointer group shadow-md shadow-ink/10 hover:shadow-xl transition-all"
+                >
                   <Image
                     src={image.src}
                     alt={image.alt}
@@ -84,7 +88,7 @@ export function GallerySection() {
                     sizes="(max-width: 768px) 50vw, 33vw"
                   />
                   <div className="absolute inset-0 bg-black/0 transition-colors group-hover:bg-black/10" />
-                </div>
+                </button>
               </DialogTrigger>
 
               {/* ESTRATEGIA NUEVA PARA EL LIGHTBOX
@@ -92,7 +96,7 @@ export function GallerySection() {
                 2. Usamos flex, items-center y justify-center para centrar la imagen en la pantalla.
                 3. Agregamos p-4 para un margen de seguridad contra los bordes de la pantalla.
               */}
-              <DialogContent className="w-auto h-auto max-w-full max-h-full p-4 bg-transparent border-none shadow-none flex items-center justify-center [&>button]:hidden">
+              <DialogContent aria-describedby={undefined} className="w-auto h-auto max-w-full max-h-full p-4 bg-transparent border-none shadow-none flex items-center justify-center [&>button]:hidden">
                 <DialogTitle className="sr-only">Vista ampliada: {image.alt}</DialogTitle>
 
                 {/* Contenedor relativo que envuelve la imagen y el botón.
