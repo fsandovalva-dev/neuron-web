@@ -24,6 +24,7 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Someday
 
+- [ ] **Vulnerabilidades restantes en la cadena de ESLint** - 5 altas (`braces`, `micromatch`, `fast-glob`) vía `eslint-config-next`; solo afectan al lint local. Revisar cuando salga un `eslint-config-next` que las corrija
 - [ ] **Resolver los 2 warnings de lint de la web** - `<img>` en el lightbox de `components/Gallery.tsx` y `isOpen` sin uso en `components/Pricing.tsx`
 - [ ] **Mensaje de WhatsApp por plan** - que "Cotizar Explosivo" prellene el nombre del plan (`whatsappUrl()` en `lib/whatsapp.ts` ya lo permite)
 - [ ] **SEO social** - agregar Open Graph / Twitter card con imagen en `app/layout.tsx` (hoy solo hay title y description)
@@ -31,7 +32,8 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
-- [x] ~~Reemplazar los testimonios mock por los reales (Elisa, Fernando y Victoria)~~ (2026-10-02, rama `feature/testimonios-reales`)
+- [x] ~~Actualizar Next.js a 16.3.8 por vulnerabilidades críticas (DoS, postcss, sharp) y alinear eslint-config-next~~ (2026-10-02, rama `chore/sincroniza-dependencias`)
+- [x] ~~Reemplazar los testimonios mock por los reales (Elisa, Fernando y Victoria)~~ (2026-10-02, PR #20)
 - [x] ~~Excluir `.agents/`, `.claude/` y `graphify-out/` de ESLint~~ (2026-10-02, PR #19)
 - [x] ~~Centralizar el enlace de WhatsApp en `lib/whatsapp.ts`~~ (2026-10-02, PR #18)
 - [x] ~~Actualizar README.md (stack, Node 20.9+, logo, estructura, secciones, URL del repo, flujo de trabajo)~~ (2026-10-02, rama `docs/actualiza-readme`)

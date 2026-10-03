@@ -198,9 +198,9 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1790978215.5358531,
-    "seen": 1790978368.8899512,
-    "ast_hash": "834ca0f744c33daa79cc2fe87900be1b",
+    "mtime": 1790989726.0661592,
+    "seen": 1790991200.6787925,
+    "ast_hash": "173616e93bb92f6d35478c349e6d7b93",
     "semantic_hash": ""
   },
   "postcss.config.mjs": {
@@ -642,9 +642,9 @@
     "semantic_hash": ""
   },
   "components/Testimonials.tsx": {
-    "mtime": 1790988064.3462384,
-    "seen": 1790988348.2875803,
-    "ast_hash": "6a71f187a1ad5250882b6268024e078a",
+    "mtime": 1790988428.5516047,
+    "seen": 1790991200.6771936,
+    "ast_hash": "1f5151844fee1d8fa4d33f30ddf2a906",
     "semantic_hash": ""
   },
   ".agents/skills/threejs-animation/SKILL.md": {
@@ -780,9 +780,9 @@
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1790988337.0207343,
-    "seen": 1790988348.3071957,
-    "ast_hash": "b54f121a6909b07197effe86e43ec399",
+    "mtime": 1790991189.5370326,
+    "seen": 1790991200.6980677,
+    "ast_hash": "19c4d1d51f6ea82f33a5e2a381524862",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {
