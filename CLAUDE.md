@@ -32,7 +32,7 @@ Fuentes de verdad, por tema:
 
 - **No inventar pruebas:** testimonios, cifras, clientes o certificaciones solo si los entrega Neuron. Todo contenido provisorio se marca en el código (`// TODO:` o un campo `placeholder: true`) y queda listado en TASKS.md.
 - **Cotizar es un paso:** cualquier sección debe poder llevar a WhatsApp. Hoy el número `56976257106` está repetido en varios componentes; ver la tarea de centralizarlo.
-- **Marca fija:** logo en `public/neuron-science-logo-colorful.jpg`; colores rosa, celeste y amarillo. Usar los tokens de `app/globals.css` (`blush`, `sky`, `ink`, `bubble`, `bubble-strong`, `lab`, `lab-strong`, `spark`) en vez de colores nuevos. Tipografías: Bricolage Grotesque (`font-display`) y Figtree (`font-sans`).
+- **Marca fija:** logo en `public/images/logo-neuron.png`; colores rosa, celeste y amarillo. Usar los tokens de `app/globals.css` (`blush`, `sky`, `ink`, `bubble`, `bubble-strong`, `lab`, `lab-strong`, `spark`) en vez de colores nuevos. Tipografías: Bricolage Grotesque (`font-display`) y Figtree (`font-sans`).
 - **Tono:** lúdico, en español de Chile, dirigido a padres e hijos; creíble para quien paga.
 - **Mínimo de accesibilidad:** contraste AA, foco visible, navegación por teclado, `prefers-reduced-motion` respetado y layouts que funcionen desde 360 px.
 - **Stack:** Next.js 16 (App Router), React 19, TypeScript, Tailwind 4, shadcn/ui (Radix), Framer Motion, Lucide. Revisar `package.json` antes de importar algo nuevo.

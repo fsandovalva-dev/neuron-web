@@ -46,3 +46,6 @@ next-env.d.ts
 
 # Claude Code: configuración local
 .claude/settings.local.json
+
+# respaldos de herramientas (p. ej. graphify deja SKILL.md.bak)
+*.bak
