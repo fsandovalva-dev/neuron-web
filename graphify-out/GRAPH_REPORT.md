@@ -1,7 +1,7 @@
 # Graph Report - neuron-web  (2026-10-03)
 
 ## Corpus Check
-- 181 files · ~1,020,054 words
+- 181 files · ~1,020,072 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 15 file(s) not represented in the graph (top: .toml 8, (none) 4, .cmd 2)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3473eb59`
+- Built from commit: `7cf57a92`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

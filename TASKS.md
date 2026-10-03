@@ -25,6 +25,7 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
+- [x] ~~Un experimento exclusivo de Macro por plan (Fluido no newtoniano, Luciérnagas electrónicas, Pelea de robots y Anillos de humo) y precio único: Micro $170.000, Macro $220.000~~ (2026-10-03, PR #32)
 - [x] ~~Planes nuevos de Neuron: NeurOn, Cientístico, Ingenioso y Cósmico en Micro y Macro, con precios por plan, experimentos por slug (Pelea de robots solo en Macro) y aviso de la pasta de dientes listo para recibir foto~~ (2026-10-03, PR #31)
 - [x] ~~Evaluar dónde guardar las respuestas del formulario de descarga (recomendado Google Sheets)~~ (2026-10-03, PR #29)
 - [x] ~~Ficha de experimento en Planes (hover, toque y teclado) con los textos de Neuron para 8 experimentos~~ (2026-10-03, PR #28)
