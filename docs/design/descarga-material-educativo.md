@@ -103,24 +103,41 @@ El botón usa `bg-bubble-strong text-white`, el mismo de los planes. El nombre d
 - **Archivo:** `public/material/<nombre>.pdf`. Es un filtro suave: quien conozca la URL puede descargarlo sin el formulario. Basta para medir; no sirve para proteger contenido.
 - **Privacidad:** no se guarda IP, nombre ni correo. Región y ocupación no identifican a una persona. El texto bajo el formulario dice exactamente qué se pide.
 
-### Dónde guardar las respuestas (decisión pendiente)
+### Dónde guardar las respuestas: evaluación (2026-10-03)
 
-| Opción | A favor | En contra |
-|---|---|---|
-| **Supabase** (recomendada) | Tabla consultable y exportable a CSV, plan gratuito, se inserta desde el servidor con una clave privada | Una cuenta y un servicio más que mantener |
-| Google Sheets (API) | Neuron ve las respuestas en una planilla que ya conoce | Configurar una cuenta de servicio; límites de la API |
-| Eventos de Vercel Analytics | Sin backend | Exportación limitada según el plan; datos menos flexibles |
+El valor para Neuron no es la descarga en sí, sino **el reporte del perfil de quienes descargan** (de qué región son y a qué se dedican). Por eso el criterio principal es qué tan fácil le resulta a alguien de Neuron, sin conocimientos técnicos, ver y analizar ese reporte.
+
+| Criterio | Google Sheets (vía Apps Script) | Supabase | Vercel Analytics (eventos) | Airtable |
+|---|---|---|---|---|
+| Neuron ve el reporte sin ayuda técnica | **Sí**: planilla con tablas dinámicas y gráficos que ya conocen | No: panel técnico o hay que construir una página de reportes con login | Solo en el panel de Vercel, con acceso al proyecto | Sí, con vistas y gráficos |
+| Costo | Gratis | Gratis | Los eventos personalizados requieren plan pagado | Gratis hasta 1.000 registros por base |
+| Configuración | Baja: una planilla + un script pegado y publicado, sin proyecto en Google Cloud | Media: proyecto, tabla, políticas y claves | Baja | Media: base + token de API |
+| Riesgo operativo | Cuotas gratuitas de Apps Script, holgadas para miles de envíos al día | El plan gratuito pausa proyectos tras una semana sin actividad; con poco tráfico podría perder envíos (confirmar política vigente) | Exportación limitada | Límite de registros |
+| Crecer a más formularios o un panel propio | Exportable a CSV para migrar | **Lo mejor** | No | Regular |
+
+**Recomendación: Google Sheets**, con un script de Apps Script como receptor:
+
+- **Planilla de Neuron** (en su cuenta de Google), con dos pestañas:
+  - *Respuestas*: una fila por descarga (fecha, material, región, ocupación).
+  - *Reporte*: totales por región, por ocupación, cruce región × ocupación y descargas por mes, con fórmulas y gráficos que se actualizan solos.
+- **Receptor:** un script de Apps Script publicado como aplicación web que agrega la fila. Solo acepta envíos con un token secreto.
+- **Envío:** la Server Action de Next le manda los datos. La URL y el token viven en las variables de entorno de Vercel (`DESCARGAS_SHEETS_URL`, `DESCARGAS_SHEETS_TOKEN`) y nunca llegan al navegador.
+- **Si el envío falla, la descarga ocurre igual** (principio 2) y el error queda en los logs de Vercel.
+- **Migración:** si más adelante hay más formularios o hace falta un panel propio dentro del sitio, se migra a Supabase con un CSV exportado de la planilla.
+
+**Dato opcional que suma valor sin pedir nada más a la persona:** el *origen* de la visita (`utm_source` del enlace o el sitio desde el que llegó). Así el reporte también diría qué canal trae a quienes descargan (Instagram, WhatsApp, Google). Requiere aceptarlo y mencionarlo en el texto de privacidad.
 
 ## Preguntas abiertas para Neuron
 
 1. ¿Cuál es el material? Nombre, PDF final e imagen de portada (vertical, mínimo 600 × 800 px).
 2. ¿Las opciones de ocupación sirven, o necesitan otras (por ejemplo "Directivo/a de colegio")?
-3. ¿Dónde quieren ver las respuestas (tabla arriba)?
-4. ¿Se agrega un enlace en la barra de navegación? Por defecto no, para no recargarla; la sección queda enlazable con `#material`.
+3. Aprobar Google Sheets como destino (evaluación arriba) y crear la planilla en la cuenta de Google de Neuron.
+4. ¿Se registra también el origen de la visita (opcional, arriba)?
+5. ¿Se agrega un enlace en la barra de navegación? Por defecto no, para no recargarla; la sección queda enlazable con `#material`.
 
 ## Plan de implementación
 
-1. Decidir dónde se guardan las respuestas y crear la tabla o planilla. Si es Supabase, cargar la skill `supabase-postgres-best-practices` antes de escribir SQL.
+1. Crear la planilla (pestañas *Respuestas* y *Reporte*) y el script receptor de Apps Script; guardar URL y token en las variables de entorno de Vercel. (Si se eligiera Supabase, cargar antes la skill `supabase-postgres-best-practices`.)
 2. `lib/download-options.ts`: regiones y ocupaciones (valor + etiqueta).
 3. `app/actions/registrar-descarga.ts`: Server Action con validación, honeypot y guardado.
 4. `components/EducationalDownload.tsx` (`"use client"`, `useActionState`) con la sección completa.

@@ -25487,7 +25487,7 @@
       "node_kind": "heading",
       "norm_label": "done",
       "source_file": "TASKS.md",
-      "source_location": "L29"
+      "source_location": "L30"
     },
     {
       "id": "tasks_someday",
@@ -25499,7 +25499,7 @@
       "node_kind": "heading",
       "norm_label": "someday",
       "source_file": "TASKS.md",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "tasks_tasks",
@@ -25523,7 +25523,7 @@
       "node_kind": "heading",
       "norm_label": "waiting on",
       "source_file": "TASKS.md",
-      "source_location": "L11"
+      "source_location": "L12"
     },
     {
       "id": "claude_skills_impeccable_reference_routing",
@@ -31640,7 +31640,7 @@
       "node_kind": "heading",
       "norm_label": "criterios de aceptacion",
       "source_file": "docs/design/descarga-material-educativo.md",
-      "source_location": "L130"
+      "source_location": "L147"
     },
     {
       "id": "docs_design_descarga_material_educativo_dise\u00f1o_descarga_de_material_educativo_con_formulario",
@@ -31655,14 +31655,14 @@
       "source_location": "L1"
     },
     {
-      "id": "docs_design_descarga_material_educativo_d\u00f3nde_guardar_las_respuestas_decisi\u00f3n_pendiente",
-      "label": "D\u00f3nde guardar las respuestas (decisi\u00f3n pendiente)",
+      "id": "docs_design_descarga_material_educativo_d\u00f3nde_guardar_las_respuestas_evaluaci\u00f3n_2026_10_03",
+      "label": "D\u00f3nde guardar las respuestas: evaluaci\u00f3n (2026-10-03)",
       "_origin": "ast",
       "community": 41,
       "community_name": "Dise\u00f1o: descarga de material educativo con formulario",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "donde guardar las respuestas (decision pendiente)",
+      "norm_label": "donde guardar las respuestas: evaluacion (2026-10-03)",
       "source_file": "docs/design/descarga-material-educativo.md",
       "source_location": "L106"
     },
@@ -31712,7 +31712,7 @@
       "node_kind": "heading",
       "norm_label": "plan de implementacion",
       "source_file": "docs/design/descarga-material-educativo.md",
-      "source_location": "L121"
+      "source_location": "L138"
     },
     {
       "id": "docs_design_descarga_material_educativo_preguntas_abiertas_para_neuron",
@@ -31724,7 +31724,7 @@
       "node_kind": "heading",
       "norm_label": "preguntas abiertas para neuron",
       "source_file": "docs/design/descarga-material-educativo.md",
-      "source_location": "L114"
+      "source_location": "L130"
     },
     {
       "id": "docs_design_descarga_material_educativo_principios_para_esta_secci\u00f3n",
@@ -111934,7 +111934,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/design/descarga-material-educativo.md",
-      "source_location": "L114",
+      "source_location": "L130",
       "weight": 1.0
     },
     {
@@ -111945,7 +111945,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/design/descarga-material-educativo.md",
-      "source_location": "L121",
+      "source_location": "L138",
       "weight": 1.0
     },
     {
@@ -111956,7 +111956,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "docs/design/descarga-material-educativo.md",
-      "source_location": "L130",
+      "source_location": "L147",
       "weight": 1.0
     },
     {
@@ -112038,7 +112038,7 @@
     },
     {
       "source": "docs_design_descarga_material_educativo_flujo_t\u00e9cnico",
-      "target": "docs_design_descarga_material_educativo_d\u00f3nde_guardar_las_respuestas_decisi\u00f3n_pendiente",
+      "target": "docs_design_descarga_material_educativo_d\u00f3nde_guardar_las_respuestas_evaluaci\u00f3n_2026_10_03",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -112924,7 +112924,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -112935,18 +112935,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "tasks_tasks",
-      "target": "tasks_done",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "TASKS.md",
-      "source_location": "L29",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -112958,6 +112947,17 @@
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "tasks_tasks",
+      "target": "tasks_done",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TASKS.md",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -116596,7 +116596,7 @@
       "confidence_score": 0.95,
       "context": "FAQSection",
       "source_file": "docs/design/descarga-material-educativo.md",
-      "source_location": "L127",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
@@ -116608,7 +116608,7 @@
       "confidence_score": 0.95,
       "context": "GallerySection",
       "source_file": "docs/design/descarga-material-educativo.md",
-      "source_location": "L127",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
@@ -116632,10 +116632,10 @@
       "confidence_score": 0.95,
       "context": "Reveal",
       "source_file": "TASKS.md",
-      "source_location": "L36",
+      "source_location": "L37",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "4b0b6f244e8f15247732724e416f0e6845592043"
+  "built_at_commit": "66b6462e4322f6692e7cc4791aab691ae5a3cf7d"
 }

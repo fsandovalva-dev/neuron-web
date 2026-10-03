@@ -1,7 +1,7 @@
 # Graph Report - neuron-web  (2026-10-03)
 
 ## Corpus Check
-- 179 files · ~1,018,754 words
+- 179 files · ~1,019,173 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 15 file(s) not represented in the graph (top: .toml 8, (none) 4, .cmd 2)
 
@@ -11,7 +11,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `4b0b6f24`
+- Built from commit: `66b6462e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -375,7 +375,7 @@ Nodes (15): Before you finish, Scope is sovereign, The amplification, The skelet
 
 ### Community 41 - "Diseño: descarga de material educativo con formulario"
 Cohesion: 0.17
-Nodes (12): Campos, Composición, Criterios de aceptación, Diseño: descarga de material educativo con formulario, Dónde guardar las respuestas (decisión pendiente), Estados, Flujo técnico, Lectura del encargo (+4 more)
+Nodes (12): Campos, Composición, Criterios de aceptación, Diseño: descarga de material educativo con formulario, Dónde guardar las respuestas: evaluación (2026-10-03), Estados, Flujo técnico, Lectura del encargo (+4 more)
 
 ### Community 42 - "initGlobalBar"
 Cohesion: 0.07
