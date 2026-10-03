@@ -4,8 +4,6 @@
 
 Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, después el desarrollo.
 
-- [ ] **Excluir `.agents/` y `.claude/` de ESLint** - `npm run lint` revisa los scripts de las skills (190 warnings, solo 2 son de la web)
-  - Agregar esas carpetas a los `ignores` de `eslint.config.mjs` para que el lint refleje solo el código del sitio
 - [ ] **Reemplazar los testimonios mock por los reales** - `components/Testimonials.tsx`, hardcodeados en el componente
   - Textos entregados el 2026-10-02 (se puede corregir solo la puntuación, no las palabras):
     - "Los niños estaban muy contentos, interesados, nunca se aburrieron, así que felicitaciones por el excelente servicio! Muy bonitas las actividades (lámpara de lava y repollímetro)." - Mamá de Elisa, 6 años
@@ -40,7 +38,8 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
-- [x] ~~Centralizar el enlace de WhatsApp en `lib/whatsapp.ts`~~ (2026-10-02, rama `refactor/centraliza-whatsapp`)
+- [x] ~~Excluir `.agents/`, `.claude/` y `graphify-out/` de ESLint~~ (2026-10-02, rama `chore/eslint-ignora-skills`)
+- [x] ~~Centralizar el enlace de WhatsApp en `lib/whatsapp.ts`~~ (2026-10-02, PR #18)
 - [x] ~~Actualizar README.md (stack, Node 20.9+, logo, estructura, secciones, URL del repo, flujo de trabajo)~~ (2026-10-02, rama `docs/actualiza-readme`)
 - [x] ~~Dejar de versionar archivos que no corresponden (caché y respaldo de graphify, settings.local.json, .bak, SVG de plantilla)~~ (2026-10-02, rama `chore/limpieza-archivos-versionados`)
 - [x] ~~Reparar `.claude/skills/impeccable` (symlink roto reemplazado por la copia versionada)~~ (2026-10-02)
