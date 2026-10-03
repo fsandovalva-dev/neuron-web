@@ -8,6 +8,7 @@ import { useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Bubbles } from "@/components/Bubbles";
+import { ExperimentChip } from "@/components/ExperimentChip";
 import { whatsappUrl } from "@/lib/whatsapp";
 
 const microPlans = [
@@ -156,9 +157,7 @@ function PlanCard({ plan, duration }: { plan: Plan; duration: string }) {
       <div className="flex flex-1 flex-col gap-6 p-6">
         <ul className="flex flex-wrap gap-2">
           {plan.experiments.map((experiment, index) => (
-            <li key={index} className="rounded-full bg-blush px-3 py-1.5 text-sm font-medium text-ink">
-              {experiment}
-            </li>
+            <ExperimentChip key={index} label={experiment} />
           ))}
         </ul>
         <Button asChild className="mt-auto w-full bg-bubble-strong hover:bg-bubble-strong/90 text-white" size="lg">
