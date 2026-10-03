@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "components/Pricing.tsx": {
-    "mtime": 1791038869.8003833,
-    "seen": 1791038991.2022638,
-    "ast_hash": "d0d46e2ad038f6d0317d15170047e065",
+    "mtime": 1791056452.2430089,
+    "seen": 1791056493.7843661,
+    "ast_hash": "21b60bbeb24d8dc20e0cf3ce853996fe",
     "semantic_hash": ""
   },
   "components/Services.tsx": {
@@ -546,21 +546,21 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1791038971.6588778,
-    "seen": 1791038991.214007,
-    "ast_hash": "b4b94038dad16159f5813082a0ac1ee2",
+    "mtime": 1791039056.7917871,
+    "seen": 1791056493.7952473,
+    "ast_hash": "7794bff937500bad1b3bfca97953a5f3",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
-    "mtime": 1791038971.6745903,
-    "seen": 1791038991.2140083,
-    "ast_hash": "0e33a2714b01a5cbb30fab55e55fd151",
+    "mtime": 1791039056.794652,
+    "seen": 1791056493.795249,
+    "ast_hash": "100d5fcf0666690dd2003fe36c5052ee",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1791038971.6588778,
-    "seen": 1791038991.2140095,
-    "ast_hash": "c9ac0aefc7212e60dc503f1954f880b2",
+    "mtime": 1791039056.7958355,
+    "seen": 1791056493.7952573,
+    "ast_hash": "798c1caf1b71012b4ea8a082542a796a",
     "semantic_hash": ""
   },
   "app/icon.png": {
@@ -780,9 +780,9 @@
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1791038985.254706,
-    "seen": 1791038991.214011,
-    "ast_hash": "18d6da3ca79ef05b6890e2ebfe0d504d",
+    "mtime": 1791056452.4937704,
+    "seen": 1791056493.795259,
+    "ast_hash": "73fce550c851dbb8427a5e5a42ca530b",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {
@@ -792,9 +792,9 @@
     "semantic_hash": ""
   },
   "docs/design/ficha-experimento-hover.md": {
-    "mtime": 1791038971.6745903,
-    "seen": 1791038991.2140899,
-    "ast_hash": "8bb7ac1ae520235a27d4ebaf700a682e",
+    "mtime": 1791039056.801293,
+    "seen": 1791056493.7953706,
+    "ast_hash": "8d245be4a0195952a201f5aac0ec2ea8",
     "semantic_hash": ""
   },
   ".claude/skills/impeccable/scripts/command-metadata.json": {
@@ -1122,9 +1122,9 @@
     "semantic_hash": ""
   },
   "components/ExperimentChip.tsx": {
-    "mtime": 1791038151.8003957,
-    "seen": 1791038991.201909,
-    "ast_hash": "72a70bf7e3cca946676a56292e3b7e14",
+    "mtime": 1791039056.7980146,
+    "seen": 1791056493.7840405,
+    "ast_hash": "cb11b19ad9b8abe3ca0eb76349a716c6",
     "semantic_hash": ""
   },
   "components/ui/popover.tsx": {
@@ -1134,21 +1134,21 @@
     "semantic_hash": ""
   },
   "lib/experiments.ts": {
-    "mtime": 1791038125.682748,
-    "seen": 1791038991.2033186,
-    "ast_hash": "17b99e4b295dac6b4ba1369906f830b2",
+    "mtime": 1791039056.837659,
+    "seen": 1791056493.7852802,
+    "ast_hash": "084d99caea82308012187e16c46946a9",
     "semantic_hash": ""
   },
   "components/ToothpasteBanner.tsx": {
-    "mtime": 1791038929.1448708,
-    "seen": 1791038991.2024925,
-    "ast_hash": "ba81e1d0e8eec761b68c341804f06b16",
+    "mtime": 1791039056.7997005,
+    "seen": 1791056493.7845693,
+    "ast_hash": "6eea6a9b2317b0012057aabebe1ff210",
     "semantic_hash": ""
   },
   "docs/design/aviso-pasta-de-dientes.md": {
-    "mtime": 1791038849.8819327,
-    "seen": 1791038991.2140126,
-    "ast_hash": "d5ec180160a0938b32b4ebf71fcb07b8",
+    "mtime": 1791039056.801293,
+    "seen": 1791056493.795261,
+    "ast_hash": "ad0a53614637eb3c3296c9e7f5205c71",
     "semantic_hash": ""
   }
 }

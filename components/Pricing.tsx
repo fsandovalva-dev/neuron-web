@@ -13,48 +13,46 @@ import { whatsappUrl } from "@/lib/whatsapp";
 import { experiments, type ExperimentSlug } from "@/lib/experiments";
 
 const durations = {
-  micro: "Micro (1 hora)",
-  macro: "Macro (2 horas)",
+  micro: { label: "Micro (1 hora)", price: "$170.000" },
+  macro: { label: "Macro (2 horas)", price: "$220.000" },
 } as const;
 
 type Duration = keyof typeof durations;
 
 type Plan = {
   name: string;
-  prices: Record<Duration, string>;
   tagline: string;
   experiments: ExperimentSlug[];
-  // Experimentos que solo entran en la versión Macro del plan.
-  macroOnly?: ExperimentSlug[];
+  // Experimento que solo entra en la versión Macro del plan.
+  macroOnly: ExperimentSlug;
 };
 
-// Micro y Macro ofrecen los mismos planes y experimentos (confirmado por Neuron el 2026-10-03);
-// cambian la duración y el precio.
+// Micro y Macro ofrecen los mismos planes (confirmado por Neuron el 2026-10-03). Cada plan suma
+// en Macro un experimento exclusivo; los precios son iguales para todos los planes de una duración.
 const plans: Plan[] = [
   {
     name: "NeurOn",
-    prices: { micro: "$170.000", macro: "$220.000" },
     tagline: "Selección de los preferidos de nuestros científicos.",
     experiments: ["lampara-de-lava", "slime", "fluido-no-newtoniano"],
+    macroOnly: "fluido-no-newtoniano",
   },
   {
     name: "Cientístico",
-    prices: { micro: "$170.000", macro: "$220.000" },
     tagline: "¿Arte y Ciencia? ¡Claro que sí!",
     experiments: ["repollimetro", "burbugrafia", "luciernagas-electronicas"],
+    macroOnly: "luciernagas-electronicas",
   },
   {
     name: "Ingenioso",
-    prices: { micro: "$205.000", macro: "$220.000" },
     tagline: "¿Te gustan los desafíos? ¡Este es tu tipo!",
     experiments: ["aerodeslizador", "pelea-de-robots", "luciernagas-electronicas"],
-    macroOnly: ["pelea-de-robots"],
+    macroOnly: "pelea-de-robots",
   },
   {
     name: "Cósmico",
-    prices: { micro: "$200.000", macro: "$225.000" },
-    tagline: "Naves espaciales, anillos de humo y mucho más: ¡ciencia de otro planeta!",
+    tagline: "Naves espaciales y mucho más: ¡ciencia de otro planeta!",
     experiments: ["aerodeslizador", "gelificaciones", "anillos-de-humo"],
+    macroOnly: "anillos-de-humo",
   },
 ];
 
@@ -111,13 +109,13 @@ const planTones: Record<string, { header: string; text: string }> = {
 
 function PlanCard({ plan, duration }: { plan: Plan; duration: Duration }) {
   const tone = planTones[plan.name] ?? planTones.NeurOn;
-  const macroOnly = plan.macroOnly ?? [];
-  const included = duration === "micro" ? plan.experiments.filter((slug) => !macroOnly.includes(slug)) : plan.experiments;
+  const { label, price } = durations[duration];
+  const included = duration === "micro" ? plan.experiments.filter((slug) => slug !== plan.macroOnly) : plan.experiments;
   return (
     <Card className="gap-0 overflow-hidden rounded-2xl border-0 py-0 shadow-md shadow-ink/10 transition-shadow duration-300 hover:shadow-xl">
       <div className={`px-6 pt-6 pb-7 ${tone.header}`}>
         <h3 className="font-display text-2xl font-bold">{plan.name}</h3>
-        <p className="mt-3 font-display text-4xl font-extrabold tracking-tight">{plan.prices[duration]}</p>
+        <p className="mt-3 font-display text-4xl font-extrabold tracking-tight">{price}</p>
         <p className={`mt-3 text-sm text-balance ${tone.text}`}>{plan.tagline}</p>
       </div>
       <div className="flex flex-1 flex-col gap-6 p-6">
@@ -127,15 +125,13 @@ function PlanCard({ plan, duration }: { plan: Plan; duration: Duration }) {
               <ExperimentChip key={slug} slug={slug} />
             ))}
           </ul>
-          {duration === "micro" && macroOnly.length > 0 && (
-            <p className="mt-3 text-sm text-ink/70">
-              Solo en Macro: {macroOnly.map((slug) => experiments[slug].name).join(", ")}.
-            </p>
+          {duration === "micro" && (
+            <p className="mt-3 text-sm text-ink/70">Solo en Macro: {experiments[plan.macroOnly].name}.</p>
           )}
         </div>
         <Button asChild className="mt-auto w-full bg-bubble-strong hover:bg-bubble-strong/90 text-white" size="lg">
           <a
-            href={whatsappUrl(`Hola Neuron, vengo de la web y quiero cotizar el plan ${plan.name} ${durations[duration]}!`)}
+            href={whatsappUrl(`Hola Neuron, vengo de la web y quiero cotizar el plan ${plan.name} ${label}!`)}
             target="_blank"
             rel="noopener noreferrer"
           >
