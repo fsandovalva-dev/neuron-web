@@ -35,7 +35,7 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center group">
           <div className="relative w-16 h-16 transition-transform group-hover:scale-105">
-            <Image src="/images/logo-neuron.png" alt="Neuron Logo" fill className="object-contain" priority />
+            <Image src="/images/logo-neuron.png" alt="Neuron Logo" fill sizes="4rem" className="object-contain" priority />
           </div>
           <span className="ml-3 text-2xl font-bold text-ink font-display tracking-tight">Neuron</span>
         </Link>

@@ -10,31 +10,44 @@ const galleryImages = [
   {
     id: 1,
     src: "/images/gallery/evento-1.JPG",
+    width: 3872,
+    height: 2176,
     alt: "Educadora con bata vierte un líquido en un tubo de ensayo mientras niños con la cara pintada extienden sus tubos",
   },
   {
     id: 2,
     src: "/images/gallery/evento-2.jpg",
+    width: 1200,
+    height: 1600,
     alt: "Niños experimentando con pipetas y tubos de ensayo en una mesa, uno de ellos con expresión de sorpresa",
   },
   {
     id: 3,
     src: "/images/gallery/evento-3.JPG",
+    width: 3872,
+    height: 2176,
     alt: "Niños con la cara pintada observan sus tubos de ensayo junto a educadoras con bata y un banner de Neuron",
   },
   {
     id: 4,
     src: "/images/gallery/evento-4.jpg",
+    // La foto viene rotada por EXIF: estas son sus medidas ya giradas.
+    width: 4590,
+    height: 8160,
     alt: "Equipo de una empresa manipulando slime de colores con guantes durante una actividad corporativa",
   },
   {
     id: 5,
     src: "/images/gallery/evento-5.jpg",
+    width: 960,
+    height: 1280,
     alt: "Tres científicos con bata blanca posan junto a una mascota de peluche en un evento al aire libre",
   },
   {
     id: 6,
     src: "/images/gallery/evento-6.JPG",
+    width: 3094,
+    height: 2176,
     alt: "Educadora con bata vierte un líquido de colores en una probeta entre dos banners de Neuron",
   },
 ]
@@ -86,13 +99,16 @@ export function GallerySection() {
                   Su tamaño será exactamente el de la imagen.
                 */}
                 <div className="relative group/lightbox shrink-0">
-                  {/* Usamos <img> normal para que el navegador calcule el tamaño natural.
-                    Limitamos el alto y ancho máximo para que no se salga de la pantalla.
-                    'block' y 'rounded-lg' para que se vea bien.
+                  {/* next/image con las medidas reales: entrega una versión optimizada en vez del
+                    original (hasta 8 MB). w-auto/h-auto y los máximos mantienen la proporción
+                    sin salirse de la pantalla.
                   */}
-                  <img
+                  <Image
                     src={image.src}
                     alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    sizes="90vw"
                     className="block max-h-[90vh] max-w-[90vw] w-auto h-auto object-contain rounded-lg shadow-2xl"
                   />
                   

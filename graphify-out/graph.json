@@ -11883,7 +11883,7 @@
       "file_type": "code",
       "norm_label": "gallerysection()",
       "source_file": "components/Gallery.tsx",
-      "source_location": "L42"
+      "source_location": "L55"
     },
     {
       "id": "components_ui_dialog_dialog",
@@ -36328,7 +36328,7 @@
       "node_kind": "heading",
       "norm_label": "done",
       "source_file": "TASKS.md",
-      "source_location": "L35"
+      "source_location": "L36"
     },
     {
       "id": "tasks_someday",
@@ -36340,7 +36340,7 @@
       "node_kind": "heading",
       "norm_label": "someday",
       "source_file": "TASKS.md",
-      "source_location": "L26"
+      "source_location": "L28"
     },
     {
       "id": "tasks_tasks",
@@ -75856,7 +75856,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Gallery.tsx",
-      "source_location": "L102",
+      "source_location": "L118",
       "weight": 1.0
     },
     {
@@ -75868,7 +75868,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Gallery.tsx",
-      "source_location": "L45",
+      "source_location": "L58",
       "weight": 1.0
     },
     {
@@ -75880,7 +75880,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Gallery.tsx",
-      "source_location": "L61",
+      "source_location": "L74",
       "weight": 1.0
     },
     {
@@ -75892,7 +75892,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Gallery.tsx",
-      "source_location": "L62",
+      "source_location": "L75",
       "weight": 1.0
     },
     {
@@ -75904,7 +75904,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Gallery.tsx",
-      "source_location": "L63",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -75916,7 +75916,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Gallery.tsx",
-      "source_location": "L82",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -75928,7 +75928,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Gallery.tsx",
-      "source_location": "L83",
+      "source_location": "L96",
       "weight": 1.0
     },
     {
@@ -76096,7 +76096,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L196",
+      "source_location": "L193",
       "weight": 1.0
     },
     {
@@ -76108,7 +76108,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L210",
+      "source_location": "L207",
       "weight": 1.0
     },
     {
@@ -76120,7 +76120,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L216",
+      "source_location": "L213",
       "weight": 1.0
     },
     {
@@ -76132,7 +76132,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L218",
+      "source_location": "L215",
       "weight": 1.0
     },
     {
@@ -76144,7 +76144,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L239",
+      "source_location": "L236",
       "weight": 1.0
     },
     {
@@ -76156,7 +76156,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L248",
+      "source_location": "L245",
       "weight": 1.0
     },
     {
@@ -76168,7 +76168,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L270",
+      "source_location": "L267",
       "weight": 1.0
     },
     {
@@ -76180,7 +76180,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L271",
+      "source_location": "L268",
       "weight": 1.0
     },
     {
@@ -76192,7 +76192,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "components/Pricing.tsx",
-      "source_location": "L279",
+      "source_location": "L276",
       "weight": 1.0
     },
     {
@@ -110256,7 +110256,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "components/Gallery.tsx",
-      "source_location": "L42",
+      "source_location": "L55",
       "weight": 1.0
     },
     {
@@ -111961,7 +111961,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L26",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -111983,7 +111983,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L35",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -115657,7 +115657,7 @@
       "confidence_score": 0.95,
       "context": "Reveal",
       "source_file": "TASKS.md",
-      "source_location": "L37",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -115674,5 +115674,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "47d085ea3601fc632956c523de68e45891914aee"
+  "built_at_commit": "1db4a35807962a2b5e1d8341120f7da92d30805a"
 }
