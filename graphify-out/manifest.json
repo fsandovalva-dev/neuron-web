@@ -96,9 +96,9 @@
     "semantic_hash": ""
   },
   "components/Gallery.tsx": {
-    "mtime": 1790996885.7767332,
-    "seen": 1790996967.6873524,
-    "ast_hash": "b14f10b2facc3635b9cae79ade83ae1d",
+    "mtime": 1790997027.161199,
+    "seen": 1790997132.6431298,
+    "ast_hash": "73d8e39f20b81ee5f31bbb690243190a",
     "semantic_hash": ""
   },
   "components/Hero.tsx": {
@@ -108,15 +108,15 @@
     "semantic_hash": ""
   },
   "components/Navbar.tsx": {
-    "mtime": 1790996885.7767332,
-    "seen": 1790996967.687492,
-    "ast_hash": "3dce1dbc6cc0a37b68351d9cf641cf3e",
+    "mtime": 1790997027.162701,
+    "seen": 1790997132.64328,
+    "ast_hash": "e53075d9a1abe37e376fdc80bfd4216c",
     "semantic_hash": ""
   },
   "components/Pricing.tsx": {
-    "mtime": 1790996885.7767332,
-    "seen": 1790996967.687493,
-    "ast_hash": "a6099af731e1949c20e2e2cf52f614b1",
+    "mtime": 1790997063.429546,
+    "seen": 1790997132.6432815,
+    "ast_hash": "4dd18e4d7f2e84413f32f055a3a10713",
     "semantic_hash": ""
   },
   "components/Services.tsx": {
@@ -546,9 +546,9 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1790996962.1495523,
-    "seen": 1790996967.697349,
-    "ast_hash": "929ca03cfb8273b1f0819d537a0df2c3",
+    "mtime": 1790997027.1586747,
+    "seen": 1790997132.6529148,
+    "ast_hash": "4b456fd76c953b397bc3d28291e7f7c8",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -780,9 +780,9 @@
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1790996962.1495523,
-    "seen": 1790996967.6975198,
-    "ast_hash": "b4bd2180b3144822554f972e52e20a74",
+    "mtime": 1790997118.1206608,
+    "seen": 1790997132.653055,
+    "ast_hash": "05db60a975c031b17033266f6b101fcb",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {

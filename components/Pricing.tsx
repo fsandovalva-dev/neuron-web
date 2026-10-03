@@ -8,7 +8,7 @@ import { useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Bubbles } from "@/components/Bubbles";
-import { WHATSAPP_URLS } from "@/lib/whatsapp";
+import { whatsappUrl } from "@/lib/whatsapp";
 
 const microPlans = [
   {
@@ -143,7 +143,8 @@ const planTones: Record<string, { header: string; text: string }> = {
   Ingeniero: { header: "bg-lab-strong text-white", text: "text-white/90" },
 };
 
-function PlanCard({ plan }: { plan: Plan }) {
+// duration distingue planes con el mismo nombre en Micro y Macro dentro del mensaje de WhatsApp.
+function PlanCard({ plan, duration }: { plan: Plan; duration: string }) {
   const tone = planTones[plan.name] ?? planTones.NeurOn;
   return (
     <Card className="gap-0 overflow-hidden rounded-2xl border-0 py-0 shadow-md shadow-ink/10 transition-shadow duration-300 hover:shadow-xl">
@@ -161,7 +162,11 @@ function PlanCard({ plan }: { plan: Plan }) {
           ))}
         </ul>
         <Button asChild className="mt-auto w-full bg-bubble-strong hover:bg-bubble-strong/90 text-white" size="lg">
-          <a href={WHATSAPP_URLS.cumpleanos} target="_blank" rel="noopener noreferrer">
+          <a
+            href={whatsappUrl(`Hola Neuron, vengo de la web y quiero cotizar el plan ${plan.name} ${duration}!`)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Cotizar {plan.name}
           </a>
         </Button>
@@ -242,7 +247,7 @@ export function PricingSection() {
               variants={fadeInUpAnimation}
             >
               {microPlans.map((plan) => (
-                <PlanCard key={plan.name} plan={plan} />
+                <PlanCard key={plan.name} plan={plan} duration="Micro (1 hora)" />
               ))}
             </motion.div>
           </TabsContent>
@@ -257,7 +262,7 @@ export function PricingSection() {
               variants={fadeInUpAnimation}
             >
               {macroPlans.map((plan) => (
-                <PlanCard key={plan.name} plan={plan} />
+                <PlanCard key={plan.name} plan={plan} duration="Macro (2 horas)" />
               ))}
             </motion.div>
           </TabsContent>
