@@ -13,6 +13,8 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Waiting On
 
+- [ ] **Nuevos precios y contenido de los planes** - de Neuron, since 2026-10-03. Pedido inicial: Micro $170.000 con "los primeros dos" experimentos y Macro $220.000 con "los 3 experimentos de cada uno"
+  - Falta confirmar si cambian solo los precios o también qué experimentos y planes muestra cada pestaña. No tocar `components/Pricing.tsx` hasta tener la confirmación
 - [ ] **Dominio de producción** - since 2026-10-02, aún no se compra. Al tenerlo: corregir el enlace del README (`neuron-web.vercel.app` es la app de otra persona) y agregar `metadataBase` para SEO
 - [ ] **Datos de los experimentos** - de Neuron, since 2026-10-02
   - Nombres oficiales (hay variantes: "Lámpara" / "Lámpara de lava", "Fluido no newtoniano" / "newtoneano", "Luciérnagas" / "Luciérnagas electrónicas")
@@ -26,15 +28,15 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 ## Someday
 
 - [ ] **Vulnerabilidades restantes en la cadena de ESLint** - 5 altas (`braces`, `micromatch`, `fast-glob`) vía `eslint-config-next`; solo afectan al lint local. Revisar cuando salga un `eslint-config-next` que las corrija
-- [ ] **Imagen del logo sin `sizes`** - `components/Navbar.tsx` usa `fill` sin `sizes` en el logo de escritorio; Next lo advierte en consola
-- [ ] **Resolver los 2 warnings de lint de la web** - `<img>` en el lightbox de `components/Gallery.tsx` y `isOpen` sin uso en `components/Pricing.tsx`
 - [ ] **Mensaje de WhatsApp por plan** - que "Cotizar Explosivo" prellene el nombre del plan (`whatsappUrl()` en `lib/whatsapp.ts` ya lo permite)
 - [ ] **SEO social** - agregar Open Graph / Twitter card con imagen en `app/layout.tsx` (hoy solo hay title y description)
 - [ ] **Revisión de accesibilidad mínima** - contraste, navegación por teclado y `prefers-reduced-motion` en las animaciones (Framer Motion, Reveal, Bubbles)
+  - Radix avisa que el diálogo de la galería no tiene descripción (`aria-describedby`)
 
 ## Done
 
-- [x] ~~Contenido visible aunque el JavaScript no cargue (`Reveal` y tarjetas de Planes visibles desde el servidor)~~ (2026-10-02, rama `fix/contenido-visible-sin-js`)
+- [x] ~~Logo con `sizes`, 0 warnings de lint y vista ampliada de la galería optimizada (de hasta 7,8 MB a ~170 KB por foto)~~ (2026-10-03, rama `fix/warnings-logo-y-lint`)
+- [x] ~~Contenido visible aunque el JavaScript no cargue (`Reveal` y tarjetas de Planes visibles desde el servidor)~~ (2026-10-02, PR #23)
 - [x] ~~Permitir abrir el servidor de desarrollo desde otro equipo (`allowedDevOrigins` para 192.168.x.x y Tailscale)~~ (2026-10-02, PR #22)
 - [x] ~~Actualizar Next.js a 16.3.8 por vulnerabilidades críticas (DoS, postcss, sharp) y alinear eslint-config-next~~ (2026-10-02, PR #21)
 - [x] ~~Reemplazar los testimonios mock por los reales (Elisa, Fernando y Victoria)~~ (2026-10-02, PR #20)

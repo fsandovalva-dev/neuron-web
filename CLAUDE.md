@@ -18,7 +18,7 @@ Fuentes de verdad, por tema:
 1. **Una rama por tarea**, creada desde `master` actualizado: `<tipo>/<descripcion-corta>` con tipo `feature`, `fix`, `docs`, `style`, `refactor` o `chore` (por ejemplo `feature/ficha-experimento-hover`).
 2. **Diseño antes que código** en features visuales: usar las skills `frontend-design` y `design-taste-frontend`, dejar la especificación en `docs/design/<feature>.md` y enlazarla desde TASKS.md. Implementar siguiendo esa especificación.
 3. **Orientarse con graphify** (sección de abajo) antes de leer o buscar en el código.
-4. **Verificar antes de commitear**: `npm run lint` sin errores ni warnings nuevos (hoy hay 2 conocidos, anotados en TASKS.md) y `npm run build` exitoso cuando se toca código. Para cambios visuales, revisar en `npm run dev` en escritorio y en móvil (360 px).
+4. **Verificar antes de commitear**: `npm run lint` sin errores ni warnings y `npm run build` exitoso cuando se toca código. Para cambios visuales, revisar en `npm run dev` en escritorio y en móvil (360 px).
 5. **Actualizar el grafo** con `graphify update .` después de modificar código e incluir `graphify-out/` en el commit (el grafo se versiona; los respaldos con fecha y la caché no).
 6. **Actualizar TASKS.md** en la misma rama: mover lo terminado a Done con la fecha y el número de PR, y agregar las tareas nuevas que surjan.
 

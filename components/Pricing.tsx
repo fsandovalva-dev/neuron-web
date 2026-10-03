@@ -171,8 +171,7 @@ function PlanCard({ plan }: { plan: Plan }) {
 }
 
 export function PricingSection() {
-  // Estado para la pestaña activa y el menú móvil
-  const [isOpen, setIsOpen] = useState(false);
+  // Estado para la pestaña activa
   const [activeTab, setActiveTab] = useState("micro");
   // La primera carga se muestra sin animar (visible aunque el JS tarde); la entrada solo se anima al cambiar de pestaña.
   const [hasSwitchedTab, setHasSwitchedTab] = useState(false);
@@ -183,8 +182,6 @@ export function PricingSection() {
   const triggerHighlight = () => {
     // Creamos y despachamos un evento personalizado llamado 'highlight-cta'
     window.dispatchEvent(new Event("highlight-cta"));
-    // Cerramos el menú móvil si estuviera abierto
-    setIsOpen(false);
   };
 
   return (

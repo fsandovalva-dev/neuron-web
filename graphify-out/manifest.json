@@ -96,9 +96,9 @@
     "semantic_hash": ""
   },
   "components/Gallery.tsx": {
-    "mtime": 1790978215.515974,
-    "seen": 1790978368.8891306,
-    "ast_hash": "2a54c39af165c9c526fd95d825b30c4f",
+    "mtime": 1790996885.7767332,
+    "seen": 1790996967.6873524,
+    "ast_hash": "b14f10b2facc3635b9cae79ade83ae1d",
     "semantic_hash": ""
   },
   "components/Hero.tsx": {
@@ -108,15 +108,15 @@
     "semantic_hash": ""
   },
   "components/Navbar.tsx": {
-    "mtime": 1790978215.5187194,
-    "seen": 1790978368.8891344,
-    "ast_hash": "ff893117f2f82470823dbc70bd3d349b",
+    "mtime": 1790996885.7767332,
+    "seen": 1790996967.687492,
+    "ast_hash": "3dce1dbc6cc0a37b68351d9cf641cf3e",
     "semantic_hash": ""
   },
   "components/Pricing.tsx": {
-    "mtime": 1790992964.9399998,
-    "seen": 1790993108.3182583,
-    "ast_hash": "bf0f7100f97c7b275e334b4e7302daef",
+    "mtime": 1790996885.7767332,
+    "seen": 1790996967.687493,
+    "ast_hash": "a6099af731e1949c20e2e2cf52f614b1",
     "semantic_hash": ""
   },
   "components/Services.tsx": {
@@ -546,9 +546,9 @@
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1790988027.5652187,
-    "seen": 1790988348.3069382,
-    "ast_hash": "9f12c144f2da435940351d8b491ad0a9",
+    "mtime": 1790996962.1495523,
+    "seen": 1790996967.697349,
+    "ast_hash": "929ca03cfb8273b1f0819d537a0df2c3",
     "semantic_hash": ""
   },
   "PRODUCT.md": {
@@ -774,15 +774,15 @@
     "semantic_hash": ""
   },
   "components/Reveal.tsx": {
-    "mtime": 1790992949.8522313,
-    "seen": 1790993108.3182683,
-    "ast_hash": "16b97cce2d110dff81e11134104ddd35",
+    "mtime": 1790993177.2753382,
+    "seen": 1790996967.6874938,
+    "ast_hash": "a1051384e4c22543aa9a5f54ad5f5ce1",
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1790993085.3147428,
-    "seen": 1790993108.3623836,
-    "ast_hash": "888bda835255ad3cdcbd9d940484a88b",
+    "mtime": 1790996962.1495523,
+    "seen": 1790996967.6975198,
+    "ast_hash": "b4bd2180b3144822554f972e52e20a74",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {
