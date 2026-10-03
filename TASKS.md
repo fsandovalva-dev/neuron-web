@@ -7,32 +7,25 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 - [ ] **Conectar las fotos de los experimentos** - siguiente paso (el usuario las deja el 2026-10-04)
   - Van en `public/images/experiments/` (carpeta ya creada en la laptop). Nombres sugeridos = slugs de `lib/experiments.ts` (`lampara-de-lava.jpg`, `repollimetro.jpg`...); si llegan con otro nombre, renombrar
   - Declarar cada una en el campo `image` del catálogo, revisar el encuadre en la ficha (proporción 15:7) y publicar
-- [ ] **Implementar la descarga de material educativo con formulario (región y ocupación)**
-  - Diseño: [docs/design/descarga-material-educativo.md](docs/design/descarga-material-educativo.md)
-  - Destino de las respuestas: evaluado en el diseño; recomendado **Google Sheets** (Neuron ve el reporte en una planilla)
-  - Pendiente del usuario: aprobar Google Sheets, crear la planilla en la cuenta de Neuron (Claude entrega el script de Apps Script), decidir si se registra el origen de la visita
-  - Bloqueado también por el PDF del material (Waiting On)
 
 ## Waiting On
 
-- [ ] **Nuevos precios y contenido de los planes** - de Neuron, since 2026-10-03. Pedido inicial: Micro $170.000 con "los primeros dos" experimentos y Macro $220.000 con "los 3 experimentos de cada uno"
-  - Falta confirmar si cambian solo los precios o también qué experimentos y planes muestra cada pestaña. No tocar `components/Pricing.tsx` hasta tener la confirmación
-  - Al rehacer los planes: incluir Pelea de robots y Anillos de humo si corresponde (ya tienen ficha) y pasar los experimentos a slugs de `lib/experiments.ts`
+- [ ] **Foto del aviso de la pasta de dientes de elefante** - de Neuron, since 2026-10-03. Al llegar: guardarla en `public/images/experiments/pasta-de-dientes-de-elefante.jpg` y declararla en `IMAGE` de `components/ToothpasteBanner.tsx`; el layout con foto ya está diseñado y probado ([docs/design/aviso-pasta-de-dientes.md](docs/design/aviso-pasta-de-dientes.md))
 - [ ] **Dominio de producción** - since 2026-10-02, aún no se compra. Al tenerlo: corregir el enlace del README (`neuron-web.vercel.app` es la app de otra persona) y reemplazar `metadataBase` en `app/layout.tsx` (hoy usa el dominio de producción de Vercel)
-- [ ] **Datos de los experimentos** - de Neuron, since 2026-10-02
-  - Fotos: el usuario las trae el 2026-10-04 (ver Active); hoy solo Slime tiene foto
-  - Textos que faltan: Fiesta de gases, Pasta de dientes (y "experimental"), Lancha supersónica, Arcoíris viajero, Colores danzantes, Carrera de autos
-  - Nombres oficiales para unificar las variantes de los planes al rehacerlos
-- [ ] **Material educativo** - de Neuron, since 2026-10-02: nombre, PDF final, imagen de portada y validación de las opciones de ocupación
+- [ ] **Fotos de los experimentos** - el usuario las trae el 2026-10-04 (ver Active); hoy solo Slime tiene foto
 - [ ] **Oferta para empresas** - de Neuron; formatos, precios y cobertura (TODO en `components/Corporate.tsx`)
 - [ ] **Cobertura geográfica y rango de edades** - de Neuron; pendientes según PRODUCT.md
 
 ## Someday
 
+- [ ] **Descarga de material educativo con formulario (región y ocupación)** - Neuron no la necesita aún (2026-10-03)
+  - Diseño listo: [docs/design/descarga-material-educativo.md](docs/design/descarga-material-educativo.md); destino recomendado de las respuestas: **Google Sheets**
+  - Para retomarla hace falta: aprobar Google Sheets, crear la planilla en la cuenta de Neuron (Claude entrega el script de Apps Script), decidir si se registra el origen de la visita, y de Neuron el nombre, PDF, portada y validación de las opciones de ocupación
 - [ ] **Vulnerabilidades restantes en la cadena de ESLint** - 5 altas (`braces`, `micromatch`, `fast-glob`) vía `eslint-config-next`; solo afectan al lint local. Revisar cuando salga un `eslint-config-next` que las corrija. Revisado 2026-10-03: seguimos en la última versión (16.3.8) y `braces` no tiene versión corregida
 
 ## Done
 
+- [x] ~~Planes nuevos de Neuron: NeurOn, Cientístico, Ingenioso y Cósmico en Micro y Macro, con precios por plan, experimentos por slug (Pelea de robots solo en Macro) y aviso de la pasta de dientes listo para recibir foto~~ (2026-10-03, PR #31)
 - [x] ~~Evaluar dónde guardar las respuestas del formulario de descarga (recomendado Google Sheets)~~ (2026-10-03, PR #29)
 - [x] ~~Ficha de experimento en Planes (hover, toque y teclado) con los textos de Neuron para 8 experimentos~~ (2026-10-03, PR #28)
 - [x] ~~Revisión de accesibilidad mínima: Lighthouse de 92 a 100 (galería operable con teclado, contraste AA, movimiento reducido en scroll y transiciones CSS)~~ (2026-10-03, PR #27)

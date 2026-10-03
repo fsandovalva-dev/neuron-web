@@ -14,7 +14,7 @@ web
 Neuron lleva la ciencia y los experimentos a cumpleaños infantiles. El sitio es la presentación y el punto de contacto principal: valida la propuesta de valor, muestra los servicios, transmite confianza y facilita la cotización directa. Es un MVP desplegado en Vercel.
 
 ## Positioning
-Experimentos reales y seguros dirigidos por educadores certificados, organizados en planes temáticos por tipo de experiencia (sensorial "¡Con-Ciencia!", desafíos de ingeniería, arte y ciencia) con versiones extendidas.
+Experimentos reales y seguros dirigidos por educadores certificados, organizados en cuatro planes temáticos (NeurOn, Cientístico, Ingenioso y Cósmico), cada uno en versión Micro (1 hora) y Macro (2 horas). La pasta de dientes de elefante va incluida en todos los cumpleaños.
 
 ## Operating Context
 - El contacto y la conversión ocurren por WhatsApp (botón flotante, barra de navegación y CTA final).
