@@ -6,7 +6,8 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 - [ ] **Implementar la descarga de material educativo con formulario (región y ocupación)**
   - Diseño: [docs/design/descarga-material-educativo.md](docs/design/descarga-material-educativo.md)
-  - Antes de implementar: decidir dónde se guardan las respuestas (recomendado: Supabase)
+  - Destino de las respuestas: evaluado en el diseño; recomendado **Google Sheets** (Neuron ve el reporte en una planilla). Falta aprobarlo y crear la planilla
+  - Bloqueado también por el PDF del material (Waiting On)
 
 ## Waiting On
 
@@ -28,7 +29,7 @@ Ordenadas por prioridad: primero lo que deja el repo y el entorno limpios, despu
 
 ## Done
 
-- [x] ~~Ficha de experimento en Planes (hover, toque y teclado) con los textos de Neuron para 8 experimentos~~ (2026-10-03, rama `feature/ficha-experimento`)
+- [x] ~~Ficha de experimento en Planes (hover, toque y teclado) con los textos de Neuron para 8 experimentos~~ (2026-10-03, PR #28)
 - [x] ~~Revisión de accesibilidad mínima: Lighthouse de 92 a 100 (galería operable con teclado, contraste AA, movimiento reducido en scroll y transiciones CSS)~~ (2026-10-03, PR #27)
 - [x] ~~SEO social: Open Graph y tarjeta de X con imagen generada (`app/opengraph-image.tsx`, JPEG de 77 KB para que WhatsApp la muestre)~~ (2026-10-03, PR #26)
 - [x] ~~Mensaje de WhatsApp por plan: cada "Cotizar" prellena el plan y su duración~~ (2026-10-03, PR #25)

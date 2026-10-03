@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "components/Pricing.tsx": {
-    "mtime": 1791001700.376017,
-    "seen": 1791002361.6541705,
-    "ast_hash": "334b900ce71b7270a3eaa61ca7e8c620",
+    "mtime": 1791003140.1000676,
+    "seen": 1791003201.702649,
+    "ast_hash": "84706fffbe10a7cfaa965ccd9306c4ee",
     "semantic_hash": ""
   },
   "components/Services.tsx": {
@@ -198,8 +198,8 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1791002488.5357041,
-    "seen": 1791003093.08011,
+    "mtime": 1791003140.1385183,
+    "seen": 1791003201.7037952,
     "ast_hash": "510dd2147c7847b8f1318971e428cc72",
     "semantic_hash": ""
   },
@@ -780,21 +780,21 @@
     "semantic_hash": ""
   },
   "TASKS.md": {
-    "mtime": 1791002346.76267,
-    "seen": 1791002361.6918244,
-    "ast_hash": "ca7c8551d44bcad173ce84261c27455d",
+    "mtime": 1791003183.9875262,
+    "seen": 1791003201.7126703,
+    "ast_hash": "58bc214b8e2e29dada017d1bf0256257",
     "semantic_hash": ""
   },
   "docs/design/descarga-material-educativo.md": {
-    "mtime": 1790982352.99823,
-    "seen": 1790986899.36942,
-    "ast_hash": "3907fe74ce16ae6841c4f39ac1fd2cf5",
+    "mtime": 1791003183.986773,
+    "seen": 1791003201.712672,
+    "ast_hash": "baeeae2de0ec8fee25b3f6db62d0387e",
     "semantic_hash": ""
   },
   "docs/design/ficha-experimento-hover.md": {
-    "mtime": 1791002346.583251,
-    "seen": 1791002361.6920738,
-    "ast_hash": "21af3d050ffb01f50dd113b753ff747b",
+    "mtime": 1791003140.1000676,
+    "seen": 1791003201.7126727,
+    "ast_hash": "39cad05511e036ce230ea95d00d2fcd9",
     "semantic_hash": ""
   },
   ".claude/skills/impeccable/scripts/command-metadata.json": {
@@ -1122,21 +1122,21 @@
     "semantic_hash": ""
   },
   "components/ExperimentChip.tsx": {
-    "mtime": 1791001693.4995494,
-    "seen": 1791002361.6532273,
-    "ast_hash": "911d56e866cbfc4eb53d00e211e235ee",
+    "mtime": 1791003140.1000676,
+    "seen": 1791003201.7023044,
+    "ast_hash": "18775f20039da5cee4b47f0776e6331e",
     "semantic_hash": ""
   },
   "components/ui/popover.tsx": {
-    "mtime": 1791001643.9319263,
-    "seen": 1791002361.6562865,
-    "ast_hash": "0b4c4d6388facc36fd0e25765f9d40da",
+    "mtime": 1791003140.1000676,
+    "seen": 1791003201.7033126,
+    "ast_hash": "32495b60cec1f08fd92cc6ca4be8b4bc",
     "semantic_hash": ""
   },
   "lib/experiments.ts": {
-    "mtime": 1791001664.6672256,
-    "seen": 1791002361.6572447,
-    "ast_hash": "6058d3061851ea5bbe8aca9c5ea38472",
+    "mtime": 1791003140.1375186,
+    "seen": 1791003201.7035768,
+    "ast_hash": "b58e506420900309114d6eb25f080252",
     "semantic_hash": ""
   }
 }
