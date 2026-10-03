@@ -12,6 +12,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Skills de agentes y salida de graphify: no son código del sitio.
+    ".agents/**",
+    ".claude/**",
+    "graphify-out/**",
   ]),
 ]);
 

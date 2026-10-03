@@ -18,7 +18,7 @@ Fuentes de verdad, por tema:
 1. **Una rama por tarea**, creada desde `master` actualizado: `<tipo>/<descripcion-corta>` con tipo `feature`, `fix`, `docs`, `style`, `refactor` o `chore` (por ejemplo `feature/ficha-experimento-hover`).
 2. **Diseño antes que código** en features visuales: usar las skills `frontend-design` y `design-taste-frontend`, dejar la especificación en `docs/design/<feature>.md` y enlazarla desde TASKS.md. Implementar siguiendo esa especificación.
 3. **Orientarse con graphify** (sección de abajo) antes de leer o buscar en el código.
-4. **Verificar antes de commitear**: `npm run lint` sin errores (hay warnings previos, no agregar nuevos) y `npm run build` exitoso cuando se toca código. Para cambios visuales, revisar en `npm run dev` en escritorio y en móvil (360 px).
+4. **Verificar antes de commitear**: `npm run lint` sin errores ni warnings nuevos (hoy hay 2 conocidos, anotados en TASKS.md) y `npm run build` exitoso cuando se toca código. Para cambios visuales, revisar en `npm run dev` en escritorio y en móvil (360 px).
 5. **Actualizar el grafo** con `graphify update .` después de modificar código e incluir `graphify-out/` en el commit (el grafo se versiona; los respaldos con fecha y la caché no).
 6. **Actualizar TASKS.md** en la misma rama: mover lo terminado a Done con la fecha y el número de PR, y agregar las tareas nuevas que surjan.
 
@@ -26,7 +26,10 @@ Fuentes de verdad, por tema:
 - Mensajes con prefijo convencional y descripción en español: `feat: agrega ficha de experimentos en planes`. Tipos: `feat`, `fix`, `docs`, `style`, `refactor`, `chore`.
 - Commitear solo los archivos de la tarea (nada de `git add -A` con cambios ajenos en el árbol).
 - PR hacia `master` con `gh pr create`, en español: resumen, cambios y cómo probarlo.
-- No hacer merge a `master` ni push forzado sin que el usuario lo pida.
+- Un PR a la vez: todos editan TASKS.md y los PRs apilados terminan mergeados en ramas muertas. Esperar el merge antes de empezar la tarea siguiente.
+- **Merge autorizado** (desde 2026-10-02): mergear el propio PR con `gh pr merge --merge` cuando lint y build pasan y los checks de Vercel están en verde. Después confirmar que el cambio está en `master` y borrar la rama local y remota.
+- Merge a `master` = deploy a producción en Vercel. Si el PR muestra a los visitantes contenido no validado por Neuron (borradores, placeholders), consultar antes de mergear.
+- Nunca push forzado.
 
 ## Reglas del producto (resumen de PRODUCT.md)
 

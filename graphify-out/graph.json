@@ -24119,7 +24119,7 @@
       "node_kind": "heading",
       "norm_label": "done",
       "source_file": "TASKS.md",
-      "source_location": "L41"
+      "source_location": "L39"
     },
     {
       "id": "tasks_someday",
@@ -24131,7 +24131,7 @@
       "node_kind": "heading",
       "norm_label": "someday",
       "source_file": "TASKS.md",
-      "source_location": "L34"
+      "source_location": "L32"
     },
     {
       "id": "tasks_tasks",
@@ -24155,7 +24155,7 @@
       "node_kind": "heading",
       "norm_label": "waiting on",
       "source_file": "TASKS.md",
-      "source_location": "L23"
+      "source_location": "L21"
     },
     {
       "id": "claude_skills_impeccable_reference_bolder",
@@ -37861,7 +37861,7 @@
       "node_kind": "heading",
       "norm_label": "graphify",
       "source_file": "CLAUDE.md",
-      "source_location": "L40"
+      "source_location": "L43"
     },
     {
       "id": "claude_neuron_web",
@@ -37897,7 +37897,7 @@
       "node_kind": "heading",
       "norm_label": "reglas del producto (resumen de product.md)",
       "source_file": "CLAUDE.md",
-      "source_location": "L31"
+      "source_location": "L34"
     },
     {
       "id": "product",
@@ -94428,7 +94428,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L31",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -94439,7 +94439,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "L40",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -111929,7 +111929,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L23",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -111951,7 +111951,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L34",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -111962,7 +111962,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "TASKS.md",
-      "source_location": "L41",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -115636,10 +115636,10 @@
       "confidence_score": 0.95,
       "context": "whatsappUrl()",
       "source_file": "TASKS.md",
-      "source_location": "L37",
+      "source_location": "L35",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a2745e87b1e09353563114a614a65ef0dd148cb4"
+  "built_at_commit": "1ed54221191ebd6838d0a2ecd4890fb80aa151c9"
 }
