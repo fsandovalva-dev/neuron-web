@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { MessageCircle } from "lucide-react"
+import { WHATSAPP_URLS } from "@/lib/whatsapp"
 
 // TODO: texto provisorio. La oferta para empresas aún no está definida (formatos, precios, cobertura); reemplazar al confirmarla.
-const CORPORATE_WHATSAPP_URL =
-  "https://wa.me/56976257106?text=Hola%20Neuron,%20vengo%20de%20la%20web%20y%20quiero%20cotizar%20una%20actividad%20para%20mi%20empresa!"
-
 export function CorporateSection() {
   return (
     <section id="empresas" className="bg-ink px-4 py-20 text-blush">
@@ -27,7 +25,7 @@ export function CorporateSection() {
             size="lg"
             className="h-auto w-full bg-spark px-8 py-4 text-base font-bold text-ink transition-all hover:-translate-y-0.5 hover:bg-spark/90 sm:w-auto md:text-lg"
           >
-            <a href={CORPORATE_WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+            <a href={WHATSAPP_URLS.empresa} target="_blank" rel="noopener noreferrer">
               <MessageCircle className="mr-2 h-5 w-5" aria-hidden="true" />
               Cotizar para mi empresa
             </a>

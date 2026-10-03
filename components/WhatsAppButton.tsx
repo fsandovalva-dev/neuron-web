@@ -1,9 +1,10 @@
 import { MessageCircle } from "lucide-react"
+import { WHATSAPP_URLS } from "@/lib/whatsapp"
 
 export function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/56976257106?text=Hola%20Neuron,%20vengo%20de%20la%20web%20y%20quiero%20cotizar%20un%20cumpleaños!"
+      href={WHATSAPP_URLS.cumpleanos}
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"

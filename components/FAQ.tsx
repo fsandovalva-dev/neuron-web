@@ -2,6 +2,7 @@ import { Bubbles } from "@/components/Bubbles"
 import { Button } from "@/components/ui/button"
 import { MessageCircle } from "lucide-react"
 import { Reveal } from "@/components/Reveal"
+import { WHATSAPP_URLS } from "@/lib/whatsapp"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 const faqs = [
@@ -49,9 +50,6 @@ const tones = [
   { dot: "bg-spark", open: "data-[state=open]:bg-[color-mix(in_oklab,var(--color-spark)_45%,white)]" },
 ]
 
-const FAQ_WHATSAPP_URL =
-  "https://wa.me/56976257106?text=Hola%20Neuron,%20tengo%20una%20duda%20sobre%20los%20cumplea%C3%B1os%20cient%C3%ADficos!"
-
 export function FAQSection() {
   return (
     <section id="faqs" className="relative overflow-hidden py-20 px-4 bg-blush">
@@ -74,7 +72,7 @@ export function FAQSection() {
               asChild
               className="mt-4 h-auto w-full bg-bubble-strong px-6 py-3 font-bold text-white hover:bg-bubble-strong/90 sm:w-auto"
             >
-              <a href={FAQ_WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+              <a href={WHATSAPP_URLS.duda} target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="mr-2 h-5 w-5" aria-hidden="true" />
                 Preguntar por WhatsApp
               </a>

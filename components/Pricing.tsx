@@ -8,6 +8,7 @@ import { useState } from "react";
 import { MotionConfig, motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Bubbles } from "@/components/Bubbles";
+import { WHATSAPP_URLS } from "@/lib/whatsapp";
 
 const microPlans = [
   {
@@ -142,7 +143,7 @@ const planTones: Record<string, { header: string; text: string }> = {
   Ingeniero: { header: "bg-lab-strong text-white", text: "text-white/90" },
 };
 
-function PlanCard({ plan, whatsappUrl }: { plan: Plan; whatsappUrl: string }) {
+function PlanCard({ plan }: { plan: Plan }) {
   const tone = planTones[plan.name] ?? planTones.NeurOn;
   return (
     <Card className="gap-0 overflow-hidden rounded-2xl border-0 py-0 shadow-md shadow-ink/10 transition-shadow duration-300 hover:shadow-xl">
@@ -160,7 +161,7 @@ function PlanCard({ plan, whatsappUrl }: { plan: Plan; whatsappUrl: string }) {
           ))}
         </ul>
         <Button asChild className="mt-auto w-full bg-bubble-strong hover:bg-bubble-strong/90 text-white" size="lg">
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+          <a href={WHATSAPP_URLS.cumpleanos} target="_blank" rel="noopener noreferrer">
             Cotizar {plan.name}
           </a>
         </Button>
@@ -179,8 +180,6 @@ export function PricingSection() {
     // Cerramos el menú móvil si estuviera abierto
     setIsOpen(false);
   };
-  const whatsappUrl =
-    "https://wa.me/56976257106?text=Hola%20Neuron,%20vengo%20de%20la%20web%20y%20quiero%20cotizar%20un%20cumpleaños!";
 
   return (
     <MotionConfig reducedMotion="user">
@@ -240,7 +239,7 @@ export function PricingSection() {
               variants={fadeInUpAnimation}
             >
               {microPlans.map((plan) => (
-                <PlanCard key={plan.name} plan={plan} whatsappUrl={whatsappUrl} />
+                <PlanCard key={plan.name} plan={plan} />
               ))}
             </motion.div>
           </TabsContent>
@@ -255,7 +254,7 @@ export function PricingSection() {
               variants={fadeInUpAnimation}
             >
               {macroPlans.map((plan) => (
-                <PlanCard key={plan.name} plan={plan} whatsappUrl={whatsappUrl} />
+                <PlanCard key={plan.name} plan={plan} />
               ))}
             </motion.div>
           </TabsContent>
