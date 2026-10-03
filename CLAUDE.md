@@ -31,6 +31,22 @@ Fuentes de verdad, por tema:
 - Merge a `master` = deploy a producción en Vercel. Si el PR muestra a los visitantes contenido no validado por Neuron (borradores, placeholders), consultar antes de mergear.
 - Nunca push forzado.
 
+### Dónde vive el contenido editable
+- Experimentos de la ficha (textos, fotos, variantes de nombre): `lib/experiments.ts`.
+- Número y mensajes de WhatsApp: `lib/whatsapp.ts`.
+- Planes y precios: `components/Pricing.tsx` (congelado hasta que Neuron confirme los cambios; ver TASKS.md).
+- Testimonios: `components/Testimonials.tsx`. Imagen para compartir: `app/opengraph-image.tsx`.
+
+### Lecciones del entorno (Windows)
+- `next dev` bloquea binarios dentro de `node_modules` (SWC, lightningcss): `npm install`/`npm ci` fallan con EPERM y dejan la instalación a medias. Detener el servidor de desarrollo antes de tocar dependencias y avisar al usuario para que lo reinicie.
+- Procesos lanzados con `npx` en segundo plano dejan el hijo vivo al detener la tarea: lanzar `node node_modules/next/dist/bin/next ...` y confirmar con la lista de procesos que no quedó nada corriendo.
+- El CLI de shadcn puede agregar paquetes que sobran (`cn`, `radix-ui`) y actualizar todo Radix: ajustar los imports a `@/lib/utils` y `@radix-ui/react-*`, e instalar la versión del primitivo que coincida con los demás para que el diff del lockfile sea mínimo.
+
+### Verificación visual sin falsos positivos
+- Edge headless controlado por DevTools (scripts en el scratchpad, no se versionan) sobre el build de producción (`next start`), no sobre `next dev`.
+- Esperar a que React hidrate (clave `__reactFiber` en el elemento) antes de interactuar, y hacer scroll con `behavior: "instant"`: el `<html>` tiene scroll suave.
+- Los popovers y diálogos de Radix siguen en el DOM durante su animación de salida: comprobar `data-state`, no solo si el nodo existe.
+
 ## Reglas del producto (resumen de PRODUCT.md)
 
 - **No inventar pruebas:** testimonios, cifras, clientes o certificaciones solo si los entrega Neuron. Todo contenido provisorio se marca en el código (`// TODO:` o un campo `placeholder: true`) y queda listado en TASKS.md.

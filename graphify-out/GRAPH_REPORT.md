@@ -1,17 +1,17 @@
 # Graph Report - neuron-web  (2026-10-03)
 
 ## Corpus Check
-- 179 files · ~1,019,173 words
+- 179 files · ~1,019,684 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 15 file(s) not represented in the graph (top: .toml 8, (none) 4, .cmd 2)
 
 ## Summary
-- 3321 nodes · 6667 edges · 167 communities (162 shown, 5 thin omitted)
-- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 133 edges (avg confidence: 0.85)
+- 3324 nodes · 6671 edges · 168 communities (163 shown, 5 thin omitted)
+- Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 134 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `66b6462e`
+- Built from commit: `86613aec`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -29,11 +29,11 @@
 - postcss.config.mjs
 - Three.js Textures
 - Three.js Textures
-- initGlobalBar
-- syncPageChatFocus
-- handleKeyDown
-- Three.js Shaders
 - renderDesignVisual
+- initPageChat
+- initGlobalBar
+- Three.js Shaders
+- cleanup
 - captureElementToBlob
 - What You Must Do When Invoked
 - Three.js Shaders
@@ -58,7 +58,7 @@
 - connectSSE
 - .agents/skills/impeccable/SKILL.md
 - Diseño: descarga de material educativo con formulario
-- initGlobalBar
+- setLiveState
 - createLiveBrowserSessionState
 - actOnAgentTarget
 - Product
@@ -75,7 +75,7 @@
 - graphify reference: extra exports and benchmark
 - Scan mode (approach C: auto-extract, then confirm descriptive language)
 - .claude/skills/impeccable/reference/generate.md
-- .claude/skills/impeccable/SKILL.md
+- .claude/skills/impeccable/reference/new-work.md
 - critique.md
 - Simplify the Design
 - Hardening Dimensions
@@ -83,7 +83,7 @@
 - Nielsen's 10 Heuristics
 - Generate Combined Critique Report
 - Three.js Interaction
-- .agents/skills/impeccable/reference/doctor.md
+- showToast
 - document.md
 - impeccable
 - polish.md
@@ -134,7 +134,7 @@
 - 🧠 Neuron - Cumpleaños Científicos Inolvidables
 - Operate mode depth (and Read notes)
 - The Toolkit
-- .agents/skills/impeccable/reference/generate.md
+- barPaletteForTheme
 - actOnAgentTarget
 - createLiveBrowserSessionState
 - .claude/skills/impeccable/reference/animate.md
@@ -149,7 +149,7 @@
 - .claude/skills/impeccable/reference/critique.md
 - Simplify the Design
 - Hardening Dimensions
-- scheduleAcceptCleanup
+- captureElementToBlob
 - .claude/skills/impeccable/reference/clarify.md
 - Nielsen's 10 Heuristics
 - Generate Combined Critique Report
@@ -158,7 +158,7 @@
 - .claude/skills/impeccable/reference/quieter.md
 - Responsive Design
 - Init flow
-- syncEditBadgeHitProxies
+- .agents/skills/impeccable/reference/colorize.md
 - Common Cognitive Load Violations
 - iOS platform
 - Shape
@@ -172,20 +172,21 @@
 - Impeccable Manual Edit Applier
 - .claude/skills/impeccable/scripts/live-browser-ignores.js
 - Flujo de trabajo
-- .claude/skills/impeccable/reference/bolder.md
+- .claude/skills/impeccable/SKILL.md
 - Visualize: Direction Comps & Asset Production
 - .claude/skills/impeccable/scripts/impeccable
-- Adaptation Strategies
+- .claude/skills/impeccable/reference/adapt.native.md
 - Component review
 - Impeccable Documenter
 - enableInlineEdit
-- .claude/skills/impeccable/reference/doctor.md
+- Diagnostic Scan
 - Heuristics Scoring Guide
 - Tasks
-- Command guidance
+- $impeccable hooks
+- enableInlineEdit
 
 ## God Nodes (most connected - your core abstractions)
-1. `cn()` - 45 edges
+1. `cn()` - 46 edges
 2. `connectSSE()` - 34 edges
 3. `connectSSE()` - 34 edges
 4. `setLiveState()` - 33 edges
@@ -199,19 +200,19 @@
 ## Surprising Connections (you probably didn't know these)
 - `Done` --references--> `Reveal()`  [INFERRED]
   TASKS.md → components/Reveal.tsx
+- `Lecciones del entorno (Windows)` --references--> `cn()`  [INFERRED]
+  CLAUDE.md → lib/utils.ts
 - `Plan de implementación` --references--> `ExperimentChip()`  [INFERRED]
   docs/design/ficha-experimento-hover.md → components/ExperimentChip.tsx
 - `Plan de implementación` --references--> `FAQSection()`  [INFERRED]
   docs/design/descarga-material-educativo.md → components/FAQ.tsx
 - `Plan de implementación` --references--> `GallerySection()`  [INFERRED]
   docs/design/descarga-material-educativo.md → components/Gallery.tsx
-- `Plan de implementación` --references--> `PlanCard()`  [INFERRED]
-  docs/design/ficha-experimento-hover.md → components/Pricing.tsx
 
 ## Import Cycles
 - None detected.
 
-## Communities (167 total, 5 thin omitted)
+## Communities (168 total, 5 thin omitted)
 
 ### Community 0 - "sheet.tsx"
 Cohesion: 0.13
@@ -239,15 +240,15 @@ Nodes (18): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModu
 
 ### Community 6 - ".agents/skills/impeccable/scripts/live-browser.js"
 Cohesion: 0.03
-Nodes (140): addManualContextText(), applyEditing(), applyParamDefaults(), applyParamValue(), averageRgb01(), bufferToBase64(), buildInsertPlaceholderSnapshotFromDom(), buildLocatorForLeaf() (+132 more)
+Nodes (134): addManualContextText(), applyEditing(), applyGlobalBarLabelState(), applyLiveBarPreference(), applyPlaceholderSizingStyles(), bindEditBadgeProxy(), bufferToBase64(), buildCollapsible() (+126 more)
 
 ### Community 7 - "dependencies"
 Cohesion: 0.07
 Nodes (26): dependencies, class-variance-authority, clsx, framer-motion, lucide-react, next, @radix-ui/react-accordion, @radix-ui/react-dialog (+18 more)
 
 ### Community 8 - "el"
-Cohesion: 0.07
-Nodes (55): actionLabel(), applyConfigureBarChrome(), bindConfigureCountPillTooltip(), bindConfigureInlineControlHover(), bindConfigureModifierPillHover(), buildConfigureActionControl(), buildConfigureCountControl(), buildConfigureRow() (+47 more)
+Cohesion: 0.08
+Nodes (51): actionLabel(), applyConfigureBarChrome(), bindConfigureCountPillTooltip(), bindConfigureInlineControlHover(), bindConfigureModifierPillHover(), buildConfigureActionControl(), buildConfigureCountControl(), buildConfigureRow() (+43 more)
 
 ### Community 9 - "modern-screenshot.umd.js"
 Cohesion: 0.09
@@ -261,25 +262,25 @@ Nodes (44): Accessing UVs, Background Options, Basic Loading, Canvas Texture, Co
 Cohesion: 0.04
 Nodes (44): Accessing UVs, Background Options, Basic Loading, Canvas Texture, Color Space, Compressed Textures, Cube Textures, CubeCamera (+36 more)
 
-### Community 13 - "initGlobalBar"
+### Community 13 - "renderDesignVisual"
 Cohesion: 0.08
-Nodes (40): agentStatusText(), applyLiveBarPreference(), barPaletteForTheme(), brandMarkSvg(), buildDesignHeader(), designPanelCss(), detectPageTheme(), ensureAgentPollTooltip() (+32 more)
+Nodes (39): buildCollapsible(), buildColorModels(), buildDesignHeader(), buildListHtml(), buildRadiiModels(), buildTypographyModels(), cssSafe(), designEmptyMessage() (+31 more)
 
-### Community 14 - "syncPageChatFocus"
+### Community 14 - "initPageChat"
 Cohesion: 0.07
-Nodes (56): agentHasWorkInFlight(), applyGlobalBarLabelState(), armPageChatForTyping(), attachSteerFocusDebug(), attachSteerFocusGuard(), buildSteerProcessingDots(), buildSteerQueueHint(), clearSteerAwaitTimer() (+48 more)
+Nodes (59): agentHasWorkInFlight(), armPageChatForTyping(), attachSteerFocusDebug(), attachSteerFocusGuard(), buildSteerProcessingDots(), buildSteerQueueHint(), clearSteerAwaitTimer(), clearSteerFocusRecoverTimer() (+51 more)
 
-### Community 15 - "handleKeyDown"
-Cohesion: 0.10
-Nodes (39): applyPlaceholderSizingStyles(), beginNewLiveConfiguration(), cancelInsertConfigure(), clearAnnotations(), clearInsertPicking(), closeTunePopover(), createInsertPlaceholder(), cursorForInsertAxis() (+31 more)
+### Community 15 - "initGlobalBar"
+Cohesion: 0.07
+Nodes (73): agentStatusText(), barPaletteForTheme(), beginNewLiveConfiguration(), brandMarkSvg(), buildParamsPanel(), buildSelectionPill(), cancelEditing(), cancelEditingToPicking() (+65 more)
 
 ### Community 16 - "Three.js Shaders"
 Cohesion: 0.06
 Nodes (33): Common Injection Points, Common Material Properties, Common Shader Patterns, Debugging Shaders, Dissolve Effect, Extending Built-in Materials, External Shader Files, Fresnel Effect (+25 more)
 
-### Community 17 - "renderDesignVisual"
-Cohesion: 0.08
-Nodes (34): buildCollapsible(), buildColorModels(), buildListHtml(), buildRadiiModels(), buildTypographyModels(), cssSafe(), designEmptyMessage(), escapeHtml() (+26 more)
+### Community 17 - "cleanup"
+Cohesion: 0.11
+Nodes (34): abortSvelteComponentInjection(), buildInsertPlaceholderSnapshotFromDom(), buildPickedAnchorSnapshot(), captureAndEmit(), cleanup(), cleanupAcceptedSession(), clearHandled(), clearMountErrorCard() (+26 more)
 
 ### Community 18 - "captureElementToBlob"
 Cohesion: 0.12
@@ -311,7 +312,7 @@ Nodes (27): AmbientLight, Common Lighting Setups, Contact Shadows (Fake, Fast), 
 
 ### Community 25 - ".claude/skills/impeccable/scripts/live-browser.js"
 Cohesion: 0.03
-Nodes (134): addManualContextText(), applyEditing(), applyGlobalBarLabelState(), applyLiveBarPreference(), applyPlaceholderSizingStyles(), bindEditBadgeProxy(), bufferToBase64(), buildCollapsible() (+126 more)
+Nodes (134): acceptedDomAlreadyClean(), addManualContextText(), applyEditing(), applyGlobalBarLabelState(), applyLiveBarPreference(), applyParamValue(), applyPlaceholderSizingStyles(), bindEditBadgeProxy() (+126 more)
 
 ### Community 26 - "Three.js Animation"
 Cohesion: 0.07
@@ -330,16 +331,16 @@ Cohesion: 0.06
 Nodes (32): ArrayBuffer, Async/Promise Loading, Blob URL, Built-in Cache, Caching, CubeTextureLoader, Custom Asset Manager, Custom Path/URL (+24 more)
 
 ### Community 30 - "connectSSE"
-Cohesion: 0.08
-Nodes (85): abandonForeignSession(), abandonSupersededGo(), abortSvelteComponentInjection(), applySavedSessionMeta(), cancelEditing(), cancelEditingToPicking(), captureAndEmit(), cleanup() (+77 more)
+Cohesion: 0.05
+Nodes (104): abortSvelteComponentInjection(), applyParamDefaults(), applyParamValue(), applySavedSessionMeta(), buildInsertPlaceholderSnapshotFromDom(), buildPickedAnchorSnapshot(), captureAndEmit(), checkpointPayload() (+96 more)
 
 ### Community 31 - ".agents/skills/impeccable/reference/new-work.md"
-Cohesion: 0.11
-Nodes (16): Recommended Actions, Craft (deprecated alias), Apply, Live-mode signature params, Set the spatial thesis, Two isolated assessments, Verify, Visitor mode (+8 more)
+Cohesion: 0.07
+Nodes (27): Recommended Actions, Craft (deprecated alias), Impeccable Documenter, Input Contract, Output Contract, Workflow, Monorepo notes, Opting out of the boot check (+19 more)
 
 ### Community 32 - "onAnnotDown"
-Cohesion: 0.15
-Nodes (21): applyPlaceholderDimensions(), beginEditPin(), buildAnnotationsForCapture(), buildPinElement(), cancelEditingPin(), clampPlaceholderSize(), finalizeEditingPin(), initAnnotOverlay() (+13 more)
+Cohesion: 0.12
+Nodes (25): applyPlaceholderDimensions(), beginEditPin(), buildAnnotationsForCapture(), buildPinElement(), buildPlaceholderResizeHandles(), cancelEditingPin(), clampPlaceholderSize(), cursorForPlaceholderEdge() (+17 more)
 
 ### Community 33 - "handleManualEditActivity"
 Cohesion: 0.19
@@ -358,16 +359,16 @@ Cohesion: 0.09
 Nodes (22): Assess Onboarding Needs, Context Over Ceremony, Contextual Help, Design Onboarding Experiences, Documentation & Help, Empty State Design, Feature Discovery & Adoption, Guided Tours & Walkthroughs (+14 more)
 
 ### Community 37 - "createLiveBrowserDomHelpers"
-Cohesion: 0.16
-Nodes (11): createLiveBrowserDomHelpers(), cssId(), liveUiRoot(), makeFrozenAnchor(), own(), pickable(), rectIsUsableAnchor(), uiAppend() (+3 more)
+Cohesion: 0.17
+Nodes (10): createLiveBrowserDomHelpers(), cssId(), liveUiRoot(), makeFrozenAnchor(), own(), pickable(), rectIsUsableAnchor(), uiAppend() (+2 more)
 
 ### Community 38 - "The Toolkit"
 Cohesion: 0.10
 Nodes (20): Animate complex properties, Assess What "Extraordinary" Means Here, For data-heavy interfaces, For functional UI, For performance-critical UI, For visual/marketing surfaces, Implement with Discipline, Interact with the device (+12 more)
 
 ### Community 39 - "connectSSE"
-Cohesion: 0.05
-Nodes (104): abortSvelteComponentInjection(), applyParamDefaults(), applyParamValue(), applySavedSessionMeta(), buildInsertPlaceholderSnapshotFromDom(), buildPickedAnchorSnapshot(), captureAndEmit(), checkpointPayload() (+96 more)
+Cohesion: 0.08
+Nodes (72): applyParamDefaults(), applyPlaceholderDimensions(), applySavedSessionMeta(), checkpointPayload(), closedClipPath(), completeParameterGenerationIfReady(), completeParameterPublication(), completeSourceInjection() (+64 more)
 
 ### Community 40 - ".agents/skills/impeccable/SKILL.md"
 Cohesion: 0.10
@@ -377,17 +378,17 @@ Nodes (15): Before you finish, Scope is sovereign, The amplification, The skelet
 Cohesion: 0.17
 Nodes (12): Campos, Composición, Criterios de aceptación, Diseño: descarga de material educativo con formulario, Dónde guardar las respuestas: evaluación (2026-10-03), Estados, Flujo técnico, Lectura del encargo (+4 more)
 
-### Community 42 - "initGlobalBar"
-Cohesion: 0.07
-Nodes (73): agentStatusText(), barPaletteForTheme(), beginNewLiveConfiguration(), brandMarkSvg(), buildParamsPanel(), buildSelectionPill(), cancelEditing(), cancelEditingToPicking() (+65 more)
+### Community 42 - "setLiveState"
+Cohesion: 0.09
+Nodes (58): beginNewLiveConfiguration(), cancelEditing(), cancelEditingToPicking(), cancelInsertConfigure(), clearAnnotations(), clearInsertPicking(), closeTunePopover(), cursorForInsertAxis() (+50 more)
 
 ### Community 43 - "createLiveBrowserSessionState"
 Cohesion: 0.21
 Nodes (15): createLiveBrowserSessionState(), clearHandled(), clearScrollY(), clearSession(), isHandled(), loadSession(), markHandled(), nextCheckpointRevision() (+7 more)
 
 ### Community 44 - "actOnAgentTarget"
-Cohesion: 0.19
-Nodes (22): actOnAgentTarget(), agentTargetBusyReason(), agentTargetOverlayGone(), agentTargetTaken(), buildPlaceholderResizeHandles(), claimAgentTarget(), claimAndActOnAgentTarget(), cursorForPlaceholderEdge() (+14 more)
+Cohesion: 0.26
+Nodes (18): actOnAgentTarget(), agentTargetBusyReason(), agentTargetOverlayGone(), agentTargetTaken(), claimAgentTarget(), claimAndActOnAgentTarget(), declineAgentTargetBusy(), declineAgentTargetUnresolvable() (+10 more)
 
 ### Community 45 - "Product"
 Cohesion: 0.18
@@ -402,8 +403,8 @@ Cohesion: 0.12
 Nodes (14): Accessibility and control, Choose material by meaning, Find the job, Implement to the runtime, Set the motion thesis, Timing and easing, Verify, Visitor mode (+6 more)
 
 ### Community 48 - ".agents/skills/impeccable/reference/live.md"
-Cohesion: 0.08
-Nodes (22): Apply at system scale, Audit before choosing, Choose a strategy, Contrast and perception, Live-mode signature params, Verify, Visitor mode, Cleanup (+14 more)
+Cohesion: 0.07
+Nodes (26): Step 1: Parse the request, Step 2: Reuse the page, then start, Step 3: Generate, Step 4: Accept and close, Cleanup, Exit, First-time setup, Handle `accept` (+18 more)
 
 ### Community 49 - "Handle `generate`"
 Cohesion: 0.12
@@ -411,7 +412,7 @@ Nodes (16): 1. Read the screenshot (if present), 2. Wrap the element, 3. Load th
 
 ### Community 50 - "el"
 Cohesion: 0.08
-Nodes (51): actionLabel(), applyConfigureBarChrome(), bindConfigureCountPillTooltip(), bindConfigureInlineControlHover(), bindConfigureModifierPillHover(), buildConfigureActionControl(), buildConfigureCountControl(), buildConfigureRow() (+43 more)
+Nodes (53): actionLabel(), applyConfigureBarChrome(), bindConfigureCountPillTooltip(), bindConfigureInlineControlHover(), bindConfigureModifierPillHover(), buildConfigureActionControl(), buildConfigureCountControl(), buildConfigureRow() (+45 more)
 
 ### Community 51 - "Generate Report"
 Cohesion: 0.13
@@ -445,9 +446,9 @@ Nodes (13): Component translation rules, Narrative mapping, Scan mode (approach 
 Cohesion: 0.15
 Nodes (11): Step 1: Parse the request, Step 2: Reuse the page, then start, Step 3: Generate, Step 4: Accept and close, append-arrays, append-string, Config drift, Consent prompt (use this phrasing) (+3 more)
 
-### Community 59 - ".claude/skills/impeccable/SKILL.md"
-Cohesion: 0.07
-Nodes (28): Assess Adaptation Challenge, Implement & Verify, 1. Accessibility (VoiceOver / TalkBack), 2. Performance, 3. Appearance & Theming, 4. Platform Conformance (CRITICAL), 5. Adaptivity, Diagnostic Scan (+20 more)
+### Community 59 - ".claude/skills/impeccable/reference/new-work.md"
+Cohesion: 0.08
+Nodes (23): Recommended Actions, Craft (deprecated alias), Monorepo notes, Opting out of the boot check, Step 1: Run the pass, Step 2: Act by severity, Step 3: Deprecated fields are binding, Step 4: Do not overclaim on truth drift (+15 more)
 
 ### Community 60 - "critique.md"
 Cohesion: 0.17
@@ -477,9 +478,9 @@ Nodes (11): Design Health Score, Design Specificity Verdict, Generate Combined C
 Cohesion: 0.07
 Nodes (29): Basic Raycasting, Box Selection, Camera Controls, Click to Select, DragControls, Efficient Raycasting, Event Handling Best Practices, FirstPersonControls (+21 more)
 
-### Community 67 - ".agents/skills/impeccable/reference/doctor.md"
-Cohesion: 0.14
-Nodes (11): Impeccable Documenter, Input Contract, Output Contract, Workflow, Monorepo notes, Opting out of the boot check, Step 1: Run the pass, Step 2: Act by severity (+3 more)
+### Community 67 - "showToast"
+Cohesion: 0.13
+Nodes (25): abandonForeignSession(), abandonSupersededGo(), cleanup(), clearScrollY(), discardedWrappers(), discardOrphanedSession(), discardStateStyleId(), handleDiscard() (+17 more)
 
 ### Community 68 - "document.md"
 Cohesion: 0.18
@@ -498,8 +499,8 @@ Cohesion: 0.18
 Nodes (10): Assess Current State, Color Refinement, Composition Refinement, Motion Reduction, Plan Refinement, Refine the Design, Simplification, Verify Quality (+2 more)
 
 ### Community 72 - "mountSvelteComponentVariant"
-Cohesion: 0.09
-Nodes (33): applyOriginalAttrsToSvelteAnchor(), commitAcceptedSvelteComponentToDom(), commitAcceptedVariantToDom(), componentModuleCandidates(), describeMountFailure(), detectDevServerBase(), ensureInsertPlaceholder(), findInsertAnchorInDom() (+25 more)
+Cohesion: 0.10
+Nodes (33): acceptedDomAlreadyClean(), applyOriginalAttrsToSvelteAnchor(), clearHandledWrapperReloadStamp(), commitAcceptedSvelteComponentToDom(), componentModuleCandidates(), deferredRecoverySuperseded(), describeMountFailure(), detectDevServerBase() (+25 more)
 
 ### Community 73 - "ExperimentChip.tsx"
 Cohesion: 0.20
@@ -558,24 +559,24 @@ Cohesion: 0.22
 Nodes (9): Color, Components, Layout, Motion, Operate mode depth (and Read notes), Product constraints, Product permissions, The product slop test (+1 more)
 
 ### Community 89 - "mountSvelteComponentVariant"
-Cohesion: 0.10
-Nodes (33): acceptedDomAlreadyClean(), applyOriginalAttrsToSvelteAnchor(), clearHandledWrapperReloadStamp(), commitAcceptedSvelteComponentToDom(), componentModuleCandidates(), deferredRecoverySuperseded(), describeMountFailure(), detectDevServerBase() (+25 more)
+Cohesion: 0.27
+Nodes (12): applyOriginalAttrsToSvelteAnchor(), commitAcceptedSvelteComponentToDom(), componentModuleCandidates(), describeMountFailure(), detectDevServerBase(), getMountedSvelteComponentAnchor(), importFirstReachable(), isSvelteInsertManifest() (+4 more)
 
 ### Community 92 - "Shape"
 Cohesion: 0.22
 Nodes (8): Cadence, Confirm and stop, Phase 1: Discovery interview, Phase 2: Resolve the design direction, Phase 3: Write the brief, Round 1: purpose, people, and outcome, Round 2: material, behavior, and boundaries, Shape
 
 ### Community 93 - "showToast"
-Cohesion: 0.13
-Nodes (25): abandonForeignSession(), abandonSupersededGo(), cleanup(), clearScrollY(), discardedWrappers(), discardOrphanedSession(), discardStateStyleId(), handleDiscard() (+17 more)
+Cohesion: 0.09
+Nodes (35): abandonForeignSession(), abandonSupersededGo(), clearSteerAwaitTimer(), configureVoiceContext(), copyToClipboard(), discardOrphanedSession(), dismissToast(), finishVoiceSession() (+27 more)
 
 ### Community 94 - "Three.js Animation"
 Cohesion: 0.07
 Nodes (26): Additive Blending, Animating Morph Targets, Animation Blending, Animation System Overview, Animation Utilities, AnimationAction, AnimationClip, AnimationMixer (+18 more)
 
 ### Community 95 - "initPageChat"
-Cohesion: 0.07
-Nodes (59): agentHasWorkInFlight(), armPageChatForTyping(), attachSteerFocusDebug(), attachSteerFocusGuard(), buildSteerProcessingDots(), buildSteerQueueHint(), clearSteerAwaitTimer(), clearSteerFocusRecoverTimer() (+51 more)
+Cohesion: 0.14
+Nodes (29): armPageChatForTyping(), attachSteerFocusDebug(), attachSteerFocusGuard(), clearSteerFocusRecoverTimer(), collapsePageChat(), expandPageChat(), focusConfigureInput(), focusPageChatInput() (+21 more)
 
 ### Community 96 - "Three.js Geometry"
 Cohesion: 0.07
@@ -658,20 +659,20 @@ Cohesion: 0.18
 Nodes (11): 🤝 Contribución y Flujo de Trabajo, 🚀 Cómo Ejecutar el Proyecto Localmente, 📂 Estructura del Proyecto, 📄 Licencia, 🧠 Neuron - Cumpleaños Científicos Inolvidables, Otros comandos, Pasos, Prerrequisitos (+3 more)
 
 ### Community 116 - "Operate mode depth (and Read notes)"
-Cohesion: 0.10
-Nodes (18): Craft floor, Refuse, Verify, Constraints, Failure modes, Flow, $impeccable hooks, Routing (+10 more)
+Cohesion: 0.22
+Nodes (9): Color, Components, Layout, Motion, Operate mode depth (and Read notes), Product constraints, Product permissions, The product slop test (+1 more)
 
 ### Community 117 - "The Toolkit"
 Cohesion: 0.10
 Nodes (20): Animate complex properties, Assess What "Extraordinary" Means Here, For data-heavy interfaces, For functional UI, For performance-critical UI, For visual/marketing surfaces, Implement with Discipline, Interact with the device (+12 more)
 
-### Community 118 - ".agents/skills/impeccable/reference/generate.md"
-Cohesion: 0.15
-Nodes (11): Step 1: Parse the request, Step 2: Reuse the page, then start, Step 3: Generate, Step 4: Accept and close, append-arrays, append-string, Config drift, Consent prompt (use this phrasing) (+3 more)
+### Community 118 - "barPaletteForTheme"
+Cohesion: 0.14
+Nodes (22): agentHasWorkInFlight(), agentStatusText(), barPaletteForTheme(), brandMarkSvg(), buildParamsPanel(), buildSteerProcessingDots(), buildSteerQueueHint(), designPanelCss() (+14 more)
 
 ### Community 119 - "actOnAgentTarget"
-Cohesion: 0.26
-Nodes (18): actOnAgentTarget(), agentTargetBusyReason(), agentTargetOverlayGone(), agentTargetTaken(), claimAgentTarget(), claimAndActOnAgentTarget(), declineAgentTargetBusy(), declineAgentTargetUnresolvable() (+10 more)
+Cohesion: 0.24
+Nodes (19): actOnAgentTarget(), agentTargetBusyReason(), agentTargetOverlayGone(), agentTargetTaken(), claimAgentTarget(), claimAndActOnAgentTarget(), declineAgentTargetBusy(), declineAgentTargetUnresolvable() (+11 more)
 
 ### Community 120 - "createLiveBrowserSessionState"
 Cohesion: 0.21
@@ -694,8 +695,8 @@ Cohesion: 0.13
 Nodes (14): 1. Accessibility (A11y), 2. Performance, 3. Theming, 4. Responsive Design, 5. Implementation Integrity (CRITICAL), Audit Health Score, Detailed Findings by Severity, Diagnostic Scan (+6 more)
 
 ### Community 125 - "onAnnotDown"
-Cohesion: 0.12
-Nodes (25): applyPlaceholderDimensions(), beginEditPin(), buildAnnotationsForCapture(), buildPinElement(), buildPlaceholderResizeHandles(), cancelEditingPin(), clampPlaceholderSize(), cursorForPlaceholderEdge() (+17 more)
+Cohesion: 0.24
+Nodes (15): beginEditPin(), buildAnnotationsForCapture(), buildPinElement(), cancelEditingPin(), finalizeEditingPin(), initAnnotOverlay(), localCoords(), onAnnotDown() (+7 more)
 
 ### Community 126 - "New visual work"
 Cohesion: 0.14
@@ -725,9 +726,9 @@ Nodes (11): Assess Current State, Code Simplification, Content Simplification, D
 Cohesion: 0.17
 Nodes (11): Accessibility Resilience, Assess Hardening Needs, Edge Cases & Boundary Conditions, Error Handling, Hardening Dimensions, Input Validation & Sanitization, Internationalization (i18n), Performance Resilience (+3 more)
 
-### Community 133 - "scheduleAcceptCleanup"
-Cohesion: 0.31
-Nodes (11): acceptedDomAlreadyClean(), clearHandledWrapperReloadStamp(), deferredRecoverySuperseded(), ensureAcceptedDomClean(), findAcceptedRuntimeWrappers(), handledWrapperReloadKey(), reloadAfterMissingAcceptedDom(), restoreAcceptedDomFromSnapshot() (+3 more)
+### Community 133 - "captureElementToBlob"
+Cohesion: 0.12
+Nodes (20): averageRgb01(), captureChromeNodes(), captureElementFromRenderedAncestor(), captureElementToBlob(), compileShader(), cssColorToRgb01(), dominantRgb01(), findBackdropAncestor() (+12 more)
 
 ### Community 134 - ".claude/skills/impeccable/reference/clarify.md"
 Cohesion: 0.18
@@ -761,9 +762,9 @@ Nodes (10): Breakpoints: Content-Driven, Detect Input Method, Not Just Screen Si
 Cohesion: 0.20
 Nodes (10): Completion gate, Init flow, Step 1: Load current state, Step 2: Explore the project, Step 3: Interview for product truth, Step 4: Write PRODUCT.md, Step 5: Record workflow defaults, Step 6: Wrap up or resume (+2 more)
 
-### Community 142 - "syncEditBadgeHitProxies"
-Cohesion: 0.27
-Nodes (10): bindEditBadgeProxy(), editBadgeProxyTargets(), initEditBadge(), initEditBadgeHitProxies(), positionEditBadge(), proxyMouseEvent(), setImportantStyle(), styleEditBadgeProxy() (+2 more)
+### Community 142 - ".agents/skills/impeccable/reference/colorize.md"
+Cohesion: 0.25
+Nodes (7): Apply at system scale, Audit before choosing, Choose a strategy, Contrast and perception, Live-mode signature params, Verify, Visitor mode
 
 ### Community 143 - "Common Cognitive Load Violations"
 Cohesion: 0.22
@@ -814,12 +815,12 @@ Cohesion: 0.52
 Nodes (6): globToRegex(), matchesScope(), normalizeIgnoreRule(), normalizeIgnoreValue(), pageCandidates(), resolveDetectIgnores()
 
 ### Community 155 - "Flujo de trabajo"
-Cohesion: 0.25
-Nodes (7): Al empezar una sesión, Commits y PRs, Flujo de trabajo, graphify, Neuron web, Por cada tarea, Reglas del producto (resumen de PRODUCT.md)
+Cohesion: 0.18
+Nodes (10): Al empezar una sesión, Commits y PRs, Dónde vive el contenido editable, Flujo de trabajo, graphify, Lecciones del entorno (Windows), Neuron web, Por cada tarea (+2 more)
 
-### Community 156 - ".claude/skills/impeccable/reference/bolder.md"
-Cohesion: 0.33
-Nodes (5): Before you finish, Scope is sovereign, The amplification, The skeleton test, Why it reads flat
+### Community 156 - ".claude/skills/impeccable/SKILL.md"
+Cohesion: 0.10
+Nodes (15): Before you finish, Scope is sovereign, The amplification, The skeleton test, Why it reads flat, Craft floor, Refuse, Verify (+7 more)
 
 ### Community 157 - "Visualize: Direction Comps & Asset Production"
 Cohesion: 0.33
@@ -829,9 +830,9 @@ Nodes (5): After approval: the comp becomes a spec, Generate three compositional
 Cohesion: 0.60
 Nodes (5): impeccable script, check_download(), fetch_url(), probe_ok(), setup_help()
 
-### Community 159 - "Adaptation Strategies"
-Cohesion: 0.40
-Nodes (5): Adaptation Strategies, Orientation & foldables, Phone → Tablet (iPad / large screens), Platform → platform (iOS ↔ Android), Web → native (porting a website or web app)
+### Community 159 - ".claude/skills/impeccable/reference/adapt.native.md"
+Cohesion: 0.25
+Nodes (7): Adaptation Strategies, Assess Adaptation Challenge, Implement & Verify, Orientation & foldables, Phone → Tablet (iPad / large screens), Platform → platform (iOS ↔ Android), Web → native (porting a website or web app)
 
 ### Community 160 - "Component review"
 Cohesion: 0.40
@@ -845,9 +846,9 @@ Nodes (4): Impeccable Documenter, Input Contract, Output Contract, Workflow
 Cohesion: 0.40
 Nodes (5): collectEditableTextRows(), visit(), enableInlineEdit(), onInlineInput(), wrapMixedContentTextNodes()
 
-### Community 163 - ".claude/skills/impeccable/reference/doctor.md"
-Cohesion: 0.25
-Nodes (7): Monorepo notes, Opting out of the boot check, Step 1: Run the pass, Step 2: Act by severity, Step 3: Deprecated fields are binding, Step 4: Do not overclaim on truth drift, What this owns, and what it does not
+### Community 163 - "Diagnostic Scan"
+Cohesion: 0.33
+Nodes (6): 1. Accessibility (VoiceOver / TalkBack), 2. Performance, 3. Appearance & Theming, 4. Platform Conformance (CRITICAL), 5. Adaptivity, Diagnostic Scan
 
 ### Community 164 - "Heuristics Scoring Guide"
 Cohesion: 0.50
@@ -857,13 +858,17 @@ Nodes (4): Heuristics Scoring Guide, Issue Severity (P0–P3), Reference Materia
 Cohesion: 0.22
 Nodes (5): Active, Done, Someday, Tasks, Waiting On
 
-### Community 166 - "Command guidance"
-Cohesion: 0.50
-Nodes (3): Command guidance, No-argument routing: the context-aware menu, Workflow questions
+### Community 166 - "$impeccable hooks"
+Cohesion: 0.33
+Nodes (6): Constraints, Failure modes, Flow, $impeccable hooks, Routing, Triage findings
+
+### Community 167 - "enableInlineEdit"
+Cohesion: 0.40
+Nodes (5): collectEditableTextRows(), visit(), enableInlineEdit(), onInlineInput(), wrapMixedContentTextNodes()
 
 ## Knowledge Gaps
-- **1437 isolated node(s):** `figtree`, `bricolage`, `metadata`, `alt`, `size` (+1432 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1515 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **1439 isolated node(s):** `figtree`, `bricolage`, `metadata`, `alt`, `size` (+1434 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 1517 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
@@ -874,7 +879,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `Generate Combined Critique Report` connect `Generate Combined Critique Report` to `critique.md`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `figtree`, `bricolage`, `metadata` to the rest of the system?**
-  _1437 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _1439 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `sheet.tsx` be split into smaller, more focused modules?**
   _Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**

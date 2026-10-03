@@ -22,7 +22,7 @@ Experimentos reales y seguros dirigidos por educadores certificados, organizados
 
 ## Capabilities and Constraints
 - Stack existente: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS 4, shadcn/ui (Radix), Framer Motion, Lucide.
-- Secciones actuales: Hero, Servicios, Planes y Precios, Galería con lightbox, FAQ, CTA final, botón de WhatsApp.
+- Secciones actuales: Hero, Experimentos, Opiniones, Planes y Precios (con ficha de cada experimento), Empresas, Galería con lightbox, FAQ, CTA final, botón de WhatsApp.
 - Idioma: español.
 - Hay información aún no disponible (precios definitivos, cobertura geográfica, rango de edades, oferta para empresas): se usan datos dummy/placeholder claramente reemplazables y marcados como tales.
 
@@ -33,7 +33,8 @@ Experimentos reales y seguros dirigidos por educadores certificados, organizados
 
 ## Evidence on Hand
 - Fotos reales de eventos pasados en la galería (`public/images`).
-- No hay testimonios, cifras, clientes ni certificaciones verificadas: no fabricarlos. Todo dato dummy debe quedar identificado para reemplazo futuro.
+- Testimonios reales de tres familias (entregados el 2026-10-02) y textos de los experimentos (2026-10-03).
+- No hay cifras, clientes ni certificaciones verificadas: no fabricarlos. Todo dato dummy debe quedar identificado para reemplazo futuro.
 
 ## Product Principles
 1. Confianza primero: seguridad y educadores certificados deben ser evidentes antes de pedir contacto.

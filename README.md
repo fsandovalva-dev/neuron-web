@@ -20,7 +20,7 @@ El diseño es vibrante, divertido y profesional, con los colores del logo (rosa,
 * **Hero:** propuesta de valor, llamado a cotizar y un racimo de fotos en burbujas que se mueven al hacer scroll.
 * **Experimentos:** el experimento destacado y dos secundarios, con foto y descripción.
 * **Opiniones:** testimonios de familias en globos de diálogo.
-* **Planes y Precios:** planes Micro (1 hora) y Macro (2 horas) en pestañas, cada uno con su botón de cotización.
+* **Planes y Precios:** planes Micro (1 hora) y Macro (2 horas) en pestañas. Cada experimento con descripción abre una ficha (al pasar el mouse, al tocarlo o con el teclado) y cada botón "Cotizar" prellena el plan en WhatsApp.
 * **Empresas:** propuesta para eventos corporativos.
 * **Galería:** fotos reales de eventos pasados con vista ampliada (lightbox).
 * **Preguntas Frecuentes:** acordeón con las dudas comunes de los padres.
@@ -31,8 +31,8 @@ Además:
 * **Contacto en todo el sitio:** botón de cotizar en la barra de navegación, botón flotante de WhatsApp y enlaces a WhatsApp con mensajes prellenados según la sección.
 * **Diseño responsivo:** adaptado a móvil y escritorio, con menú lateral en móvil.
 * **Animaciones con criterio:** entradas al hacer scroll y burbujas decorativas, que respetan la preferencia de movimiento reducido del sistema.
-* **Accesibilidad básica:** enlace para saltar al contenido, foco visible y textos alternativos en las imágenes.
-* **SEO básico:** título, descripción, palabras clave y favicon.
+* **Accesibilidad:** enlace para saltar al contenido, foco visible, galería y fichas operables con teclado, contraste AA, movimiento reducido respetado y contenido visible aunque el JavaScript no cargue (Lighthouse 100).
+* **SEO y redes:** título, descripción, palabras clave, favicon e imagen para compartir el enlace (Open Graph), liviana para que WhatsApp muestre la vista previa.
 
 ---
 
@@ -81,6 +81,8 @@ Además:
 
     Visita [http://localhost:3000](http://localhost:3000). El sitio se actualiza automáticamente mientras editas el código.
 
+    Para verlo desde otro equipo o celular de la misma red (o por Tailscale), abre `http://<IP-de-tu-equipo>:3000`.
+
 ### Otros comandos
 
 | Comando | Qué hace |
@@ -99,6 +101,7 @@ neuron-web/
 │   ├── layout.tsx          # Layout raíz: tipografías, metadatos, navbar y botón de WhatsApp
 │   ├── page.tsx            # Página de inicio con todas las secciones
 │   ├── globals.css         # Tailwind y tokens de diseño (colores de marca, tipografías)
+│   ├── opengraph-image.tsx # Imagen para compartir el enlace (se genera en el build)
 │   └── icon.png            # Favicon
 ├── components/
 │   ├── ui/                 # Componentes base de shadcn/ui
@@ -108,6 +111,7 @@ neuron-web/
 │   ├── Services.tsx        # Experimentos
 │   ├── Testimonials.tsx    # Opiniones
 │   ├── Pricing.tsx         # Planes y precios
+│   ├── ExperimentChip.tsx  # Experimento de un plan, con su ficha
 │   ├── Corporate.tsx       # Eventos para empresas
 │   ├── Gallery.tsx         # Galería con lightbox
 │   ├── FAQ.tsx             # Preguntas frecuentes
@@ -115,8 +119,12 @@ neuron-web/
 │   ├── WhatsAppButton.tsx  # Botón flotante de contacto
 │   ├── Reveal.tsx          # Animación de entrada al hacer scroll
 │   └── Bubbles.tsx         # Burbujas decorativas de fondo
-├── lib/utils.ts            # Utilidades (cn)
-├── public/images/          # Logo, fotos de la galería y de los experimentos
+├── lib/
+│   ├── experiments.ts      # Textos y fotos de las fichas de experimentos
+│   ├── whatsapp.ts         # Número y mensajes prellenados de WhatsApp
+│   └── utils.ts            # Utilidades (cn)
+├── public/images/          # Logo, galería, servicios y fotos de experimentos (experiments/)
+├── next.config.ts          # Permite abrir el servidor de desarrollo desde otro equipo de la red
 ├── docs/design/            # Especificaciones de diseño de features
 ├── PRODUCT.md              # Público, marca y principios del producto
 ├── TASKS.md                # Backlog del proyecto
